@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+    <header class="fixed top-0">
+        <nav class="w-screen bg-white drop-shadow p-5 md:flex md:items-center md:justify-between  px-24">
+            <ul
+                class="md:flex md:items-center z-[3] md:z-auto md:static absolute drop-shadow font-bold md:bg-gray-50 md:bg-opacity-0  bg-gray-900 bg-opacity-10 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100  top-[-400px] transition-all ease-in duration-500">
+                <li class="mx-5 my-6 md:my-0 flex items-center justify-center">
+                    <ion-icon name="arrow-back-outline"
+                        class="font-bold text-2xl text-green-900  hover:text-opacity-30 hover:text-black duration-500"></ion-icon>
+                    <a href="#"
+                        class="text-xl text-green-900  hover:text-opacity-30 hover:text-black duration-500  ">Kembali</a>
+                </li>
+
+            </ul>
+            <div class="flex justify-between items-center drop-shadow">
+
+                <span class="text-2xl cursor-pointer font-bold text-green-900  ">
+                    <img src="../assets/img/images.png" alt="" class="w-14 h-16 inline">Daily Muslim
+                </span>
+                <span class="text-3xl cursor-pointer md:hidden block mx-2">
+                    <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+
+        </nav>
+    </header>
+    <section class="bg-gray-200 h-screen flex items-center justify-center overflow-hidden">
+        <div class="bg-blue-300 flex   rounded-2xl  drop-shadow-2xl shadow-2xl  md:h-auto  ">
+            <div class="flex items-center justify-around gap-14">
+                <form action="" class="  mt-5 py-10 px-20 md:flex flex-col">
+                    <div class="text-center  flex flex-col gap-7 md:w-80 ">
+                        <h2 class="text-2xl font-bold ">Login</h2>
+                        <p class="text-lg ">if you already a member easily log in</p>
+                        <input type="text" class="rounded-xl h-8 p-6 " name="email" placeholder="Email">
+                        <input type="password" class="rounded-xl h-8 p-6" name="password" placeholder="Password">
+                        <div
+                            class="flex mt-6 justify-center rounded-xl bg-blue-800 text-center font-bold text-white  hover:ring-2 hover:ring-orange-400 hover:text-black hover:bg-white duration-500">
+                            <button class="py-4 px-5 w-80   ">Login</button>
+                        </div>
+                        <div class="mt-2 font-bold grid grid-cols-3 items-center text-gray-500 ">
+                            <hr class="border-gray-500">
+                            <p class="text-center">OR</p>
+                            <hr class="border-gray-500">
+                        </div>
+                    </div>
+                </form>
+                <div class=""></div>
+
+                <div class="bg-transparent flex justify-center pr-4">
+                    <img src="../assets/img/Saly-44.png" alt="" class="md:h-96 flex px-10 bg-gray-500 rounded-xl ">
+                </div>
+            </div>
+            <div class="">
+
+            </div>
+            <div class="">
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

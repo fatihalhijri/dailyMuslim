@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,47 +14,122 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </head>
-<body>
-    <header class="fixed top-0">
-        <nav class="w-screen bg-white drop-shadow p-5 md:flex md:items-center md:justify-between  px-24">
+
+<body class="overflow-hidden">
+    <header class="fixed top-0 font-Ubuntu z-50 ">
+        <nav class="w-screen bg-transparent drop-shadow p-5 md:flex md:items-center md:justify-between  md:px-24 px-10">
             <ul
                 class="md:flex md:items-center z-[3] md:z-auto md:static absolute drop-shadow font-bold md:bg-gray-50 md:bg-opacity-0  bg-gray-900 bg-opacity-10 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100  top-[-400px] transition-all ease-in duration-500">
-                <li class="mx-5 my-6 md:my-0 flex items-center justify-center">
-                    <ion-icon name="arrow-back-outline" class="font-bold text-2xl text-green-900  hover:text-opacity-30 hover:text-black duration-500"></ion-icon>
-                    <a href="#" class="text-xl text-green-900  hover:text-opacity-30 hover:text-black duration-500  ">Kembali</a>
+                <li class="mx-5 my-6 md:my-0 flex items-center justify-center text-green-900  hover:text-opacity-30 hover:text-black duration-500">
+                    <ion-icon name="arrow-back-outline"
+                        class="font-bold text-2xl "></ion-icon>
+                    <a href="#"
+                        class="text-xl   ">Kembali</a>
                 </li>
-                
+
             </ul>
             <div class="flex justify-between items-center drop-shadow">
+                <div class="flex justify-center items-center">
+                <span class="flex justify-center cursor-pointer md:hidden  mx-2 text-green-900  hover:text-opacity-30 hover:text-black duration-500">
+                    <ion-icon name="arrow-back-outline"
+                        class="font-bold text-3xl "></ion-icon>
+                        <a href="#" class="text-xl font-bold">kembali</a>
+                </span>
+            </div>
 
-                <span class="text-2xl cursor-pointer font-bold text-green-900  ">
+                <span class="md:text-2xl text-xl cursor-pointer font-bold text-green-900  ">
                     <img src="../assets/img/images.png" alt="" class="w-14 h-16 inline">Daily Muslim
                 </span>
-                <span class="text-3xl cursor-pointer md:hidden block mx-2">
-                    <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
-                </span>
             </div>
-            
+
         </nav>
     </header>
-    <section class="bg-gray-200 h-screen flex items-center justify-center overflow-hidden">
-        <div class="bg-blue-300 flex   rounded-2xl  drop-shadow-2xl shadow-2xl py-10 h-72 px-40">
-            <div class="">
-                <h2 class="text-2xl font-bold ">Login</h2>
-                <p class="text-lg ">if you already a member easily log in</p>
-                <form action="" class="flex flex-col gap-4 mt-10">
-                    <input type="text" class="rounded-lg h-8 p-6" name="email" placeholder="email">
-                    <input type="password" class="rounded-lg h-8 p-6" name="password" placeholder="password">
-                    <button class="h-8 p-6 rounded-lg bg-blue-800">Login</button>
+
+    <section class="bg-gray-50 min-h-screen flex items-center justify-center ">
+        <!-- login container -->
+        <div class="bg-transparent flex rounded-2xl shadow-lg max-w-3xl p-5 drop-shadow-3xl py-10 z-10 ">
+            <!-- form -->
+
+            <div class="md:w-1/2 px-16 ">
+                <h2 class="font-bold text-2xl">Login</h2>
+                <p class="text-sm mt-4 ">If you already a member, easily log in</p>
+
+                <form action="" class="flex flex-col gap-4">
+                    <input type="text" class="p-2 mt-8 rounded-xl border " placeholder="Your Email">
+                    <div class="relative">
+                        <input type="password" class="p-2 rounded-xl border w-full" placeholder="Your Password">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"
+                            class="bi bi-eye absolute top-[1rem] right-3 -transalte-y-1/2" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                            <path
+                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                        </svg>
+                    </div>
+                    <button class="bg-blue-400 rounded-xl text-white py-2 hover:scale-110 duration-500">Login</button>
                 </form>
+                <div class="mt-4 grid grid-cols-3 items-center text-black">
+                    <hr class="border-black">
+                    <p class="text-center text-sm ">OR</p>
+                    <hr class="border-black">
+                </div>
+                <button
+                    class="bg-white border py-2 w-full rounded-xl mt-5 flex justify-center items-center text-sm hover:scale-110 duration-500"><img
+                        src="../assets/img/ggogle.png" alt="" class="w-8 h-8 ">
+                    Login with google</button>
+                <p class="mt-5 text-xs border-b border-black  py-4">Forgot your password?</p>
+                <div class="text-xs mt-3 flex justify-between items-center gap-4">
+                    <p class="">I'f you don't have an account?</p>
+                    <button class="py-2 px-5 bg-white border rounded-lg hover:scale-110 duration-500">Register</button>
+                </div>
             </div>
-            <div class="">
-                
+            <div class="md:w-1/2 sm:block hidden md:flex md:items-center">
+                <img src="../assets/img/Saly-44.png" alt="" class=" rounded-2xl">
             </div>
-            <div class="">
-                
-            </div>
+            <!-- <div class="w-1/2 ">
+                <img src="../assets/img/Saly-44.png" alt="" class="rounded-2xl">
+            </div> -->
         </div>
+
+
+
+
     </section>
+    <section class=" ">
+        <!-- <div class="relative  w-full max-w-lg"> -->
+
+        <div
+            class="absolute md:top-20 md:left-[44rem] top-52 md:w-72 md:h-72 w-44 h-44 bg-red-500 rounded-full mix-blend-multiply filter blur-xl opacity-80 animate-blob animation-delay-4000">
+        </div>
+        <div class="md:flex hidden">
+            <div
+                class="absolute top-14 -left-4 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-80 animate-blob animation-delay-2000">
+            </div>
+
+            <!-- </div> -->
+            <!-- <div class="relative  w-full max-w-lg"> -->
+            <div
+                class="absolute top-72 right-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-80 animate-blob animation-delay-2000">
+            </div>
+
+        </div>
+            <div
+                class="absolute md:top-14 md:right-48 top-7 right-10 md:w-72 md:h-72 w-44 h-44 bg-yellow-500 rounded-full mix-blend-multiply filter blur-xl opacity-80 animate-blob animation-delay-2000">
+            </div>
+
+        <div
+            class="absolute md:bottom-10 md:right-[52rem] bottom-72 right-14  md:w-72 md:h-72 w-44 h-44 bg-green-500 rounded-full mix-blend-multiply filter blur-xl opacity-80 animate-blob animation-delay-2000">
+        </div>
+        <div
+            class="absolute md:bottom-44 md:left-10 bottom-20 left-20  md:w-72 md:h-72 w-44 h-44 bg-lime-500 rounded-full mix-blend-multiply filter blur-xl opacity-80 animate-blob animation-delay-4000">
+        </div>
+
+
+
+
+        <!-- </div> -->
+    </section>
+
 </body>
+
 </html>
