@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Sholat DKI Jakarta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="overflow-x-hidden
+font-Ubuntu">
+    <header class="fixed top-0 filter bg-transparent  z-50 " id="header">
+        <nav class="w-screen bg-transparent  filter   p-5 md:flex md:items-center md:justify-between  md:px-24 ">
+            <div class="flex justify-between items-center drop-shadow">
+                <span class="text-2xl cursor-pointer font-bold text-green-900  ">
+                    <img src="../assets/img/images.png" alt="" class="w-14 h-16 inline">Daily Muslim
+                </span>
+                <span class="text-3xl cursor-pointer md:hidden block mx-2 text-green-900">
+                    <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+            <ul class="md:flex gap-4 md:items-center z-[3] md:z-auto  md:static absolute   md:bg-gray-50  md:bg-opacity-0  bg-gray-900  rounded-2xl bg-opacity-10 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100  top-[-400px] transition-all ease-in duration-500"
+                id="menu2">
+                <li class="mx-5 my-6 md:my-0 font-bold">
+                    <a href="beranda.html" class="text-xl text-green-900  hover:text-gray-500 duration-500  ">Home</a>
+                </li>
+                <li class="mx-5 my-6 md:my-0 font-bold">
+                    <a href="#" class="text-xl text-green-900  hover:text-gray-500 duration-500 ">Blog</a>
+                </li>
+                <li class="mx-5 my-6 md:my-0 font-bold">
+                    <a href="#" class="text-xl text-green-900  hover:text-gray-500 duration-500 ">Live</a>
+                </li>
+                <!-- <span class="flex   gap-2 text-green-900  hover:text-gray-500" id=".">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search font-bold " viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
+                    <input type="text" placeholder="Search" class="rounded-lg font-normal text-center ring-1 ring-black" id="search">
+                    
+                </span> -->
+                <form action="" class="relative w-max mx-auto ">
+                    <input type="search " placeholder="Search here" name="search" id="search"
+                        class="relative peer z-10 bg-transparent 
+                    w-12 h-12 rounded-full border cursor-pointer outline-none pl-12 focus:w-full focus:border-green-900 focus:cursor-text focus:pl-16 focus:pr-4 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="text-green-900"
+                        class="bi bi-search font-bold  absolute inset-y-0 my-auto h-8 w-12 px-3.5 stroke-green-900 border-r border-transparent peer-focus:border-green-900 peer-focus:stroke-green-900 "
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </form>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class=" ">
+        <div class="flex justify-center items-center mt-32 font-bold text-3xl   ">
+            <h1 class="text-center ">
+                Waktu adzan
+            </h1>
+        </div>
+        <section class="p-5 h-screen mt-4 ">
+            <h1 class="text-xl mb-2 font-bold">
+                 DKI jakarta
+            </h1>
+            <div class="overflow-auto rounded-xl shadow ">
+                <table class="w-full">
+                    <thead class="bg-gray-50 border-b-2 border-gray-200 ">
+                        <tr>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Tanggal</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Subuh</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Terbit</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dhuha</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dzuhur</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Ashar</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Maghrib</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Isya</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="bg-white ">
+                            <td class="py-2  px-4 border-b border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h1 class="text-xl mb-2 mt-10 font-bold">
+                Bekasi
+            </h1>
+            <div class="overflow-auto rounded-xl shadow ">
+                <table class="w-full">
+                    <thead class="bg-gray-50 border-b-2 border-gray-200 ">
+                        <tr>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Tanggal</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Subuh</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Terbit</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dhuha</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dzuhur</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Ashar</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Maghrib</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Isya</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="bg-white ">
+                            <td class="py-2  px-4 border-b border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h1 class="text-xl mb-2 mt-10 font-bold">
+                Cilegon
+            </h1>
+            <div class="overflow-auto rounded-xl shadow ">
+                <table class="w-full">
+                    <thead class="bg-gray-50 border-b-2 border-gray-200 ">
+                        <tr>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Tanggal</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Subuh</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Terbit</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dhuha</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dzuhur</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Ashar</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Maghrib</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Isya</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="bg-white ">
+                            <td class="py-2  px-4 border-b border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h1 class="text-xl mb-2 mt-10 font-bold">
+                Bogor
+            </h1>
+            <div class="overflow-auto rounded-xl shadow ">
+                <table class="w-full">
+                    <thead class="bg-gray-50 border-b-2 border-gray-200 ">
+                        <tr>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Tanggal</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Subuh</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Terbit</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dhuha</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dzuhur</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Ashar</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Maghrib</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Isya</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="bg-white ">
+                            <td class="py-2  px-4 border-b border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h1 class="text-xl mb-2 mt-10 font-bold">
+                Tangerang
+            </h1>
+            <div class="overflow-auto rounded-xl shadow ">
+                <table class="w-full">
+                    <thead class="bg-gray-50 border-b-2 border-gray-200 ">
+                        <tr>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Tanggal</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Subuh</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Terbit</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dhuha</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dzuhur</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Ashar</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Maghrib</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Isya</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="bg-white ">
+                            <td class="py-2  px-4 border-b border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h1 class="text-xl mb-2 mt-10 font-bold">
+                Bandung
+            </h1>
+            <div class="overflow-auto rounded-xl shadow ">
+                <table class="w-full">
+                    <thead class="bg-gray-50 border-b-2 border-gray-200 ">
+                        <tr>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Tanggal</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Subuh</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Terbit</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dhuha</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dzuhur</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Ashar</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Maghrib</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Isya</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="bg-white ">
+                            <td class="py-2  px-4 border-b border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h1 class="text-xl mb-2 mt-10 font-bold">
+                Banjar
+            </h1>
+            <div class="overflow-auto rounded-xl shadow ">
+                <table class="w-full">
+                    <thead class="bg-gray-50 border-b-2 border-gray-200 ">
+                        <tr>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Tanggal</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Subuh</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Terbit</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dhuha</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dzuhur</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Ashar</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Maghrib</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Isya</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="bg-white ">
+                            <td class="py-2  px-4 border-b border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h1 class="text-xl mb-2 mt-10 font-bold">
+                Aceh
+            </h1>
+            <div class="overflow-auto rounded-xl shadow ">
+                <table class="w-full">
+                    <thead class="bg-gray-50 border-b-2 border-gray-200 ">
+                        <tr>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Tanggal</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Subuh</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Terbit</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dhuha</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dzuhur</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Ashar</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Maghrib</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Isya</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="bg-white ">
+                            <td class="py-2  px-4 border-b border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h1 class="text-xl mb-2 mt-10 font-bold">
+                Depok
+            </h1>
+            <div class="overflow-auto rounded-xl shadow ">
+                <table class="w-full">
+                    <thead class="bg-gray-50 border-b-2 border-gray-200 ">
+                        <tr>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Tanggal</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Subuh</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Terbit</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dhuha</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dzuhur</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Ashar</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Maghrib</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Isya</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="bg-white ">
+                            <td class="py-2  px-4 border-b border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h1 class="text-xl mb-2 mt-10 font-bold">
+                Parung
+            </h1>
+            <div class="overflow-auto rounded-xl shadow ">
+                <table class="w-full">
+                    <thead class="bg-gray-50 border-b-2 border-gray-200 ">
+                        <tr>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Tanggal</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Subuh</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Terbit</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dhuha</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dzuhur</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Ashar</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Maghrib</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Isya</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="bg-white ">
+                            <td class="py-2  px-4 border-b border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h1 class="text-xl mb-2 mt-10 font-bold">
+                Bandung
+            </h1>
+            <div class="overflow-auto rounded-xl shadow ">
+                <table class="w-full">
+                    <thead class="bg-gray-50 border-b-2 border-gray-200 ">
+                        <tr>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Tanggal</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Subuh</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Terbit</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dhuha</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dzuhur</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Ashar</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Maghrib</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Isya</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="bg-white ">
+                            <td class="py-2  px-4 border-b border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h1 class="text-xl mb-2 mt-10 font-bold">
+                surabaya
+            </h1>
+            <div class="overflow-auto rounded-xl shadow ">
+                <table class="w-full mb-32">
+                    <thead class="bg-gray-50 border-b-2 border-gray-200 ">
+                        <tr>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Tanggal</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Subuh</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Terbit</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dhuha</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Dzuhur</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Ashar</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Maghrib</th>
+                            <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 ">Isya</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="bg-white ">
+                            <td class="py-2  px-4 border-b border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-white">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">14 Mei 2023</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">04:35</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">05:48</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">06:18</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">11:55</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">15:17</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">18:09</td>
+                            <td class="py-2 px-4 border-b whitespace-nowrap border-gray-200">19:21</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+    <!-- <div class="grid grid-cols-1 gap-4 md:hidden">
+        <div class="bg-white p-4 rounded-lg shadow ">
+            <div class="flex items-center space-x-2 text-sm text-center">
+                <tr class="bg-white block">
+                    <td class="py-2  px-4 ">14 Mei 2023</td>
+                    <td class="py-2 px-4 p-1.5 text-xs font-medium uppercase tracking-wide">04:35</td>
+                    <td class="py-2 px-4 ">05:48</td>
+                    <td class="py-2 px-4 ">06:18</td>
+                    <td class="py-2 px-4 ">11:55</td>
+                    <td class="py-2 px-4 ">15:17</td>
+                    <td class="py-2 px-4 ">18:09</td>
+                    <td class="py-2 px-4 ">19:21</td>
+                </tr>
+            </div>
+        </div>
+    </div> -->
+    <!--  -->
+    <!-- <div class="container mx-auto p-4">
+        <h1 class="text-2xl font-bold mb-4">Jadwal Sholat DKI Jakarta</h1>
+        <table class="min-w-full bg-white">
+            <thead>
+                <tr>
+                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 font-bold">Tanggal</th>
+                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 font-bold">Subuh</th>
+                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 font-bold">Terbit</th>
+                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 font-bold">Dhuha</th>
+                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 font-bold">Dzuhur</th>
+                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 font-bold">Ashar</th>
+                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 font-bold">Maghrib</th>
+                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-100 font-bold">Isya</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="py-2 px-4 border-b border-gray-200">14 Mei 2023</td>
+                    <td class="py-2 px-4 border-b border-gray-200">04:35</td>
+                    <td class="py-2 px-4 border-b border-gray-200">05:48</td>
+                    <td class="py-2 px-4 border-b border-gray-200">06:18</td>
+                    <td class="py-2 px-4 border-b border-gray-200">11:55</td>
+                    <td class="py-2 px-4 border-b border-gray-200">15:17</td>
+                    <td class="py-2 px-4 border-b border-gray-200">18:09</td>
+                    <td class="py-2 px-4 border-b border-gray-200">19:21</td>
+                </tr> -->
+    <!-- Tambahkan baris lainnya sesuai jadwal sholat -->
+    <!-- </tbody>
+        </table>
+    </div> -->
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
