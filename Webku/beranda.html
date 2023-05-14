@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="../assets/css/output.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body class="overflow-x-hidden
+<body class="overflow-x-hidden scroll-smooth
 font-Ubuntu">
+
     <header class="fixed top-0 filter bg-transparent  z-50 " id="header">
         <nav class="w-screen bg-transparent  filter   p-5 md:flex md:items-center md:justify-between  md:px-24 ">
             <div class="flex justify-between items-center drop-shadow">
@@ -45,81 +47,218 @@ font-Ubuntu">
                     
                 </span> -->
                 <form action="" class="relative w-max mx-auto ">
-                    <input type="search " placeholder="Search here" name="search" id="search" class="relative peer z-10 bg-transparent 
+                    <input type="search " placeholder="Search here" name="search" id="search"
+                        class="relative peer z-10 bg-transparent 
                     w-12 h-12 rounded-full border cursor-pointer outline-none pl-12 focus:w-full focus:border-green-900 focus:cursor-text focus:pl-16 focus:pr-4 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="text-green-900" class="bi bi-search font-bold  absolute inset-y-0 my-auto h-8 w-12 px-3.5 stroke-green-900 border-r border-transparent peer-focus:border-green-900 peer-focus:stroke-green-900 " viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="text-green-900"
+                        class="bi bi-search font-bold  absolute inset-y-0 my-auto h-8 w-12 px-3.5 stroke-green-900 border-r border-transparent peer-focus:border-green-900 peer-focus:stroke-green-900 "
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
                 </form>
 
-                
+
             </ul>
         </nav>
     </header>
     <main class="">
-    <section class="">
+        <section class="">
 
-        <div class="relative z-10 " id="slider">
-            
+            <div class="relative z-10 " id="slider">
+
                 <ul class="" id="slider">
                     <li class="md:h-[100vh] h-[100vh] relative ">
-                        
-                        <video autoplay loop muted playinsine src="../assets/img/pexels-roman-odintsov-7304302-4096x2160-30fps.mp4" class="h-full w-full object-cover rounded-b-3xl"></video>
+
+                        <video autoplay loop muted playinsine
+                            src="../assets/img/pexels-roman-odintsov-7304302-4096x2160-30fps.mp4"
+                            class="h-full w-full object-cover rounded-b-3xl"></video>
                         <div class="absolute  top-0 left-0 h-full w-full flex ">
-                            <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20">heading 1</h2>
+                            <h2 class="lg:text-3xl md:text-2xl text-xl font-bold text-white my-auto w-full text-center px-20">"Dunia hanyalah tempat persingahan, sedangkan yang abadi ialah hidup setelah kematian"</h2>
                         </div>
                     </li>
                 </ul>
                 <ul class="" id="slider">
-                    <li class="md:h-[100vh] h-[100vh] relative hidden">
-                        <video autoplay loop muted playinsine src="../assets/img/ramadan-33348.mp4 " class="h-full w-full object-cover rounded-b-3xl"></video>
+                    <li class="md:h-[100vh] h-[100vh] relative hidden ">
+                        <video autoplay loop muted playinsine src="../assets/img/ramadan-33348.mp4 "
+                            class="h-full w-full object-cover rounded-b-3xl"></video>
                         <!-- <img src="../assets/img/majid2.png" alt="" class="h-full w-full object-cover  "> -->
-                        
+
                         <div class="absolute  top-0 left-0 h-full w-full flex ">
-                            <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20">heading 2</h2>
+                            <h2 class="lg:text-3xl md:text-2xl text-xl font-bold text-white my-auto w-full text-center px-20 ">"Hidup tanpa allah ibarat sebuah pensil tumpul, ia tidak memiliki titik"</h2>
                         </div>
                     </li>
                 </ul>
                 <ul class="" id="slider">
                     <li class="md:h-[100vh] h-[100vh] relative hidden">
-                        <img src="../assets/img/Rectangle 45.png" alt="" class="h-full w-full object-cover  rounded-b-3xl">
+                        <!-- <img src="../assets/img/Rectangle 45.png" alt="" class="h-full w-full object-cover  rounded-b-3xl"> -->
+                        <video muted loop playinsane autoplay
+                            src="../assets/img/pexels-zahabiyatravelworld-3880003-1920x1080-60fps.mp4"
+                            class="h-full w-full object-cover rounded-b-3xl"></video>
                         <div class="absolute  top-0 left-0 h-full w-full flex ">
-                            <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20">heading 3</h2>
+                            <h2 class="lg:text-3xl md:text-2xl text-xl font-bold text-white my-auto w-full text-center px-20">"Hidup sederhana tanpa ada hasrat untuk mencari perhatian dihadapan manusia adalah di antara sebab ketenangan hati dan bahagia"</h2>
                         </div>
                     </li>
                 </ul>
+
+
+            </div>
+            <div class="absolute px-5 flex top-0 h-full w-full left-0 z-10 ">
+                <div class="my-auto  w-full flex justify-between items-center">
+                    <button onclick="prev()"
+                        class="bg-white flex justify-center py-2 p-1 px-2 rounded-full bg-opacity-80 shadow-lg md:top-0 hover:scale-150 duration-300">
+                        <ion-icon name="arrow-back-outline" class="font-bold"></ion-icon>
+                    </button>
+                    <button onclick="next()"
+                        class="bg-white flex justify-center py-2 p-1 px-2 rounded-full bg-opacity-80 shadow-lg hover:scale-150 duration-300">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+        <section class="relative  ">
+            <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28 ">
+                <!-- content -->
+                <div class="flex flex-1 flex-col items-center lg:items-start " data-aos="fade-right">
+                    <h2 class="text-purple-400 text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">A simple
+                        booksmark manager</h2>
+                    <p class="text-gray-200 text-lg text-center lg:text-left mb-6">Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Dignissimos possimus itaque incidunt voluptates sapiente. Quaerat
+                        eveniet dolor tenetur sed omnis optio unde provident esse, sunt blanditiis vero. Consectetur,
+                        nihil est?</p>
+                    <div class="flex justify-center flex-wrap gap-6">
+                        <button class=""></button>
+                    </div>
+                </div>
+                <!-- img -->
+                <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10" data-aos="fade-left">
+                    <img src="../assets/img/Saly-19.png" alt="" class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full">
+                </div>
+                <!-- hero -->
+                <div class="hidden md:block overflow-hidden bg-purple-300 rounded-l-full absolute h-88 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-28" data-aos="fade-left"></div>
                 
-            
-        </div>
-        <div class="absolute px-5 flex top-0 h-full w-full left-0 z-10 ">
-            <div class="my-auto  w-full flex justify-between items-center">
-                <button onclick="prev()" class="bg-white flex justify-center py-2 p-1 px-2 rounded-full bg-opacity-80 shadow-lg md:top-0 hover:scale-150 duration-300">
-                    <ion-icon name="arrow-back-outline" class="font-bold"></ion-icon>
-                </button>
-                <button onclick="next()" class="bg-white flex justify-center py-2 p-1 px-2 rounded-full bg-opacity-80 shadow-lg hover:scale-150 duration-300">
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                </button>
 
             </div>
-        </div>
-        <div class="  flex justify-center items-center mt-3   ">
-            <div class="w-52 bg-transparent drop-shadow shadow-2xl h-56 rounded-3xl">
-                <img src="../assets/img/" alt="" class="">
+
+
+
+
+        </section>
+<!-- feature -->
+
+        <section class="bg-white py-20 mt-20 lg:mt-60  ">
+            <!-- heading -->
+            <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+                <h1 class="text-3xl text-center text-blue-300 ">Features</h1>
+                <p class="texxt-center text-gray-200 mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sit labore libero officia sapiente debitis, quas magnam? Iusto ab consequatur ratione modi commodi reiciendis harum quidem, saepe, vitae voluptate dicta.
+                </p>
             </div>
+            <!-- feature #1 -->
+            <div class="relative mt-20 lg:mt-24 ">
+                <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+                    <!-- img -->
+                    <div class="flex flex-1  justify-center z-10 mb-10 lg:mb-0">
+                        <img src="../assets/img/Saly-44.png" alt="" class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full">
+                    </div>
+                    <!-- content -->
+                    <div class="flex flex-1 flex-col items-center lg:items-start">
+                        <h1 class="text-3xl text-blue-300 ">bookmark in</h1>
+                        <p class="text-gray-300 my-4 text-center lg:text-left sm:w-3/4 lg:w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptate exercitationem voluptatem expedita, sapiente laborum quia modi quis eveniet sed incidunt corporis hic, voluptatum consectetur, aliquam commodi perspiciatis at neque!</p>
+                    </div>
+                </div>
+                <div class="hidden md:block overflow-hidden bg-purple-300 rounded-r-full absolute h-88 w-2/4 top-32 left-0 lg:-bottom-28 lg:-right-28"></div>
+            </div>
+            <!-- feature #2 -->
+            <div class="relative mt-20 lg:mt-52 ">
+                <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
+                    <!-- img -->
+                    <div class="flex flex-1  justify-center z-10 mb-10 lg:mb-0">
+                        <img src="../assets/img/Saly-44.png" alt="" class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full">
+                    </div>
+                    <!-- content -->
+                    <div class="flex flex-1 flex-col items-center lg:items-start">
+                        <h1 class="text-3xl text-blue-300 ">bookmark in</h1>
+                        <p class="text-gray-300 my-4 text-center lg:text-left sm:w-3/4 lg:w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptate exercitationem voluptatem expedita, sapiente laborum quia modi quis eveniet sed incidunt corporis hic, voluptatum consectetur, aliquam commodi perspiciatis at neque!</p>
+                    </div>
+                </div>
+                <div class="hidden sm; md:block overflow-hidden bg-purple-300 rounded-l-full absolute h-88 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-28"></div>
+                
+            </div>
+            <!-- feature #3 -->
+            <div class="relative mt-20 lg:mt-52 ">
+                <div class="container flex flex-col lg:flex-row  items-center justify-center gap-x-24">
+                    <!-- img -->
+                    <div class="flex flex-1  justify-center z-10 mb-10 lg:mb-0">
+                        <img src="../assets/img/Saly-44.png" alt="" class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full">
+                    </div>
+                    <!-- content -->
+                    <div class="flex flex-1 flex-col items-center lg:items-start">
+                        <h1 class="text-3xl text-blue-300 ">bookmark in</h1>
+                        <p class="text-gray-300 my-4 text-center lg:text-left sm:w-3/4 lg:w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptate exercitationem voluptatem expedita, sapiente laborum quia modi quis eveniet sed incidunt corporis hic, voluptatum consectetur, aliquam commodi perspiciatis at neque!</p>
+                    </div>
+                </div>
+                <div class="hidden md:block overflow-hidden bg-purple-300 rounded-r-full absolute h-88 w-2/4 top-32 left-0 lg:-bottom-28 lg:-right-28"></div>
+          
+            </div>
+
+        </section>
+        <!-- donwload -->
+        <section class="">
+          <!-- heading -->
+          <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2 mt-10">
+            <h1 class="text-3xl text-center text-blue-300 ">Features</h1>
+            <p class="texxt-center text-gray-200 mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sit labore libero officia sapiente debitis, quas magnam? Iusto ab consequatur ratione modi commodi reiciendis harum quidem, saepe, vitae voluptate dicta.
+            </p>
         </div>
+          <!--card  -->
+          <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16">
+            <!-- card1 -->
+            <div class="flex flex-col rounded-xl shadow-md ">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="../assets/img/Saly-44.png" alt="" class="">
+                    <h3 class="mt-5 mb-2 text-blue-200 text-lg ">add chrome</h3>
+                    <p class="mb-2 text-gray-400 font-light">minimum version 62</p>
+                </div>
+                <hr class="border-b border-white">
+                <div class="flex p-6">
+                    <button class="flex-1 px-2 py-2  bg-green-500 text-white hover:scale-110 duration-500 rounded-xl ">add chrome</button>
+                </div>
+            </div>
+            <div class="flex flex-col rounded-xl shadow-md ">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="../assets/img/Saly-44.png" alt="" class="">
+                    <h3 class="mt-5 mb-2 text-blue-200 text-lg ">add chrome</h3>
+                    <p class="mb-2 text-gray-400 font-light">minimum version 62</p>
+                </div>
+                <hr class="border-b border-white">
+                <div class="flex p-6">
+                    <button class="flex-1 px-2 py-2  bg-green-500 text-white hover:scale-110 duration-500 rounded-xl ">add chrome</button>
+                </div>
+            </div>
+            <div class="flex flex-col rounded-xl shadow-md ">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="../assets/img/Saly-44.png" alt="" class="">
+                    <h3 class="mt-5 mb-2 text-blue-200 text-lg ">add chrome</h3>
+                    <p class="mb-2 text-gray-400 font-light">minimum version 62</p>
+                </div>
+                <hr class="border-b border-white">
+                <div class="flex p-6">
+                    <button class="flex-1 px-2 py-2  bg-green-500 text-white hover:scale-110 duration-500 rounded-xl ">add chrome</button>
+                </div>
+            </div>
 
+          </div>
+        </section>
+        <section class="h-screen"></section>
 
-
-
-    </section>
-    <section class="h-screen ">
-        <div class="">
-
-        </div>
-    </section>
-    <!-- </main> -->
-
-    <script src="./script.js"></script>
+        <script src="./script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
 
 </body>
 
