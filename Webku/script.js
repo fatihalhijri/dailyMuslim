@@ -34,7 +34,7 @@ function bebas() {
 }
 
 function menu() {
-    if (document.documentElement.scrollTop > 780) {
+    if (document.documentElement.scrollTop > 700) {
         document.getElementById("header").classList.add("bg-white");
         document.getElementById("header").classList.add("shadow-xl");
         document.getElementById("header").classList.add("rounded-br-3xl");
@@ -90,4 +90,77 @@ function showSlide( ){
             }
     }
 }
+
+
+
+
+function page1() {
+    document.getElementById("page1").classList.add("md:flex")
+    document.getElementById("page1").classList.add("md:flex")
+    document.getElementById("page1").classList.remove("hidden")
+    
+
+    document.getElementById("page2").classList.add("hidden")
+    
+
+    document.getElementById("page3").classList.add("hidden")
+    
+    
+}
+function page2() {
+    document.getElementById("page2").classList.add("md:flex")
+    document.getElementById("page2").classList.add("flex")
+    document.getElementById("page2").classList.remove("hidden")
+    
+
+
+    document.getElementById("page1").classList.add("hidden")
+    
+    
+    document.getElementById("page3").classList.add("hidden")
+    
+    
+}
+function page3() {
+    document.getElementById("page3").classList.add("md:flex")
+    document.getElementById("page3").classList.add("flex")
+    document.getElementById("page3").classList.remove("hidden")
+    
+    
+
+    document.getElementById("page2").classList.add("hidden")
+    
+    
+    document.getElementById("page1").classList.add("hidden")
+    
+    
+}
+
+// timeee~~~~~~~~~~
+function showTime() {
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+
+    var time = hours + ":" + minutes + ":" + seconds;
+
+    document.getElementById("clock").textContent = time;
+
+    setTimeout(showTime, 1000);
+}
+
+showTime();
+
+function showDate() {
+    var date = new Date();
+    var day = date.getDate();
+    var months = date.getMonth() +1;
+    var year = date.getFullYear();
+
+    var fullDate = day + "/" + months + "/" + year;
+    document.getElementById("date").textContent = fullDate;
+}
+
+showDate();
 

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden scroll-smooth
+font-Ubuntu">
+
+    <header class="fixed top-0 filter bg-transparent  z-50 " id="header">
+        <nav class="w-screen bg-transparent  filter   p-5 md:flex md:items-center md:justify-between  md:px-24 " >
+            <div class="flex justify-between items-center drop-shadow">
+                <span class="text-2xl cursor-pointer font-bold text-green-900  ">
+                    <img src="../assets/img/images.png" alt="" class="w-14 h-16 inline">Daily Muslim
+                </span>
+                <span class="text-3xl cursor-pointer md:hidden block mx-2 text-green-900">
+                    <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+            <ul class="md:flex gap-4 md:items-center z-50 md:z-auto  md:static absolute   md:bg-gray-50  md:bg-opacity-0  bg-gray-900  rounded-2xl bg-opacity-10 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100  top-[-400px] transition-all ease-in duration-500"
+                id="menu2">
+                <li class="mx-5 my-6 md:my-0 font-bold" >
+                    <a href="#" class="text-xl text-green-900  hover:text-gray-500 duration-500" onclick="down()" onmouseleave="up()">Home</a>
+                </li>
+                <li class="mx-5 my-6 md:my-0 font-bold">
+                    <a href="../Webku/"
+                        class="text-xl text-green-900  hover:text-gray-500 duration-500 ">About</a>
+                </li>
+                <li class="mx-5 my-6 md:my-0 font-bold">
+                    <a href="../Webku/blog2.html"
+                        class="text-xl text-green-900  hover:text-gray-500 duration-500 ">Blog</a>
+                </li>
+                <li class="mx-5 my-6 md:my-0 font-bold">
+                    <a href="#" class="text-xl text-green-900  hover:text-gray-500 duration-500 ">Live</a>
+                </li>
+                <!-- <span class="flex   gap-2 text-green-900  hover:text-gray-500" id=".">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search font-bold " viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
+                    <input type="text" placeholder="Search" class="rounded-lg font-normal text-center ring-1 ring-black" id="search">
+                    
+                </span> -->
+                <form action="" class="relative w-max mx-auto ">
+                    <input type="search " placeholder="Search here" name="search" id="search"
+                        class="relative peer z-10 bg-transparent 
+                    w-12 h-12 rounded-full border cursor-pointer outline-none pl-12 focus:w-full focus:border-green-900 focus:cursor-text focus:pl-16 focus:pr-4 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="text-green-900"
+                        class="bi bi-search font-bold  absolute inset-y-0 my-auto h-8 w-12 px-3.5 stroke-green-900 border-r border-transparent peer-focus:border-green-900 peer-focus:stroke-green-900 "
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </form>
+
+
+            </ul>
+        </nav>
+        
+
+            <div class="lg:absolute bg-white   rounded-md p-2 right-[13rem] top-[5rem] hidden" id="dropdown1" >
+                <ul class="space-y-2  lg:w-48">
+                    <li class="">
+                        <a href="#" class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">Pembuka</a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">Pembuka</a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">Pembuka</a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">Pembuka</a>
+                    </li>
+                </ul>
+            </div>
+        
+    </header>
+
+    <main class="">
+        <section class="">
+            <div class="">
+                <img src="" alt="">
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
