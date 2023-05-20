@@ -164,3 +164,17 @@ function showDate() {
 
 showDate();
 
+
+
+function down(){
+    document.getElementById("dropdown1").classList.add("flex")
+    document.getElementById("dropdown1").classList.remove("hidden")
+}
+
+
+
+function up(){
+    document.getElementById("dropdown1").classList.add("hidden")
+    document.getElementById("dropdown1").classList.remove("flex")
+}
+

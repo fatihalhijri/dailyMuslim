@@ -104,17 +104,17 @@ function tiga() {
 
 
 
-function down(){
-    document.getElementById("dropdown1").classList.add("flex")
-    document.getElementById("dropdown1").classList.remove("hidden")
-}
+// function down(){
+//     document.getElementById("dropdown1").classList.add("flex")
+//     document.getElementById("dropdown1").classList.remove("hidden")
+// }
 
 
 
-function up(){
-    document.getElementById("dropdown1").classList.add("hidden")
-    document.getElementById("dropdown1").classList.remove("flex")
-}
+// function up(){
+//     document.getElementById("dropdown1").classList.add("hidden")
+//     document.getElementById("dropdown1").classList.remove("flex")
+// }
 
 
 

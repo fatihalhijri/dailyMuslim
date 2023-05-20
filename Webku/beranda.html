@@ -18,73 +18,82 @@
 <body class="overflow-x-hidden scroll-smooth
 font-Ubuntu">
 
-    <header class="fixed top-0 filter bg-transparent  z-50 " id="header">
-        <nav class="w-screen bg-transparent  filter   p-5 md:flex md:items-center md:justify-between  md:px-24 ">
-            <div class="flex justify-between items-center drop-shadow">
-                <span class="text-2xl cursor-pointer font-bold text-green-900  ">
-                    <img src="../assets/img/images.png" alt="" class="w-14 h-16 inline">Daily Muslim
-                </span>
-                <span class="text-3xl cursor-pointer md:hidden block mx-2 text-green-900">
-                    <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
-                </span>
-            </div>
-            <ul class="md:flex gap-4 md:items-center z-50 md:z-auto  md:static absolute   md:bg-gray-50  md:bg-opacity-0  bg-gray-900  rounded-2xl bg-opacity-10 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100  top-[-400px] transition-all ease-in duration-500"
-                id="menu2">
-                <li class="mx-5 my-6 md:my-0 font-bold">
-                    <a href="#" class="text-xl text-green-900  hover:text-gray-500 duration-500" onclick="down()"
-                        onmouseleave="up()">Home</a>
-                </li>
+    <header class=" ">
+        <div class="fixed top-0 filter bg-transparent  md:z-50 z-40">
+            <nav class="w-screen bg-transparent  filter   p-5 md:flex md:items-center md:justify-between  md:px-24 "
+                id="header">
+                <div class="flex justify-between items-center drop-shadow">
+                    <span class="text-2xl cursor-pointer font-bold text-green-900  ">
+                        <img src="../assets/img/images.png" alt="" class="w-14 h-16 inline">Daily Muslim
+                    </span>
+                    <span class="text-3xl cursor-pointer md:hidden block mx-2 text-green-900">
+                        <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+                    </span>
+                </div>
+                <ul class="md:flex gap-4 md:items-center z-50 md:z-auto  md:static absolute   md:bg-gray-50  md:bg-opacity-0  bg-gray-900  rounded-2xl bg-opacity-10 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100  top-[-400px] transition-all ease-in duration-500"
+                    id="menu2">
+                    <li class="mx-5 my-6 md:my-0 font-bold">
+                        <a href="#" class="text-xl text-green-900  hover:text-gray-500 duration-500"
+                            onmouseenter="down()">Home</a>
+                    </li>
 
-                <li class="mx-5 my-6 md:my-0 font-bold">
-                    <a href="../Webku/blog2.html"
-                        class="text-xl text-green-900  hover:text-gray-500 duration-500 ">Blog</a>
-                </li>
-                <li class="mx-5 my-6 md:my-0 font-bold">
-                    <a href="#" class="text-xl text-green-900  hover:text-gray-500 duration-500 ">Live</a>
-                </li>
-                <!-- <span class="flex   gap-2 text-green-900  hover:text-gray-500" id=".">
+                    <li class="mx-5 my-6 md:my-0 font-bold">
+                        <a href="../Webku/blog2.html"
+                            class="text-xl text-green-900  hover:text-gray-500 duration-500 ">Blog</a>
+                    </li>
+                    <li class="mx-5 my-6 md:my-0 font-bold">
+                        <a href="#" class="text-xl text-green-900  hover:text-gray-500 duration-500 ">Live</a>
+                    </li>
+                    <!-- <span class="flex   gap-2 text-green-900  hover:text-gray-500" id=".">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search font-bold " viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                       </svg>
                     <input type="text" placeholder="Search" class="rounded-lg font-normal text-center ring-1 ring-black" id="search">
                     
                 </span> -->
-                <form action="" class="relative w-max mx-auto ">
-                    <input type="search " placeholder="Search here" name="search" id="search"
-                        class="relative peer z-10 bg-transparent 
+                    <form action="" class="relative w-max mx-auto ">
+                        <input type="search " placeholder="Search here" name="search" id="search"
+                            class="relative peer z-10 bg-transparent 
                     w-12 h-12 rounded-full border cursor-pointer outline-none pl-12 focus:w-full focus:border-green-900 focus:cursor-text focus:pl-16 focus:pr-4 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="text-green-900"
-                        class="bi bi-search font-bold  absolute inset-y-0 my-auto h-8 w-12 px-3.5 stroke-green-900 border-r border-transparent peer-focus:border-green-900 peer-focus:stroke-green-900 "
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                    </svg>
-                </form>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="text-green-900"
+                            class="bi bi-search font-bold  absolute inset-y-0 my-auto h-8 w-12 px-3.5 stroke-green-900 border-r border-transparent peer-focus:border-green-900 peer-focus:stroke-green-900 "
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </form>
 
 
-            </ul>
-        </nav>
+                </ul>
+            </nav>
+        </div>
 
-
-        <div class="lg:absolute bg-white   rounded-md p-2 right-[13rem] top-[5rem] hidden" id="dropdown1">
-            <ul class="space-y-2  lg:w-48">
-                <li class="">
-                    <a href="#"
-                        class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">Pembuka</a>
-                </li>
-                <li class="">
-                    <a href="#"
-                        class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">Pembuka</a>
-                </li>
-                <li class="">
-                    <a href="#"
-                        class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">Pembuka</a>
-                </li>
-                <li class="">
-                    <a href="#"
-                        class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">Pembuka</a>
-                </li>
-            </ul>
+        <div class="absolute" onmouseleave="up()">
+            <div class="fixed  bg-white md:w-48  w-48 rounded-md p-2 md:right-[13rem]   lg:top-[4rem] lg:right-[13rem] bottom[11rem] md:mt-0 mt-40 right-[12rem] md:top-[4rem] hidden  z-50"
+                id="dropdown1">
+                <!-- <div class=""> -->
+                <ul class="space-y-2  w-full">
+                    <li class="">
+                        <a href="#waktu shalat"
+                            class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">Waktu
+                            shalat</a>
+                    </li>
+                    <li class="">
+                        <a href="#ceramah singkat"
+                            class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">Trending</a>
+                    </li>
+                    <li class="">
+                        <a href="#hadist harian"
+                            class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">hadist
+                            harian</a>
+                    </li>
+                    <li class="">
+                        <a href="#kontak"
+                            class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">Kontak</a>
+                    </li>
+                </ul>
+                <!-- </div> -->
+            </div>
         </div>
 
     </header>
@@ -154,35 +163,42 @@ font-Ubuntu">
         </section>
 
         <section class="">
-            <div class="">
+            <div class="" id="waktu shalat">
                 <div class=" justify-between hidden md:flex absolute">
                     <div class="flex gap-[80rem]  ">
-                        <img src="../assets/img/Group 231.png" alt="" class="left-0">
-                        <img src="../assets/img/Group 231.png" alt="" class="right-0">
+                        <img src="../assets/img/Group 231.png" alt="" class="left-0" data-aos="fade-right">
+                        <img src="../assets/img/Group 231.png" alt="" class="right-0" data-aos="fade-left">
                     </div>
                 </div>
-                <div class=" justify-between hidden md:flex absolute mt-[16rem]">
+                <div class=" justify-between hidden md:flex absolute mt-[16rem]" >
                     <div class="flex gap-[80rem]  ">
-                        <img src="../assets/img/Group 231.png" alt="" class="left-0">
-                        <img src="../assets/img/Group 231.png" alt="" class="right-0">
+                        <img src="../assets/img/Group 231.png" alt="" class="left-0" data-aos="fade-right">
+                        <img src="../assets/img/Group 231.png" alt="" class="right-0" data-aos="fade-left">
                     </div>
                 </div>
             </div>
 
             </div>
-            <div class="md:px-32 px-16 py-5 relative">
-                <div class="rounded-lg bg-gray-400 w-full md:h-72 px-6 py-3 shadow-xl">
+            <div class="md:px-32 px-16 py-5 relative ">
+                <div class="rounded-lg bg-gray-400 w-full md:h-72 px-6 py-2 shadow-xl mt-24" data-aos="fade-up" >
                     <div class="text-center md:text-left ">
-                        <div class="md:flex block justify-between">
+                        <div class="md:flex block justify-between items-center">
                             <h3 class="font-medium md:text-base text-sm uppercase ">Waktu Shalat Untuk <a href=""
                                     class="uppercase font-bold md:text-2xl text-xl text-green-900 ">jakarta</a></h3>
                             <div id="date" class=" md:text-2xl   font-medium text-green-900 mt-6"></div>
 
                         </div>
-                        <div id="clock" class="md:text-3xl text-2xl font-bold mx-auto flex justify-center items-center py-4 text-green-900"></div>
+                        <div id="clock"
+                            class="md:text-3xl text-2xl font-bold mx-auto flex justify-center items-center py-4 text-green-900">
+                        </div>
 
                         <div class="">
-                            <button  class="bg-white w-full h-10 py-2  rounded-xl text-center font-bold text-black  hover:scale-90 hover:bg-green-900 hover:text-white  duration-500 "><a href="../Webku/jadwal.html">Periksa</a> </button>
+
+                            <a href="../Webku/jadwal.html" class="   text-center font-bold text-black   ">
+                                <div
+                                    class="bg-white w-full h-10 py-2  rounded-xl text-center font-bold text-black  hover:scale-90 hover:bg-green-900 hover:text-white  duration-500">
+                                    Periksa</div>
+                            </a>
                         </div>
                         <div class=" gap-10 py-5  md:flex ">
                             <div class="w-full  h-20   bg-white rounded-lg py-2 ">
@@ -191,7 +207,7 @@ font-Ubuntu">
                                     <p class="text-3xl font-medium text-green-900">04:35</p>
                                 </div>
                             </div>
-                            
+
                             <div class="w-full  h-20   bg-white rounded-lg py-2 md:mt-0 mt-6">
                                 <div class="  text-center px-3 ">
                                     <h3 class=" font-medium text-xl">dhuhur</h3>
@@ -216,7 +232,7 @@ font-Ubuntu">
                                     <p class="text-3xl font-medium text-green-900">18:59</p>
                                 </div>
                             </div>
-                            
+
                         </div>
 
                     </div>
@@ -225,193 +241,388 @@ font-Ubuntu">
         </section>
 
 
-        <section class="  h-screen mt-40 z-10">
-            <!-- <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28 ">
-                
-                <div class="flex flex-1 flex-col items-center lg:items-start " data-aos="fade-right">
-                    <h2 class="text-green-900 text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">Web ini akan
-                        membantu anda dalam keseharian anda
+        <section class="  h-screen md:mt-40 z-10">
 
-                    </h2>
-                    <p class="text-gray-500 text-lg text-center lg:text-left mb-6">Memberikan kenyamanan dan memberikan
-                        informasi-informasi terkait sunnah-sunnah yang diajarkan oleh nabi dan juga rasulnya</p>
-                    <div class="flex justify-center flex-wrap gap-6">
-                        <button class=""></button>
+
+
+            <div class="mt-32 z-20 bg-gray-300 h-screen " id="ceramah singkat">
+                <div class="md:py-32 py-4">
+                    <div class=" px-8 md:text-left  text-center flex justify-between">
+                        <h3 class="font-bold text-2xl" data-aos="fade-left">Ceramah Singkat</h3>
+                        <div data-aos="fade-right"
+                            class="md:px-4 px-3 md:py-2 py-1 bg-green-900 text-white md:text-lg text-base w-24 text-center rounded-lg">
+                            Terbaru</div>
+                    </div>
+                    <div class="flex md:hidden md:mt-0 justify-center items-center mt-5 gap-6 py-6">
+
+                        <h3 onclick="page1()"
+                            class="w-14 bg-green-900 text-center text-white rounded-lg hover:bg-white hover:text-black hover:ring-2 hover:ring-green-900 hover:scale-110 duration-500">
+                            1</h3>
+                        <h3 onclick="page2()"
+                            class="w-14 bg-green-900 text-center text-white rounded-lg hover:bg-white hover:text-black hover:ring-2 hover:ring-green-900 hover:scale-110 duration-500">
+                            2</h3>
+                        <h3 onclick="page3()"
+                            class="w-14 bg-green-900 text-center text-white rounded-lg hover:bg-white hover:text-black hover:ring-2 hover:ring-green-900 hover:scale-110 duration-500">
+                            3</h3>
+                    </div>
+                    <div class="flex justify-between items-center  md:px-14 px-6 md:mt-10 mt-8 gap-10">
+                        <div class=" flex  items-center justify-center  " id="page1" data-aos="fade-left">
+                            <div class="md:w-96   bg-white  rounded-3xl  shadow-xl ">
+                                <img src="../assets/img/Group 228.png" alt="" class="rounded-t-xl w-full">
+
+                                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/1N5zrXLteiU"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen class="w-full rounded-t-xl h-56 object-cover"></iframe> -->
+                                <div class=" py-5">
+                                    
+                                    <div class="px-8">
+                                        <div class="flex flex-row justify-between items-center gap-3">
+                                            <img src="../assets/img/download.png" alt="" class="rounded-full w-10 h-10">
+                                            <div class="">
+                                            <h2 class="text-lg      font-normal">
+                                                Ceramah Singkat: Salafi Wahabi - Ustadz
+                                            Abu Qatadah.
+                                            </h2>
+                                            
+                                            </div>
+                                        </div>
+
+                                        <div class="pl-[3.3rem] ">
+                                            <p class="mt-2 text-gray-500 ">Yufid.TV
+                                            </p>
+                                            <p class="text-gray-500">3,81 jt subscriber16 rb video</p>
+                                        </div>
+                                        <!-- <div class="flex flex-row mt-4 items-center justify-between">
+
+                                            <div class="flex items-center justify-center gap-2">
+
+                                                <h3 class="font-bold mr-2">
+                                                    Ahsan TV
+                                                </h3>
+
+                                            </div>
+                                            <div class="text-gray-300">pada februari</div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" md:flex hidden items-center justify-center " id="page2" data-aos="fade-up">
+                            <div class="md:w-96  bg-white  rounded-3xl shadow-xl ">
+                                <img src="../assets/img/foto dak/Rectangle 12249.png" alt="" class="w-full">
+                                
+                                <div class=" py-5">
+                                    
+                                    <div class="px-8">
+                                        <div class="flex flex-row justify-between items-center gap-3">
+                                            <img src="../assets/img/download.png" alt="" class="rounded-full w-10 h-10">
+                                            <div class="">
+                                            <h2 class="text-lg      font-normal">Tetesan Air Wudhu - Sebuah Video Motivasi Islami...</h2>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="pl-[3.3rem]">
+                                            <p class="mt-2 text-gray-500 ">Yufid.TV
+                                            </p>
+                                            <p class="text-gray-500">3,81 jt subscriber16 rb video</p>
+                                        </div>
+                                        <!-- <div class="flex flex-row mt-4 items-center justify-between">
+
+                                            <div class="flex items-center justify-center gap-2">
+
+                                                <h3 class="font-bold mr-2">
+                                                    Ahsan TV
+                                                </h3>
+
+                                            </div>
+                                            <div class="text-gray-300">pada februari</div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" md:flex hidden  items-center justify-center " id="page3" data-aos="fade-right">
+                            <div class="md:w-96  bg-white  rounded-3xl shadow-xl ">
+                                <img src="../assets/img/foto dak/Rectangle 72.png" alt="" class="w-full">
+
+                                <div class=" py-5">
+                                    
+                                    <div class="px-8">
+                                        <div class="flex flex-row justify-between items-center gap-3">
+                                            <img src="../assets/img/foto dak/PP.png" alt="" class="rounded-full w-10 h-10">
+                                            <div class="">
+                                            <h2 class="text-lg      font-normal">
+                                                Kenapa Memakai Nama Manhaj Salaf ust. Yazid bin Abdul Qadir
+                                            </h2>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="pl-[3.3rem]">
+                                            <p class="mt-2 text-gray-500 ">Dakwah Vidgram
+                                                
+                                            </p>
+                                            <p class="text-gray-500">39,9 rb subscriber801 video</p>
+                                        </div>
+                                        <!-- <div class="flex flex-row mt-4 items-center justify-between">
+
+                                            <div class="flex items-center justify-center gap-2">
+
+                                                <h3 class="font-bold mr-2">
+                                                    Ahsan TV
+                                                </h3>
+
+                                            </div>
+                                            <div class="text-gray-300">pada februari</div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="md:mt-10 mt-4" data-aos="fade-left">
+                        <div class="md:px-32 px-16 md:mt-0 mt-10">
+                            <a href="../Webku/vidio.html" class=" ">
+                                <h3 class="font-normal text-end  text-xl  ">See
+                                    all</h3>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10" data-aos="fade-left">
-                    <img src="../assets/img/Saly-1.png" alt=""
-                        class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full hover:scale-125 duration-500 md:animate-blob">
+            </div>
+
+        </section>
+
+
+
+
+        <section class="bg-white py-20 mt-20 lg:mt-60  " id="hadist harian">
+
+            <!-- heading -->
+            <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2" data-aos="fade-up">
+                <h1 class="md:text-3xl lg:text-5xl text-3xl text-center text-green-900 ">Hadist Harian Singkat</h1>
+                <p class="text-center text-gray-500 mt-4">
+                    hadist ini akan memberikan anda motivasi untuk setiap harinya
+                </p>
+            </div>
+
+            <div class="relative mt-20 lg:mt-24 ">
+                <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
+                    <!-- img -->
+                    <div class="flex flex-1  justify-center z-10 mb-10 lg:mb-0" data-aos="fade-left">
+                        <img src="../assets/img/Saly-1.png" alt=""
+                            class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-4/5 hover:scale-125 duration-500 md:animate-geser animate-delay-2000">
+                    </div>
+                    <!-- content -->
+                    <div class="flex flex-1 flex-col items-center lg:items-start " data-aos="fade-right">
+                        <h1 class="text-3xl text-green-900 ">(Hadist riwayat Ibnu Majah)</h1>
+                        <p class="text-gray-500 my-4 text-center lg:text-left sm:w-3/4 lg:w-full"> طَلَبُ الْعِلْمِ
+                            فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ وَوَاضِعُ الْعِلْمِ عِنْدَ غَيْرِ أَهْلِهِ كَمُقَلِّدِ
+                            الْخَنَازِيرِ الْجَوْهَرَ وَاللُّؤْلُؤَ وَالذَّهَبَ
+
+
+
+                            Artinya: "Mencari ilmu adalah kewajiban setiap muslim, dan siapa yang menanamkan ilmu kepada
+                            yang tidak layak seperti yang meletakkan kalung permata, mutiara, dan emas di sekitar leher
+                            hewan." .</p>
+                    </div>
                 </div>
-               
                 <div class=" md:block  bg-green-900 rounded-l-full absolute md:h-[27rem] md:w-[48rem] h-[20rem] w-[20rem] top-5 right-0 lg:-bottom-28 lg:-right-28"
                     data-aos="fade-left"></div>
 
-
-            </div> -->
-
-
-            <!-- <div class="mt-28">
-                <div class="md:px-32 px-16 md:text-left  text-center flex justify-between">
-                    <h3 class="font-bold text-2xl">Saran untuk anda</h3>
-                    <div
-                        class="md:px-4 px-3 md:py-2 py-1 bg-green-900 text-white md:text-lg text-base w-24 text-center rounded-lg">
-                        Terbaru</div>
-                </div>
-                <div class="flex md:hidden md:mt-0 justify-center items-center mt-5 gap-6 py-6">
-
-                    <h3 onclick="page1()"
-                        class="w-14 bg-green-900 text-center text-white rounded-lg hover:bg-white hover:text-black hover:ring-2 hover:ring-green-900 hover:scale-110 duration-500">
-                        1</h3>
-                    <h3 onclick="page2()"
-                        class="w-14 bg-green-900 text-center text-white rounded-lg hover:bg-white hover:text-black hover:ring-2 hover:ring-green-900 hover:scale-110 duration-500">
-                        2</h3>
-                    <h3 onclick="page3()"
-                        class="w-14 bg-green-900 text-center text-white rounded-lg hover:bg-white hover:text-black hover:ring-2 hover:ring-green-900 hover:scale-110 duration-500">
-                        3</h3>
-                </div>
-                <div class="flex justify-center   px-14 mt-10 ">
-                    <div class=" flex  items-center justify-center " id="page1">
-                        <div class="md:w-3/4    rounded-xl shadow-xl py-2">
-
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/1N5zrXLteiU"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen class="w-full rounded-t-xl h-56 object-cover"></iframe>
-                            <div class=" ">
-                                <div class="flex  justify-start items-center  px-5 gap-0">
-                                    <img src="../assets/img/Youtube.png" alt="" class="rounded-md w-16">
-                                    <h3 class="font-bold text-base tracking-tighter uppercase">Youtube</h3>
-                                </div>
-                                <div class="px-8">
-                                    <h2 class="text-2xl      font-bold">the road(1)</h2>
-                                    <p class="mt-2 text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit.
-                                        Molestias
-                                        voluptatum magnam aspernatur hic nulla, tenetur iure? Sed error amet esse at
-                                        aliquid
-                                        officia
-                                        libero tempora. Quo neque ut vitae tempora.</p>
-
-                                    <div class="flex flex-row mt-4 items-center justify-between">
-
-                                        <div class="flex items-center justify-center gap-2">
-                                            <img src="../assets/img/download.png" alt="" class="rounded-full w-16 h-16">
-                                            <h3 class="font-bold mr-2">
-                                                Ahsan TV
-                                            </h3>
-
-                                        </div>
-                                        <div class="text-gray-300">on october</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" md:flex hidden items-center justify-center " id="page2">
-                        <div class="md:w-3/4    rounded-xl shadow-xl py-2">
-
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/RIxQOHWnbVg"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen class="w-full rounded-t-xl h-56 object-cover"></iframe>
-                            <div class=" ">
-                                <div class="flex  justify-start items-center  px-5 gap-0">
-                                    <img src="../assets/img/Youtube.png" alt="" class="rounded-md w-16">
-                                    <h3 class="font-bold text-base tracking-tighter uppercase">Youtube</h3>
-                                </div>
-                                <div class="px-8">
-                                    <h2 class="text-2xl      font-bold">the road(2)</h2>
-                                    <p class="mt-2 text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit.
-                                        Molestias
-                                        voluptatum magnam aspernatur hic nulla, tenetur iure? Sed error amet esse at
-                                        aliquid
-                                        officia
-                                        libero tempora. Quo neque ut vitae tempora.</p>
-
-                                    <div class="flex flex-row mt-4 items-center justify-between">
-
-                                        <div class="flex items-center justify-center gap-2">
-                                            <img src="../assets/img/avatar-link-ahsan.png" alt=""
-                                                class="rounded-full w-16 h-16">
-                                            <h3 class="font-bold mr-2">
-                                                Ahsan TV
-                                            </h3>
-
-                                        </div>
-                                        <div class="text-gray-300">on october</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" md:flex hidden  items-center justify-center " id="page3">
-                        <div class="md:w-3/4    rounded-xl shadow-xl py-2">
-
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Dff63c_UnTg"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen class="w-full rounded-t-xl h-56 object-cover"></iframe>
-                            <div class=" ">
-                                <div class="flex  justify-start items-center  px-5 gap-0">
-                                    <img src="../assets/img/Youtube.png" alt="" class="rounded-md w-16">
-                                    <h3 class="font-bold text-base tracking-tighter uppercase">Youtube</h3>
-                                </div>
-                                <div class="px-8">
-                                    <h2 class="text-2xl      font-bold">the road(3)</h2>
-                                    <p class="mt-2 text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit.
-                                        Molestias
-                                        voluptatum magnam aspernatur hic nulla, tenetur iure? Sed error amet esse at
-                                        aliquid
-                                        officia
-                                        libero tempora. Quo neque ut vitae tempora.</p>
-
-                                    <div class="flex flex-row mt-4 items-center justify-between">
-
-                                        <div class="flex items-center justify-center gap-2">
-                                            <img src="../assets/img/download.png" alt="" class="rounded-full w-16 h-16">
-                                            <h3 class="font-bold mr-2">
-                                                Ahsan TV
-                                            </h3>
-
-                                        </div>
-                                        <div class="text-gray-300">on october</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="flex justify-center items-center">
-                    <button class="px-4 py-3 bg-geen-900 text- rounded-xl "></button>
-                </div>
-                <div class="flex  justify-center relative top-32 left-[2rem] gap-10">
-                <div class="rounded-md h-32 w-60 bg-black"></div>
-                <div class="rounded-md h-32 w-60 bg-black"></div>
-                <div class="rounded-md h-32 w-60 bg-black"></div>
-                <div class="rounded-md h-32 w-60 bg-black"></div>
-                <div class="rounded-md h-32 w-60 bg-black"></div>
             </div>
-            <div class="flex  justify-start ml-20 mt-24 gap-40">
-                <div class="rounded-full w-32 h-32 bg-black"></div>
-                <div class="rounded-full w-32 h-32 bg-black"></div>
-                <div class="rounded-full w-32 h-32 bg-black"></div>
-                <div class="rounded-full w-32 h-32 bg-black"></div>
-                <div class="rounded-full w-32 h-32 bg-black"></div>
-            </div> -->
 
 
 
+
+            <!-- feature #1 -->
+            <div class="relative mt-20 lg:mt-52 ">
+                <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+                    <!-- img -->
+                    <div class="flex flex-1  justify-center z-10 mb-10 lg:mb-0" data-aos="fade-right">
+                        <img src="../assets/img/muslim-man-and-woman-riding-drum-5100741-4266708 1.png" alt=""
+                            class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-4/5 hover:scale-125 md:animate-terbang duration-500">
+                    </div>
+                    <!-- content -->
+                    <div class="flex flex-1 flex-col items-center lg:items-start" data-aos="fade-left">
+                        <h1 class="text-3xl text-pink-500 ">(Hadist riwayat Ahmad).</h1>
+                        <p class="text-gray-500 my-4 text-center lg:text-left sm:w-3/4 lg:w-full"> مَنْ أَرَادَ
+                            الدُّنْيَا فَعَلَيْهِ بِاْلعِلْمِ، وَمَنْ أَرَادَ الآخِرَهَ فَعَلَيْهِ بِالْعِلْمِ، وَمَنْ
+                            أَرَادَهُمَا فَعَلَيْهِ باِلعِلْمِ
+
+
+
+                            Artinya: "Barangsiapa yang hendak menginginkan dunia, maka hendaklah ia menguasai ilmu.
+                            Barangsiapa menginginkan akhirat hendaklah ia menguasai ilmu, dan barangsiapa yang
+                            menginginkan keduanya (dunia dan akhirat) hendaklah ia menguasai ilmu." </p>
+                    </div>
+                </div>
+                <div class=" md:block overflow-hidden bg-pink-500 rounded-r-full absolute  md:h-[27rem] md:w-[40rem] h-[20rem] w-[21rem] md:top-10 top-14 left-0 lg:-bottom-28 lg:-right-28"
+                    data-aos="fade-right"></div>
+            </div>
+            <!-- feature #2 -->
+            <div class="relative mt-20 lg:mt-52 ">
+                <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
+                    <!-- img -->
+                    <div class="flex flex-1  justify-center z-10 mb-10 lg:mb-0" data-aos="fade-left">
+                        <img src="../assets/img/Other 03.png" alt=""
+                            class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full hover:scale-125 duration-500 md:animate-geser animate-delay-2000">
+                    </div>
+                    <!-- content -->
+                    <div class="flex flex-1 flex-col items-center lg:items-start " data-aos="fade-right">
+                        <h1 class="text-3xl text-blue-900 text-center">Doa Rasulullah Agar Terhindar dari Akhlak Tercela</h1>
+                        <p class="text-gray-500 my-4 text-center lg:text-left sm:w-3/4 lg:w-full"> اَللَّهُمَّ
+                            جَنِّبْنِي مُنْكَرَاتِ اَلْأَخْلَاقِ وَالْأَعْمَالِ وَالْأَهْوَاءِ وَالْأَدْوَاءِ.
+                            أَخْرَجَهُ اَلتِّرْمِذِيُّ وَصَحَّحَهُ اَلْحَاكِمُ وَاللَّفْظِ لَهُ
+
+                            Dari Quthbah bin Malik berkata, Rasulullah ﷺ berdoa, “Allahumma jannibni munkaratil akhlaq,
+                            wal a’mal, wal ahwai, wal adwa. (Ya Allah, jauhkanlah dari aku akhlak yang mungkar,
+                            amal-amal yang mungkar, hawa nafsu yang mungkar, dan juga berbagai penyakit).</p>
+                    </div>
+                </div>
+                <div class=" md:block  bg-blue-900 rounded-l-full absolute md:h-[27rem] md:w-[48rem] h-[20rem] w-[20rem] top-5 right-0 lg:-bottom-28 lg:-right-28"
+                    data-aos="fade-left"></div>
+
+            </div>
+            <!-- feature #3 -->
+            <div class="relative mt-20 lg:mt-52 ">
+                <div class="container flex flex-col lg:flex-row  items-center justify-center gap-x-24">
+                    <!-- img -->
+                    <div class="flex flex-1  justify-center z-10 mb-10 lg:mb-0" data-aos="fade-right">
+                        <img src="../assets/img/Saly-13.png" alt=""
+                            class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full hover:scale-125 duration-500 md:animate-terbang">
+                    </div>
+                    <!-- content -->
+                    <div class="flex flex-1 flex-col items-center lg:items-start" data-aos="fade-left">
+                        <h1 class="text-3xl text-orange-900 ">Nabi Muhammad
+                            ﷺ bersabda </h1>
+                        <p class="text-gray-500 my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+
+                            تَرَكْتُ فِيْكُمْ أَمْرَيْنِ لَنْ تَضِلُّوْا مَا تَمَسَّكْتُمْ بِهِمَا : كِتَابَ اللهِ وَ
+                            سُنَّةَ رَسُوْلِهِ
+
+                            “Aku telah tinggalkan kepada kamu dua perkara. Kamu tidak akan sesat selama berpegang kepada
+                            keduanya, (yaitu) Kitab Allah dan Sunnah Rasul-Nya.” (HR. Malik; Al-Hakim, Al-Baihaqi, Ibnu
+                            Nashr, Ibnu Hazm. Hadits ini disahihkan oleh Syaikh Salim Al-Hilali di dalam At-Ta’zhim wa
+                            Al-Minnah fi Al-Intishar As-Sunnah, hlm. 12-13).
+
+
+
+
+                        </p>
+                    </div>
+                </div>
+                <div class="md:block overflow-hidden bg-orange-900 rounded-r-full absolute  md:h-[27rem] md:w-[42rem] h-[20rem] w-[21rem] md:top-15 top-14 left-0 lg:-bottom-28 lg:-right-28"
+                    data-aos="fade-right"></div>
+
+            </div>
 
         </section>
+        <footer class="min-h-screen flex items-end text-white box-border " id="kontak">
+            <div class="h-4/5 bg-green-900  w-full">
+                <div class="  flex md:flex-row flex-col px-14 mt-10 ">
+                    <div class=" md:w-5/12 mt-10">
+                        <h3 class="font-bold text-3xl ">DailyMuslim</h3>
+                        <p class="font-light text-2xl mt-20">JIka ada kesalahan yang menjangal lebih baik memberi
+                            tahu kepada pihak yang berwajib</p>
+                    </div>
+                    <div class=" md:w-1/4 mt-10">
+                        <h3 class="font-bold text-3xl">Link Tercepat</h3>
+                        <div class="flex flex-col gap-4 mt-8 px-5">
+                            <a href="#" class="font-medium ">F.A.Q</a>
+                            <a href="#" class="font-medium ">Cookies policy</a>
+                            <a href="#" class="font-medium ">Terms of service</a>
+                            <a href="#" class="font-medium ">Support</a>
+                            <a href="#" class="font-medium ">Carrier</a>
+                        </div>
+                    </div>
+                    <div class=" md:w-5/12 mt-10">
+                        <h3 class="font-bold text-3xl">Subcribe</h3>
+                        <div class=" text-center flex flex-col gap-4 rounded-xl">
+                            <div class="flex flex-col gap-4 mt-4">
+                                <input type="text" class="py-4 px-6 w-full  text-black rounded-xl"
+                                    placeholder="Ketikkan sesuatu">
+                                <a href="" class="">
+                                    <div
+                                        class="py-4 px-6 w-full bg-white text-black hover:scale-90 font-bold text-lg rounded-xl hover:bg-green-900 hover:ring-2 hover:text-white hover:ring-white duration-700 ">
+                                        Subcribe Sekarang</div>
+                                </a>
+                            </div>
+                            <div class="flex flex-row justify-around mt-5">
+                                <div class="bg-white rounded-xl ">
+                                    <a href="https://twitter.com/">
+                                        <img src="../assets/img/Social media logo-1.png" alt="" class="md:w-16 w-10">
+                                    </a>
+                                </div>
+                                <div class="bg-white rounded-xl">
+
+                                    <a href="https://www.facebook.com/">
+                                        <img src="../assets/img/Social media logo-2.png" alt="" class="md:w-16 w-10">
+                                    </a>
+                                </div>
+                                <div class="bg-white rounded-xl">
+                                    <a href="https://www.google.com/">
+                                        <img src="../assets/img/ggogle.png" alt="" class="md:w-16 w-10">
+                                    </a>
+                                </div>
 
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col justify-between items-center  p-10 mt-10">
+                    <div class="md:w-2/5 gap-8  justify-center text-center flex flex-col items-center p-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-geo-alt-fill " viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                        </svg>
+                        <p class="text-center font-medium text-white text-xl">
+                            +62 857-7666-3953
+                        </p>
+                    </div>
+                    <div class="md:w-2/5 gap-8  justify-center text-center flex flex-col items-center p-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-chat-dots-fill " viewBox="0 0 16 16">
+                            <path
+                                d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                        </svg>
+                        <p class="text-center font-medium text-white text-xl">
+                            Dailymuslim@gmail.com
+                        </p>
+                    </div>
+                    <div class="md:w-2/5   justify-center text-center flex flex-col items-center p-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-telephone-fill " viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
+                        <div class="flex flex-col ">
+                            <p class="text-center font-medium text-white text-lg">Madinatul Quran</p>
+                            <p class="text-center font-medium text-white text-base  ">Jl. Baru TMMD, Singasari,
+                                Kec. Jonggol,
+                                Kabupaten Bogor, Jawa Barat 16830</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social flex-col">
+                    <img src="" alt="" class="">
+                </div>
+                <div class="   ">
+                    <div class=" bg-gray-800 w-full h-16    md:py-5 py-5">
+                        <h3 class="font-medium md:text-base text-sm  text-center  flex justify-center items-center ">
+                            Created By Student From SMK MAdinatul Qur'an 2023 |
+                            Daily Muslim</h3>
+                    </div>
+                </div>
+            </div>
 
-        <section class="h-screen"></section>
+        </footer>
 
         <script src="./script.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
