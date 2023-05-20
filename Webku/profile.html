@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden scroll-smooth
+font-Ubuntu">
+
+    <header class=" ">
+        <div class="fixed top-0 filter bg-transparent  md:z-50 z-40">
+            <nav class="w-screen bg-transparent  filter   p-5 md:flex md:items-center md:justify-between  md:px-24 "
+                id="header">
+                <div class="flex justify-between items-center drop-shadow">
+                    <span class="text-2xl cursor-pointer font-bold text-green-900  ">
+                        <img src="../assets/img/images.png" alt="" class="w-14 h-16 inline">Daily Muslim
+                    </span>
+                    <span class="text-3xl cursor-pointer md:hidden block mx-2 text-green-900">
+                        <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+                    </span>
+                </div>
+                <ul class="md:flex gap-4 md:items-center z-50 md:z-auto  md:static absolute   md:bg-gray-50  md:bg-opacity-0  bg-gray-900  rounded-2xl bg-opacity-10 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100  top-[-400px] transition-all ease-in duration-500"
+                    id="menu2">
+                    <li class="mx-5 my-6 md:my-0 font-bold">
+                        <a href="#" class="text-xl text-green-900  hover:text-gray-500 duration-500"
+                            onmouseenter="down()">Home</a>
+                    </li>
+
+                    <li class="mx-5 my-6 md:my-0 font-bold">
+                        <a href="../Webku/blog2.html"
+                            class="text-xl text-green-900  hover:text-gray-500 duration-500 ">Blog</a>
+                    </li>
+                    <li class="mx-5 my-6 md:my-0 font-bold">
+                        <a href="#" class="text-xl text-green-900  hover:text-gray-500 duration-500 ">Live</a>
+                    </li>
+                    <!-- <span class="flex   gap-2 text-green-900  hover:text-gray-500" id=".">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search font-bold " viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
+                    <input type="text" placeholder="Search" class="rounded-lg font-normal text-center ring-1 ring-black" id="search">
+                    
+                </span> -->
+                    <form action="" class="relative w-max mx-auto ">
+                        <input type="search " placeholder="Search here" name="search" id="search"
+                            class="relative peer z-10 bg-transparent 
+                    w-12 h-12 rounded-full border cursor-pointer outline-none pl-12 focus:w-full focus:border-green-900 focus:cursor-text focus:pl-16 focus:pr-4 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="text-green-900"
+                            class="bi bi-search font-bold  absolute inset-y-0 my-auto h-8 w-12 px-3.5 stroke-green-900 border-r border-transparent peer-focus:border-green-900 peer-focus:stroke-green-900 "
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </form>
+
+
+                </ul>
+            </nav>
+        </div>
+
+
+    </header>
+    <section class="h-screen ">
+        <div class="">
+            <div class="bg-gradient-to-br from-violet-500 to-red-500 w-full h-80 justify-start">
+
+                <div class="absolute  flex md:justify-between  md:gap-[71rem] gap-[12.2rem]">
+                    <img src="../assets/img/drif g.png" alt="" class="md:w-56 w-36">
+                    <img src="../assets/img/drif g.png" alt="" class="md:w-56 w-36">
+                </div>
+                <div class="absolute  flex justify-between  md:gap-[71rem] gap-[12.2rem]  md:mt-[10.2rem] mt-[13.5rem]">
+                    <img src="../assets/img/drif g.png" alt="" class="md:w-56 w-36">
+                    <img src="../assets/img/drif g.png" alt="" class="md:w-56 w-36">
+                </div>
+                <div
+                    class="absolute md:hidden flex justify-between  md:gap-[72rem] gap-[12.2rem]  md:mt-[10.2rem] mt-[6.7rem]">
+                    <img src="../assets/img/drif g.png" alt="" class="md:w-56 w-36">
+                    <img src="../assets/img/drif g.png" alt="" class="md:w-56 w-36">
+                </div>
+                <div class="flex h-full w-full items-center justify-center ">
+                    <h3 class="text-center font-extrabold text-black md:text-4xl text-2xl z-20">
+                        Profile Pembuat Website
+                    </h3>
+
+                </div>
+
+            </div>
+            <div class=" relative z-20">
+                <div class="">
+                    <div class=" md:right-[46.5rem] right-[13rem] md:mt-[4rem] mt-[6rem] absolute">
+                        <div
+                            class="md:w-60 w-48 md:px-4 px-4  md:py-6 py-4 shadow-xl rounded-lg bg-pink-300 flex items-center absolute hover:scale-110 duration-500">
+                            <h3 class="text-center md:text-lg text-sm font-light ">Kamu bisa menghubungi pembuat website
+                                daily muslim si bawah ini</h3>
+
+                        </div>
+                    </div>
+                    <div class=" md:right-[71.5rem] right-[26rem] md:mt-[22rem] mt-[24rem] absolute">
+                        <div
+                            class="md:w-60 w-48 md:px-4 px-4  md:py-6 py-4 shadow-xl rounded-lg bg-blue-300 flex items-center absolute hover:scale-110 duration-500">
+                            <h3 class="text-center md:text-lg text-sm font-light ">Bisa juga untuk menanyakan hal-hala
+                                penting lainnya..</h3>
+
+                        </div>
+                    </div>
+                    <div class="mt-[4.7rem] ml-[37rem] absolute ">
+                        <div class=""></div>
+                        <div
+                            class="w-96 h-96  border-dashed border-4 border-gray-200 flex justify-center items-center px-10 rounded-full absolute">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-20 md:px-0 px-8">
+                <div
+                    class="drop-shadow-lg md:w-2/3 w-full   flex justify-center shadow-xl py-8 rounded-3xl bg-gradient-to-tr from-pink-400  to-blue-500">
+                    <div class="">
+                        <img src="../assets/img/Saly-14.png" alt="" class="w-52 ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="h-screen"></section>
+
+
+
+    <script src="./blog.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
