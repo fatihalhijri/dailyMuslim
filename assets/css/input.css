@@ -10,3 +10,7 @@
         animation-delay: 4s;
     }
 }
+
+#dark-toggle:checked~label div.toggle-circle {
+    @apply translate-x-3;
+}
