@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en " class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -31,10 +31,11 @@ font-Ubuntu">
                     <a href="beranda.html" class="text-xl text-green-900  hover:text-gray-500 duration-500  ">Home</a>
                 </li>
                 <li class="mx-5 my-6 md:my-0 font-bold">
-                    <a href="#" class="text-xl text-green-900  hover:text-gray-500 duration-500 ">Blog</a>
+                    <a href="blog2.html" class="text-xl text-green-900  hover:text-gray-500 duration-500 ">Blog</a>
                 </li>
                 <li class="mx-5 my-6 md:my-0 font-bold">
-                    <a href="#" class="text-xl text-green-900  hover:text-gray-500 duration-500 ">Live</a>
+                    <a href="live.html" class="text-xl text-green-900  hover:text-gray-500 duration-500 "
+                        onmouseenter="down()">Live</a>
                 </li>
                 <!-- <span class="flex   gap-2 text-green-900  hover:text-gray-500" id=".">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search font-bold " viewBox="0 0 16 16">
@@ -59,22 +60,201 @@ font-Ubuntu">
             </ul>
         </nav>
 
-    </header>
+        <div class="absolute" onmouseleave="up()">
+            <div class="fixed  bg-white md:w-48  w-48 rounded-md p-2 md:right-[1rem]   lg:top-[4rem]  bottom[11rem] md:mt-0 mt-40 right-[14rem] md:top-[4rem] hidden  z-50"
+                id="dropdown1">
 
-    <section class="h-screen w-full ">
-        <div class="flex justify-center">  
-        <div class="flex justify-center items-center ">
-            <div class="md:w-full   rounded-xl shadow-xl py-4">
-            <img src="../assets/img/maxresdefault.jpg" alt="" class="w-full rounded-t-xl h-auto object-cover">
-            <div class="">
-                <h3 class=""></h3>
+                <ul class="space-y-2  w-full">
+                    <li class=" ">
+                        <a href="#live"
+                            class="flex flex-row justify-between items-center p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">Live<span
+                                class="w-5 h-5 bg-red-600 rounded-full animate-pulse"></span> </a>
+
+                    </li>
+                    <li class="">
+                        <a href="#pilihan"
+                            class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">Live
+                            pilihan</a>
+                    </li>
+                    <li class="">
+                        <a href="#hadist harian"
+                            class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">hadist
+                            harian</a>
+                    </li>
+                    <li class="">
+                        <a href="#kontak"
+                            class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">Kontak</a>
+                    </li>
+                </ul>
+
             </div>
         </div>
 
+    </header>
+
+    <section class="h-screen w-full ">
+        <div class="flex justify-center mt-24" >
+            <div class="flex justify-center items-center md:px-16 px-6">
+
+                <div class="md:w-full   rounded-xl shadow-xl py-4">
+                    <img src="../assets/img/maxresdefault.jpg" alt="" class="w-full rounded-t-xl h-auto object-cover" id="live">
+                    <div class="flex  justify-start items-center  md:px-8 px-3 gap-0" >
+                        <a href="www.youtub.com/" class="flex lfex-row items-center">
+                            <img src="../assets/img/Youtube.png" alt="" class="rounded-md w-16">
+                            <h3 class="font-bold text-base tracking-tighter uppercase"> Youtube</h3>
+                        </a>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex flex-row items-center md:px-10 px-6 py-4 gap-4">
+                            <h3 class="font-bold md:text-3xl uppercase text-xl">LIVE sekarang</h3>
+                            <div class="rounded-full bg-red-500 w-10 h-10 animate-pulse"></div>
+                        </div>
+
+                        <div class="px-10 flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping" width="32" height="32"
+                                fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping-slow absolute  " width="32"
+                                height="32" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping-slow2 absolute  " width="32"
+                                height="32" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <div class="absolute">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                    class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:px-10 px-5">
+                        <div class="pb-6 py-5">
+                            <a href="https://www.youtube.com/" class="">
+                                <div
+                                    class="w-full h-10 py-2 px-5 bg-green-700 text-white text-center rounded-2xl hover:scale-95 hover:text-black hover:bg-red-700 duration-500 ">
+                                    Masuk</div>
+                            </a>
+
+                        </div>
+                        <h3 class="font-medium md:text-2xl text-xl ">Nasehat Tentang Tebar Qurban
+
+                        </h3>
+                        <div class="">
+                            <p class="md:text-xl text-base font-light text-gray-400">
+                                <br>
+                                Pertanyaan:
+                                Sebentar lagi merupakan momen Idul Adha dan kita dianjurkan untuk berqurban.
+                                Bagaimanakah
+                                tuntunan ibadah qurban yang sesuai dengan sunnah Nabi Shallallahu ‘Alaihi wa Sallam?
+                                Bagi
+                                kami yang tinggal di perkotaan dan hewan qurban sudah melimpah, apakah boleh kami
+                                berqurban
+                                di pelosok daerah yang jarang ada hewan qurban?
+                                <br><br>
+                                Jawaban:
+                                Allahul musta’an, ini ujung-ujungnya donasi. Dari pertanyaannya, sepertinya tentang
+                                tebar
+                                hewan qurban. Mungkin itu maksudnya.
+                                <br>
+                                Sebenarnya berqurban ini merupakan syariat. Dan setiap syariat sudah pasti syiar. Namun
+                                tidak setiap syiar itu syariat. Allah Subhanahu wa Ta’ala berfirman,
+                                <br><br>
+                                ذَٰلِكَ وَمَنْ يُعَظِّمْ شَعَائِرَ اللَّهِ فَإِنَّهَا مِنْ تَقْوَى الْقُلُوبِ
+                                <br><br>
+                                “Demikianlah (perintah Allah). Dan barangsiapa mengagungkan syi’ar-syi’ar Allah, maka
+                                sesungguhnya itu timbul dari ketakwaan hati.” (QS. Al-Hajj[22]: 32)
+
+                                <br>
+                                Jadi salah satu syiar agama Allah Subhanahu wa Ta’ala adalah menunaikan ibadah haji,
+                                umroh,
+                                pemotongan hadyu, dan hewan qurban. Karena itu syariat.
+                                <br>
+                                Dan tentang masalah berqurban, para ulama menyebutkan kewajibannya adalah bagi yang
+                                mampu.
+                                Ada hadits yang derajatnya hasan lighairihi,
+                                <br>
+                                مَنْ كَانَ لَهُ سَعَةٌ وَلَمْ يُضَحِّ فَلاَ يَقْرَبَنَّ مُصَلاَّنَا
+                                <br><br>
+                                “Barang siapa yang memiliki kemampuan namun tidak berqurban, janganlah dia dekati tempat
+                                shalat kami.” (HR. Ibnu Majah)
+
+
+
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
+        <section class="h-screen">
+            <div class="md:mt-24 mt-8 py-10 md:px-16 px-5">
+                <h3 class="font-bold md:text-3xl text-2xl  ">Live pilihan</h3>
+            </div>
+            <div class="flex md:flex-row flex-col justify-between items-center  md:px-14 px-6  gap-10">
+                
+                
+                <div class=" flex  items-center justify-center  " data-aos="fade-left">
+                    <div class="md:w-96 w-full  bg-white  rounded-3xl  shadow-xl ">
+                        <img src="../assets/img/foto dak/Rectangle 65.png" alt="" class="rounded-t-xl w-full">
+
+                        <div class=" py-5">
+
+                            <div class="px-8">
+                                <div class="flex flex-row justify-between items-center gap-3">
+                                    <img src="../assets/img/PP-4.png" alt="" class="rounded-full w-10 h-10">
+                                    <div class="">
+                                        <h2 class="text-lg      font-normal">
+                                            Murotal Al Quran Juz 30 (Juz Amma) Merdu - Muhammad Taha Al Junayd
+                                        </h2>
+
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center justify-between ">
+                                    <div class="mt-2 text-gray-500 ">
+                                        <h3 class="">
+                                            Rumah Quran TV
+                                        </h3>
+                                        <p class="">204.subscribe</p>
+
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="rounded-full bg-red-500 w-10 h-10 animate-pulse"></div>
+                                        <p class="text-xl font-semibold">Live</p>
+                                    </div>
+                                </div>
+                                <a href="" class="">
+                                    <div class="flex items-center text-center mt-5">
+                                        <div
+                                            class="w-full py-2 bg-green-700 px-2 h-10 rounded-xl text-white hover:scale-90 hover:text-black hover:bg-red-700 duration-500">
+                                            Masuk
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+        </section>
     </section>
     <section class="h-screen"></section>
-    
+    <script src="../Webku/blog.js"></script>
+
 </body>
+
 </html>

@@ -120,6 +120,11 @@ function up(){
 
 
 
+
+
+
+
+
 currentSlideID = 1;
 sliderElement = document.getElementById('slider');
 totalSlides = sliderElement.childElementCount;

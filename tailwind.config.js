@@ -17,10 +17,12 @@ module.exports = {
         "Ubuntu":['Ubuntu', 'sans-serif'] 
       },
       animation: {
-        blob: "blob 7s infinite ",
+        blob: "blob 15s infinite ",
         'spin-slow':'spin 3s linear infinite',
-        terbang: "terbang 7s infinite",
-        geser: "terbang 10s infinite"
+        terbang: "terbang 17s infinite",
+        geser: "terbang 15s infinite",
+        'ping-slow': 'ping 1s linear  infinite',
+        'ping-slow2': 'ping 3s   infinite'
       },
       keyframes: {
         blob: {
