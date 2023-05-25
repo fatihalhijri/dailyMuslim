@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@500&display=swap"
+    rel="stylesheet" />
+</head>
+<body class="">
+    <section class="wrapper bg-white w-96  max-w-lg px-5 absolute -translate-x-52 left-52 top-1 rounded-xl">
+        <div class="timer-display font-lg text-center "></div>
+        <div class="container">
+            <div class="inputs flex item-center justify-center gap-5 mt-2">
+                <input type="number" class="w-10 font-lg border rounded-xl p-10 " id="hourInput" placeholder="00" min="0" max="23">
+                <input type="number" class="" id="minuteInput" placeholder="00" min="0" max="59">
+            </div>
+            <button class="bg-blue border-none p-5 block m-auto rounded-xl text-white " id="set">Add alarm</button>
+            <div class="activeAlarms"></div>
+        </div>
+
+ 
+    </section>
+    <script src="alarm.js"></script>
+</body>
+</html>

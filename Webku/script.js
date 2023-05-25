@@ -26,70 +26,75 @@ function Menu(e) {
 window.onscroll = function () { menu() };
 // var xstatus = false;
 
-function bebas() {
-    document.getElementById("sds").classList.add("flex")
-    document.getElementById("sds").classList.remove("flex")
-    document.getElementById("sds").classList.add("flex")
-    document.getElementById("sds").classList.remove("flex")
-}
+
 
 function menu() {
     if (document.documentElement.scrollTop > 700) {
         document.getElementById("header").classList.add("bg-white");
+
+        document.getElementById("header").classList.add("dark:bg-slate-900");
         document.getElementById("header").classList.add("shadow-xl");
-        document.getElementById("header").classList.add("rounded-br-3xl");
-        document.getElementById("header").classList.add("rounded-bl-3xl");
-        document.getElementById("menu2").classList.add("bg-transparent");
+        document.getElementById("menu2").classList.add("md:shadow-none");
+        document.getElementById("header").classList.add("md:rounded-br-3xl");
+        document.getElementById("header").classList.add("md:rounded-bl-3xl");
+        document.getElementById("menu2").classList.add("bg-white");
+        document.getElementById("menu2").classList.add("dark:bg-slate-900");
         document.getElementById("menu2").classList.add("md:shadow-none");
         document.getElementById("menu2").classList.add("shadow-xl");
-        document.getElementById("menu2").classList.add("rounded-br-3xl");
-        document.getElementById("menu2").classList.add("rounded-bl-3xl");
+        // document.getElementById("menu2").classList.add("rounded-br-3xl");
+        // document.getElementById("menu2").classList.add("rounded-bl-3xl");
     } else {
         document.getElementById("header").classList.remove("bg-white");
+        
+        document.getElementById("header").classList.remove("dark:bg-slate-900");
         document.getElementById("header").classList.remove("md:shadow-none");
         document.getElementById("header").classList.remove("shadow-xl");
-        document.getElementById("header").classList.remove("rounded-br-3xl");
-        document.getElementById("header").classList.remove("rounded-bl-3xl");
-        document.getElementById("menu2").classList.remove("bg-transparent");
+        document.getElementById("header").classList.remove("md:rounded-br-3xl");
+        document.getElementById("header").classList.remove("md:rounded-bl-3xl");
+        document.getElementById("menu2").classList.remove("bg-white");
+        document.getElementById("menu2").classList.remove("dark:bg-slate-900");
         document.getElementById("menu2").classList.remove("shadow-xl");
-        document.getElementById("menu2").classList.remove("rounded-br-3xl");
-        document.getElementById("menu2").classList.remove("rounded-bl-3xl");
+        // document.getElementById("menu2").classList.remove("rounded-br-3xl");
+        // document.getElementById("menu2").classList.remove("rounded-bl-3xl");
     }
 }
 
-currentSlideID = 1;
-sliderElement = document.getElementById('slider');
-totalSlides = sliderElement.childElementCount;
+
+// slider
+
+// currentSlideID = 1;
+// sliderElement = document.getElementById('slider');
+// totalSlides = sliderElement.childElementCount;
 
 
-function next() {
-    if (currentSlideID < totalSlides){
-        currentSlideID++;
-        showSlide()
-    }
+// function next() {
+//     if (currentSlideID < totalSlides){
+//         currentSlideID++;
+//         showSlide()
+//     }
         
-}
-function prev() {
-    if (currentSlideID > 1){
-        currentSlideID--;
-        showSlide()
-    }
+// }
+// function prev() {
+//     if (currentSlideID > 1){
+//         currentSlideID--;
+//         showSlide()
+//     }
         
-}
+// }
 
-function showSlide( ){
-    slides = document.getElementById('slider').getElementsByTagName('li')
-    for (let index = 0; index < totalSlides; index++){
-        const element = slides[index];
-        if(currentSlideID===index+1){
+// function showSlide( ){
+//     slides = document.getElementById('slider').getElementsByTagName('li')
+//     for (let index = 0; index < totalSlides; index++){
+//         const element = slides[index];
+//         if(currentSlideID===index+1){
             
-                element.classList.remove('hidden')
-            }
-            else{
-                element.classList.add('hidden')
-            }
-    }
-}
+//                 element.classList.remove('hidden')
+//             }
+//             else{
+//                 element.classList.add('hidden')
+//             }
+//     }
+// }
 
 
 
@@ -178,6 +183,7 @@ function up(){
     document.getElementById("dropdown1").classList.remove("flex")
 }
 
+// dark mode sandika
 const darkToggle = document.querySelector('#dark-toggle');
 const html = document.querySelector('html');
 
@@ -189,4 +195,75 @@ darkToggle.addEventListener('click', function () {
     html.classList.remove('dark');
     localStorage.theme = 'light';
   }
+});
+
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
+
+
+
+// dark mode pro
+
+// const sunIcon = document.querySelector(".sun");
+// const moonIcon = document.querySelector(".moon");
+
+// const userTheme = localStorage.getItem("theme");
+// const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+
+// // icon toggling
+// const iconToggle = () => {
+//     moonIcon.classList.toggle("display-none");
+//     sunIcon.classList.toggle("display-none");
+// };
+
+// // initial them check
+// const themeCheck = () => {
+//     if (userTheme === "dark" || (!userTheme && systemTheme)) {
+//         document.documentElement.classList.add("dark");
+//         moonIcon.classList.add("display-none");
+//         return;
+//     }
+//     sunIcon.classList.add("display-none");
+// };
+
+// // manual theme switch
+// const themeSwitch = () => {
+//     if (document.documentElement.classList.contains("dark")) {
+//         document.documentElement.classList.remove("dark");
+//         localStorage.setItem("theme", "light");
+//         iconToggle();
+//         return;
+//     }
+//     document.documentElement.classList.add("dark");
+//     localStorage.setItem("theme", "dark");
+//     iconToggle();
+// };
+
+// // call theme switch on clicking button
+// sunIcon.addEventListener("click", () => {
+//     themeSwitch();
+// });
+// moonIcon.addEventListener("click", () => {
+//     themeSwitch();
+// });
+
+// // invoke theme check on initial load 
+// themeCheck();
+
+
+
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    autoplay: {
+        Delay: 100,
+        disableOnInteraction: false
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    },
 });

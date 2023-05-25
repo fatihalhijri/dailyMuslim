@@ -13,14 +13,15 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body class="overflow-x-hidden scroll-smooth
 font-Ubuntu">
 
-    <header class=" ">
-        <div class="fixed top-0 filter bg-transparent  md:z-50 z-40">
-            <nav class="w-screen bg-transparent  filter   p-5 md:flex md:items-center md:justify-between  md:px-24 "
+    <header class="">
+        <div class="fixed top-0 filter   md:z-50 z-40">
+            <nav class="w-screen  bg-transparent    p-5 md:flex md:items-center md:justify-between  md:px-24 "
                 id="header">
                 <div class="flex justify-between items-center drop-shadow">
                     <span class="text-2xl cursor-pointer font-bold text-green-900  ">
@@ -30,19 +31,21 @@ font-Ubuntu">
                         <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
                     </span>
                 </div>
-                <ul class="md:flex gap-4 md:items-center z-50 md:z-auto  md:static absolute   md:bg-gray-50  md:bg-opacity-0  bg-gray-900  rounded-2xl bg-opacity-10 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100  top-[-400px] transition-all ease-in duration-500"
+                <ul class="md:flex gap-4 md:items-center z-50 md:z-auto  md:static absolute   dark:md:bg-transparent md:bg-transparent bg-transparent dark:md:bg-opacity-100   dark:bg-slate-900 rounded-2xl  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100  top-[-400px] transition-all ease-in duration-500"
                     id="menu2">
                     <li class="mx-5 my-6 md:my-0 font-bold">
-                        <a href="#" class="text-xl text-green-900  hover:text-gray-500 duration-500"
+                        <a href="#"
+                            class="text-xl text-green-900  hover:underline-offset-4 hover:underline hover:text-red-700 duration-500"
                             onmouseenter="down()">Home</a>
                     </li>
 
                     <li class="mx-5 my-6 md:my-0 font-bold">
                         <a href="../Webku/blog2.html"
-                            class="text-xl text-green-900  hover:text-gray-500 duration-500 ">Blog</a>
+                            class="text-xl text-green-900  hover:underline-offset-4 hover:underline hover:text-red-700 duration-500 ">Blog</a>
                     </li>
                     <li class="mx-5 my-6 md:my-0 font-bold">
-                        <a href="../Webku/live.html" class="text-xl text-green-900  hover:text-gray-500 duration-500 ">Live</a>
+                        <a href="../Webku/live.html"
+                            class="text-xl text-green-900  hover:underline-offset-4 hover:underline hover:text-red-700 duration-500 ">Live</a>
                     </li>
                     <!-- <span class="flex   gap-2 text-green-900  hover:text-gray-500" id=".">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search font-bold " viewBox="0 0 16 16">
@@ -54,9 +57,9 @@ font-Ubuntu">
                     <form action="" class="relative w-max mx-auto ">
                         <input type="search " placeholder="Search here" name="search" id="search"
                             class="relative peer z-10 bg-transparent 
-                    w-12 h-12 rounded-full border cursor-pointer outline-none pl-12 focus:w-full focus:border-green-900 focus:cursor-text focus:pl-16 focus:pr-4 ">
+                    w-12 h-12 rounded-full border cursor-pointer outline-none pl-12 focus:w-full focus:border-green-900 focus:cursor-text focus:pl-16 focus:pr-4 dark:text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="text-green-900"
-                            class="bi bi-search font-bold  absolute inset-y-0 my-auto h-8 w-12 px-3.5 stroke-green-900 border-r border-transparent peer-focus:border-green-900 peer-focus:stroke-green-900 "
+                            class="bi bi-search font-bold  absolute inset-y-0 my-auto h-8 w-12 px-3.5 stroke-green-900  border-r border-transparent  peer-focus:border-green-900 peer-focus:stroke-green-900 "
                             viewBox="0 0 16 16">
                             <path
                                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
@@ -97,28 +100,33 @@ font-Ubuntu">
         </div>
 
         <div class=" fixed z-50">
-            <div class="flex justify-end relative md:top-[40rem] top-[40rem] items-center md:right-2 left-3">
-                <img src="../assets/img/Saly-32.png" alt="" class="w-44 h-44 md:flex hidden">
-                <div class="flex md:flex-col flex-row items-center">
-                    <div class="md:w-32 w-24 md:h-[8vh] h-[6vh] md:py-2 py-1 px-2 md:px-4 md:flex  bg-green-800 rounded-2xl">
+            <div class="flex justify-end relative md:top-[46.5rem] top-[40rem] items-center md:right-2 left-3">
+                <!-- <img src="../assets/img/Saly-32.png" alt="" class="w-44 h-44 md:flex hidden"> -->
+                <div class="flex md:flex-row flex-row items-center gap-6">
+                    <div
+                        class="md:w-32 w-24 md:h-[8vh] h-[6vh] md:py-2 py-1 px-2 md:px-4 md:flex  bg-green-800 rounded-2xl">
                         <h3 class="font-light md:text-base text-xs text-white text-center">Tersedia mode malam</h3>
                     </div>
                     <div class="flex flex-col  justify-center  py-6 md:pl-0  pl-3">
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-moon-fill flex" viewBox="0 0 16 16">
-                            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-                          </svg>
-                          
-                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="yellow" class="bi bi-sun-fill hidden" viewBox="0 0 16 16">
-                            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-                          </svg> -->
-                       
-                          <div class="flex">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-moon-fill flex" viewBox="0 0 16 16">
+                            <path
+                                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="yellow"
+                            class="bi bi-sun-fill hidden" viewBox="0 0 16 16">
+                            <path
+                                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                        </svg> -->
+
+                        <div class="flex">
                             <span class="mr-2 text-sm text-slate-500">light</span>
                             <input type="checkbox" class="hidden" id="dark-toggle" />
                             <label for="dark-toggle">
                                 <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
-                                    <div
-                                        class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out" onclick="">
+                                    <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"
+                                        onclick="">
                                     </div>
                                 </div>
                             </label>
@@ -130,7 +138,7 @@ font-Ubuntu">
         </div>
 
     </header>
-    <main class="">
+    <main class="dark:bg-slate-900 bg-white">
         <section class="">
 
 
@@ -180,6 +188,8 @@ font-Ubuntu">
 
 
             </div>
+
+            
             <!-- <div class="absolute px-5 flex top-0 h-full w-full left-0 z-10 ">
                 <div class="my-auto  w-full flex justify-between items-center">
                     <button onclick="prev()"
@@ -198,13 +208,13 @@ font-Ubuntu">
         <section class="">
             <div class="" id="waktu shalat">
                 <div class=" justify-between hidden md:flex absolute">
-                    <div class="flex gap-[80rem]  ">
+                    <div class="flex gap-[80rem]  dark:hidden">
                         <img src="../assets/img/Group 231.png" alt="" class="left-0" data-aos="fade-right">
                         <img src="../assets/img/Group 231.png" alt="" class="right-0" data-aos="fade-left">
                     </div>
                 </div>
                 <div class=" justify-between hidden md:flex absolute mt-[16rem]">
-                    <div class="flex gap-[80rem]  ">
+                    <div class="flex gap-[80rem]  dark:hidden">
                         <img src="../assets/img/Group 231.png" alt="" class="left-0" data-aos="fade-right">
                         <img src="../assets/img/Group 231.png" alt="" class="right-0" data-aos="fade-left">
                     </div>
@@ -278,12 +288,12 @@ font-Ubuntu">
 
 
 
-            <div class="mt-32 z-20 bg-gray-300 h-screen " id="ceramah singkat">
+            <div class="mt-32 z-20 bg-gray-300 dark:bg-slate-800 h-screen " id="ceramah singkat">
                 <div class="md:py-32 py-4">
                     <div class=" md:px-16 px-8 md:text-left  text-center flex justify-between">
                         <h3 class="font-bold text-2xl" data-aos="fade-left">Ceramah Singkat</h3>
                         <div data-aos="fade-right"
-                            class="md:px-4 px-3 md:py-2 py-1 bg-green-900 text-white md:text-lg text-base w-24 text-center rounded-lg">
+                            class="md:px-4 px-3 md:py- py-1 bg-green-900 text-white md:text-base text-sm w-24 text-center rounded-lg">
                             Terbaru</div>
                     </div>
                     <div class="flex md:hidden md:mt-0 justify-center items-center mt-5 gap-6 py-6">
@@ -422,7 +432,7 @@ font-Ubuntu">
                     <div class="md:mt-10 mt-4" data-aos="fade-left">
                         <div class="md:px-32 px-16 md:mt-0 mt-10">
                             <a href="../Webku/vidio.html" class=" ">
-                                <h3 class="font-normal text-end  text-xl  ">See
+                                <h3 class="font-normal text-end  text-xl  text-black dark:text-white">See
                                     all</h3>
                             </a>
                         </div>
@@ -435,7 +445,7 @@ font-Ubuntu">
 
 
 
-        <section class="bg-white py-20 mt-20 lg:mt-60  " id="hadist harian">
+        <section class="bg-white dark:bg-slate-900 py-20 mt-20 lg:mt-60  " id="hadist harian">
 
             <!-- heading -->
             <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2" data-aos="fade-up">
@@ -560,166 +570,199 @@ font-Ubuntu">
         </section>
         <section class="h-screen">
             <div class="">
-                <h3 class="font-bold md:text-4xl text-2xl text-center">
+                <h3 class="font-bold md:text-4xl text-2xl text-center text-black dark:text-white">
                     Ingin melihat Profile Pembuat Website?
                 </h3>
-                
+
             </div>
             <div class="h-screen">
 
-            <div class="flex justify-center mt-20 md:px-0 px-8 ">
-                <div
-                    class="relative drop-shadow-lg md:w-2/3 w-full   flex justify-center shadow-xl py-8 rounded-3xl bg-gradient-to-tr from-pink-400  to-blue-500">
-                    <!-- <div data-aos="fade-up"
+                <div class="flex justify-center mt-20 md:px-0 px-8 ">
+                    <div
+                        class="relative drop-shadow-lg md:w-2/3 w-full   flex justify-center shadow-xl py-8 rounded-3xl bg-gradient-to-tr from-pink-400  to-blue-500">
+                        <!-- <div data-aos="fade-up"
                         class="md:w-72 md:h-72 w-64 h-64 md:mt-0 mt-6 mr-[1rem] border-dashed border-4 border-gray-200 flex justify-center items-center px-10 rounded-full absolute">
                     </div> -->
-                    
-                    <div
-                        class="absolute drop-shadow-lg shadow-2xl md:w-96 w-80   md:h-24 h-20 mb-[0rem] bg-green-900 text-white  rounded-full top-[18rem] hover:bg-white hover:text-black duration-500 z-10">
-                        <a href="../Webku/profile.html" class="flex justify-center items-center h-full">
-                            <h3 class="text-center font-bold text-xl">Click di sini</h3>
-                        </a>
-                    </div>
-                    <div data-aos="fade-right"
-                        class="md:w-60 w-48 md:px-4 px-4  md:py-6 py-4 shadow-xl md:ml-[20rem] mx-auto mt-[-3rem] drop-shadow-lg rounded-lg bg-green-300 flex items-center absolute hover:scale-110 duration-500 z-20">
-                        <h3 class="text-center md:text-lg text-sm font-light ">Kamu bisa menghubungi pembuat website
-                            daily muslim si bawah ini</h3>
 
-                    </div>
+                        <div
+                            class="absolute drop-shadow-lg shadow-2xl md:w-96 w-80   md:h-24 h-20 mb-[0rem] bg-green-900 text-white  rounded-full top-[18rem] hover:bg-white hover:text-black duration-500 z-10">
+                            <a href="../Webku/profile.html" class="flex justify-center items-center h-full">
+                                <h3 class="text-center font-bold text-xl">Click di sini</h3>
+                            </a>
+                        </div>
+                        <div data-aos="fade-right"
+                            class="md:w-60 w-48 md:px-4 px-4  md:py-6 py-4 shadow-xl md:ml-[20rem] mx-auto mt-[-3rem] drop-shadow-lg rounded-lg bg-green-300 flex items-center absolute hover:scale-110 duration-500 z-20">
+                            <h3 class="text-center md:text-lg text-sm font-light text-black dark:text-white">Kamu bisa
+                                menghubungi pembuat website
+                                daily muslim si bawah ini</h3>
 
-
-                    <div class="absolute md:mt-[-2rem] md:mr-[24rem] mt-[10rem] ml-[20rem] md:z-0 z-20">
-                        <img src="../assets/img/cloud2.png" alt="" class="md:w-52 w-32 animate-geser ">
-                    </div>
-                    <div class="absolute md:mt-[14rem] md:ml-[48rem] mt-[1rem] mr-[10rem] md:z-0 z-20">
-                        <img src="../assets/img/cloud2.png" alt="" class="md:w-52 w-32 animate-terbang ">
-                    </div>
-                    <div class="absolute md:mt-[14rem] md:flex hidden   md:mr-[48rem] md:z-0 z-20">
-                        <img src="../assets/img/cloud.png" alt="" class="md:w-52 w-32 animate-blob ">
-                    </div>
+                        </div>
 
 
-                    <div class="z-10" data-aos="fade-up">
-                        <img src="../assets/img/Saly-2.png" alt="" class="w-72 ">
+                        <div class="absolute md:mt-[-2rem] md:mr-[24rem] mt-[10rem] ml-[20rem] md:z-0 z-20">
+                            <img src="../assets/img/cloud2.png" alt="" class="md:w-52 w-32 animate-geser ">
+                        </div>
+                        <div class="absolute md:mt-[14rem] md:ml-[48rem] mt-[1rem] mr-[10rem] md:z-0 z-20">
+                            <img src="../assets/img/cloud2.png" alt="" class="md:w-52 w-32 animate-terbang ">
+                        </div>
+                        <div class="absolute md:mt-[14rem] md:flex hidden   md:mr-[48rem] md:z-0 z-20">
+                            <img src="../assets/img/cloud.png" alt="" class="md:w-52 w-32 animate-blob ">
+                        </div>
+
+
+                        <div class="z-10" data-aos="fade-up">
+                            <img src="../assets/img/Saly-2.png" alt="" class="w-72 ">
+                        </div>
                     </div>
                 </div>
+
+
+
+
+
+
+
             </div>
-            
-
-
-
-
-
-
-        </div>
         </section>
-       
 
 
-        <footer class="min-h-screen flex items-end text-white box-border " id="kontak">
-            <div class="h-4/5 bg-green-900  w-full">
-                <div class="  flex md:flex-row flex-col px-14 mt-10 ">
-                    <div class=" md:w-5/12 mt-10">
-                        <h3 class="font-bold text-3xl ">DailyMuslim</h3>
-                        <p class="font-light text-2xl mt-20">JIka ada kesalahan yang menjangal lebih baik memberi
-                            tahu kepada pihak yang berwajib</p>
-                    </div>
-                    <div class=" md:w-1/4 mt-10">
-                        <h3 class="font-bold text-3xl">Link Tercepat</h3>
-                        <div class="flex flex-col gap-4 mt-8 px-5">
-                            <a href="#" class="font-medium ">F.A.Q</a>
-                            <a href="#" class="font-medium ">Cookies policy</a>
-                            <a href="#" class="font-medium ">Terms of service</a>
-                            <a href="#" class="font-medium ">Support</a>
-                            <a href="#" class="font-medium ">Carrier</a>
-                        </div>
-                    </div>
-                    <div class=" md:w-5/12 mt-10">
-                        <h3 class="font-bold text-3xl">Subcribe</h3>
-                        <div class=" text-center flex flex-col gap-4 rounded-xl">
-                            <div class="flex flex-col gap-4 mt-4">
-                                <input type="text" class="py-4 px-6 w-full  text-black rounded-xl"
-                                    placeholder="Ketikkan sesuatu">
-                                <a href="" class="">
-                                    <div
-                                        class="py-4 px-6 w-full bg-white text-black hover:scale-90 font-bold text-lg rounded-xl hover:bg-green-900 hover:ring-2 hover:text-white hover:ring-white duration-700 ">
-                                        Subcribe Sekarang</div>
-                                </a>
+
+        <section class="h-screen" id="kontak">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#14532d" fill-opacity="1"
+                    d="M0,288L48,266.7C96,245,192,203,288,208C384,213,480,267,576,245.3C672,224,768,128,864,96C960,64,1056,96,1152,133.3C1248,171,1344,213,1392,234.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+
+            <footer class=" flex items-end text-white box-border ">
+                <div class="h-4/5 bg-green-900  w-full">
+
+                    <div class="  flex md:flex-row flex-col px-14  py-20">
+                        <div class="md:w-5/12">
+
+                            <div class="  ">
+                                <h3 class="font-bold text-3xl ">DailyMuslim</h3>
+                                <p class="font-light text-2xl mt-5  md:px-0 px-5">Hubungi kami </p>
                             </div>
-                            <div class="flex flex-row justify-around mt-5">
-                                <div class="bg-white rounded-xl ">
-                                    <a href="https://twitter.com/">
-                                        <img src="../assets/img/Social media logo-1.png" alt="" class="md:w-16 w-10">
-                                    </a>
-                                </div>
-                                <div class="bg-white rounded-xl">
 
-                                    <a href="https://www.facebook.com/">
-                                        <img src="../assets/img/Social media logo-2.png" alt="" class="md:w-16 w-10">
-                                    </a>
+                            <div class="flex md:flex-col flex-col justify-between items-start   md:mt-5 md:py-0 py-10">
+                                <div class="   justify-center text-center flex  items-center py-4 px-5 gap-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-geo-alt-fill " viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                    </svg>
+                                    <div class="">
+                                        <p
+                                            class="text-start font-medium text-white text-xl hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold  duration-300">
+                                            +62 857-7666-3953
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="bg-white rounded-xl">
-                                    <a href="https://www.google.com/">
-                                        <img src="../assets/img/ggogle.png" alt="" class="md:w-16 w-10">
-                                    </a>
-                                </div>
+                                <div class=" gap-5  justify-start text-start flex  items-center py-4 px-5 ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-chat-dots-fill " viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                    </svg>
+                                    <div class="">
 
+                                        <p
+                                            class="text-start font-medium text-white text-lg hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold  duration-300">
+                                            Dailymuslim@gmail.com
+                                    </div>
+                                    </p>
+                                </div>
+                                <div class="   justify-start text-start flex  items-start  py-4 px-5 gap-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-telephone-fill " viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                    </svg>
+                                    <div class="flex  ">
+
+                                        <p
+                                            class="text-start font-medium text-white text-base  hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold  duration-300">
+                                            Jonggol, Kab. Bogor,
+                                            Indonesia</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" md:w-1/2 ">
+                            <h3 class="font-bold text-3xl md:px-5">Yang sering dilihat</h3>
+                            <div class="flex flex-col gap-8 mt-8 px-8 font-semibold md:py-0 py-10">
+                                <a href="jadwal.html"
+                                    class="font-medium text-xl hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold md:hover:text-xl duration-300 ">Jadwal
+                                    shalat</a>
+                                <a href="profile.html"
+                                    class="font-medium text-xl hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold md:hover:text-xl duration-300">Profile
+                                    pemilik</a>
+                                <a href="blog2.html"
+                                    class="font-medium text-xl  hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold md:hover:text-xl duration-300">Ceramah
+                                    Pilihan</a>
+                                <a href="live.html"
+                                    class="font-medium text-xl hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold md:hover:text-xl duration-300 ">Live</a>
 
                             </div>
                         </div>
+                        <div class=" md:w-5/12 ">
+                            <h3 class="font-bold text-3xl">Kirimkan pesan</h3>
+                            <div class=" text-center flex flex-col gap-4 rounded-xl md:py-2 py-5">
+                                <div class="flex flex-col gap-4 mt-4">
+                                    <input type="text" class="py-4 px-6 w-full  text-black rounded-xl"
+                                        placeholder="Ketikkan sesuatu">
+                                    <a href="" class="">
+                                        <div
+                                            class="py-4 px-6 w-full bg-white text-black hover:scale-90 font-bold text-lg rounded-xl hover:bg-green-900 hover:ring-2 hover:text-white hover:ring-white duration-700 ">
+                                            kirim Sekarang</div>
+                                    </a>
+                                </div>
+                                <div class="flex flex-row justify-around mt-5">
+                                    <div class="bg-white rounded-xl ">
+                                        <a href="https://twitter.com/">
+                                            <img src="../assets/img/Social media logo-1.png" alt=""
+                                                class="md:w-16 w-10">
+                                        </a>
+                                    </div>
+                                    <div class="bg-white rounded-xl">
+
+                                        <a href="https://www.facebook.com/">
+                                            <img src="../assets/img/Social media logo-2.png" alt=""
+                                                class="md:w-16 w-10">
+                                        </a>
+                                    </div>
+                                    <div class="bg-white rounded-xl">
+                                        <a href="https://www.google.com/">
+                                            <img src="../assets/img/ggogle.png" alt="" class="md:w-16 w-10">
+                                        </a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="flex md:flex-row flex-col justify-between items-center  p-10 mt-10">
-                    <div class="md:w-2/5 gap-8  justify-center text-center flex flex-col items-center p-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                            class="bi bi-geo-alt-fill " viewBox="0 0 16 16">
-                            <path
-                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                        </svg>
-                        <p class="text-center font-medium text-white text-xl">
-                            +62 857-7666-3953
-                        </p>
+
+                    <div class="social flex-col">
+                        <img src="" alt="" class="">
                     </div>
-                    <div class="md:w-2/5 gap-8  justify-center text-center flex flex-col items-center p-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                            class="bi bi-chat-dots-fill " viewBox="0 0 16 16">
-                            <path
-                                d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                        </svg>
-                        <p class="text-center font-medium text-white text-xl">
-                            Dailymuslim@gmail.com
-                        </p>
-                    </div>
-                    <div class="md:w-2/5   justify-center text-center flex flex-col items-center p-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                            class="bi bi-telephone-fill " viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                        </svg>
-                        <div class="flex flex-col ">
-                            <p class="text-center font-medium text-white text-lg">Madinatul Quran</p>
-                            <p class="text-center font-medium text-white text-base  ">Jl. Baru TMMD, Singasari,
-                                Kec. Jonggol,
-                                Kabupaten Bogor, Jawa Barat 16830</p>
+                    <div class="   ">
+                        <div class=" bg-gray-800 w-full h-16    md:py-4 py-5">
+                            <h3
+                                class="font-medium md:text-base text-sm  text-center  flex justify-center items-center ">
+                                Created
+                                By Student From SMK MAdinatul Qur'an 2023 |
+                                Daily Muslim</h3>
                         </div>
                     </div>
                 </div>
-                <div class="social flex-col">
-                    <img src="" alt="" class="">
-                </div>
-                <div class="   ">
-                    <div class=" bg-gray-800 w-full h-16    md:py-5 py-5">
-                        <h3 class="font-medium md:text-base text-sm  text-center  flex justify-center items-center ">
-                            Created By Student From SMK MAdinatul Qur'an 2023 |
-                            Daily Muslim</h3>
-                    </div>
-                </div>
-            </div>
 
-        </footer>
-
+            </footer>
+        </section>
         <script src="./script.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script>
             AOS.init();
         </script>
