@@ -13,7 +13,11 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.css"
+        integrity="sha512-Y1c7KsgMNtf7pIhrj/Ul2LhutImFYr+TsCmjB8mGAk+cgG1Vm8U1g7tvfmRr6yD5nds03Qgc6Mcb86MBKu1Llg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 </head>
 
 <body class="overflow-x-hidden scroll-smooth
@@ -72,27 +76,27 @@ font-Ubuntu">
         </div>
 
         <div class="absolute" onmouseleave="up()">
-            <div class="fixed  bg-white md:w-48  w-48 rounded-md p-2 md:right-[13rem]   lg:top-[4rem] lg:right-[13rem] bottom[11rem] md:mt-0 mt-40 right-[12rem] md:top-[4rem] hidden  z-50"
+            <div class="fixed  bg-white md:w-48  w-48 rounded-md p-2 md:right-[13rem] dark:bg-slate-700  lg:top-[4rem] lg:right-[13rem] bottom[11rem] md:mt-0 mt-40 right-[12rem] md:top-[4rem] hidden  z-50"
                 id="dropdown1">
 
                 <ul class="space-y-2  w-full">
                     <li class="">
                         <a href="#waktu shalat"
-                            class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">Waktu
+                            class="flex p-2 font-medium text-gray-600 dark:text-white rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-block">Waktu
                             shalat</a>
                     </li>
                     <li class="">
                         <a href="#ceramah singkat"
-                            class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">Trending</a>
+                            class="flex p-2 font-medium text-gray-600 dark:text-white rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-block">Trending</a>
                     </li>
                     <li class="">
                         <a href="#hadist harian"
-                            class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">hadist
+                            class="flex p-2 font-medium text-gray-600 dark:text-white rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-block">hadist
                             harian</a>
                     </li>
                     <li class="">
                         <a href="#kontak"
-                            class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">Kontak</a>
+                            class="flex p-2 font-medium text-gray-600 dark:text-white rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-block">Kontak</a>
                     </li>
                 </ul>
 
@@ -101,12 +105,12 @@ font-Ubuntu">
 
         <div class=" fixed z-50">
             <div class="flex justify-end relative md:top-[46.5rem] top-[40rem] items-center md:right-2 left-3">
-                <!-- <img src="../assets/img/Saly-32.png" alt="" class="w-44 h-44 md:flex hidden"> -->
+
                 <div class="flex md:flex-row flex-row items-center gap-6">
-                    <div
+                    <!-- <div
                         class="md:w-32 w-24 md:h-[8vh] h-[6vh] md:py-2 py-1 px-2 md:px-4 md:flex  bg-green-800 rounded-2xl">
                         <h3 class="font-light md:text-base text-xs text-white text-center">Tersedia mode malam</h3>
-                    </div>
+                    </div> -->
                     <div class="flex flex-col  justify-center  py-6 md:pl-0  pl-3">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                             class="bi bi-moon-fill flex" viewBox="0 0 16 16">
@@ -138,11 +142,13 @@ font-Ubuntu">
         </div>
 
     </header>
+
+
     <main class="dark:bg-slate-900 bg-white">
         <section class="">
 
 
-            <div class="relative z-10 " id="slider">
+            <!-- <div class="relative z-10 " id="slider">
 
                 <ul class="" id="slider">
                     <li class="md:h-[100vh] h-[100vh] relative ">
@@ -162,7 +168,7 @@ font-Ubuntu">
                     <li class="md:h-[100vh] h-[100vh] relative hidden ">
                         <video autoplay loop muted playinsine src="../assets/img/ramadan-33348.mp4 "
                             class="h-full w-full object-cover rounded-b-3xl"></video>
-                        <!-- <img src="../assets/img/majid2.png" alt="" class="h-full w-full object-cover  "> -->
+                     
 
                         <div class="absolute  top-0 left-0 h-full w-full flex ">
                             <h2
@@ -173,7 +179,6 @@ font-Ubuntu">
                 </ul>
                 <ul class="" id="slider">
                     <li class="md:h-[100vh] h-[100vh] relative hidden">
-                        <!-- <img src="../assets/img/Rectangle 45.png" alt="" class="h-full w-full object-cover  rounded-b-3xl"> -->
                         <video muted loop playinsane autoplay
                             src="../assets/img/pexels-zahabiyatravelworld-3880003-1920x1080-60fps.mp4"
                             class="h-full w-full object-cover rounded-b-3xl"></video>
@@ -188,8 +193,66 @@ font-Ubuntu">
 
 
             </div>
+             -->
+            <div class="swiper">
 
-            
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <ul class="">
+                            <li class="md:h-[100vh] h-[100vh] relative ">
+
+                                <video autoplay loop muted playinsine
+                                    src="../assets/img/pexels-roman-odintsov-7304302-4096x2160-30fps.mp4"
+                                    class="h-full w-full object-cover "></video>
+                                <div class="absolute  top-0 left-0 h-full w-full flex ">
+                                    <h2
+                                        class="lg:text-3xl md:text-2xl text-xl font-bold text-white my-auto w-full text-center px-20">
+                                        "Dunia hanyalah tempat persingahan, sedangkan yang abadi ialah hidup setelah
+                                        kematian"
+                                    </h2>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul class="">
+                            <li class="md:h-[100vh] h-[100vh] relative ">
+                                <video autoplay loop muted playinsine src="../assets/img/ramadan-33348.mp4 "
+                                    class="h-full w-full object-cover "></video>
+
+
+                                <div class="absolute  top-0 left-0 h-full w-full flex ">
+                                    <h2
+                                        class="lg:text-3xl md:text-2xl text-xl font-bold text-white my-auto w-full text-center px-20 ">
+                                        "Hidup tanpa allah ibarat sebuah pensil tumpul, ia tidak memiliki titik"</h2>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul class="">
+                            <li class="md:h-[100vh] h-[100vh] relative">
+
+                                <video muted loop playinsane autoplay
+                                    src="../assets/img/pexels-zahabiyatravelworld-3880003-1920x1080-60fps.mp4"
+                                    class="h-full w-full object-cover "></video>
+                                <div class="absolute  top-0 left-0 h-full w-full flex ">
+                                    <h2
+                                        class="lg:text-3xl md:text-2xl text-xl font-bold text-white my-auto w-full text-center px-20">
+                                        "Hidup sederhana tanpa ada hasrat untuk mencari perhatian dihadapan manusia
+                                        adalah di
+                                        antara sebab ketenangan hati dan bahagia"</h2>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+            </div>
+
             <!-- <div class="absolute px-5 flex top-0 h-full w-full left-0 z-10 ">
                 <div class="my-auto  w-full flex justify-between items-center">
                     <button onclick="prev()"
@@ -208,70 +271,89 @@ font-Ubuntu">
         <section class="">
             <div class="" id="waktu shalat">
                 <div class=" justify-between hidden md:flex absolute">
-                    <div class="flex gap-[80rem]  dark:hidden">
-                        <img src="../assets/img/Group 231.png" alt="" class="left-0" data-aos="fade-right">
-                        <img src="../assets/img/Group 231.png" alt="" class="right-0" data-aos="fade-left">
+                    <div class="flex gap-[81rem]  dark:hidden">
+                        <img src="../assets/img/green2.png" alt="" class="left-0" data-aos="fade-right">
+                        <img src="../assets/img/green2.png" alt="" class="right-0" data-aos="fade-left">
                     </div>
                 </div>
-                <div class=" justify-between hidden md:flex absolute mt-[16rem]">
-                    <div class="flex gap-[80rem]  dark:hidden">
-                        <img src="../assets/img/Group 231.png" alt="" class="left-0" data-aos="fade-right">
-                        <img src="../assets/img/Group 231.png" alt="" class="right-0" data-aos="fade-left">
+                <div class=" justify-between hidden md:flex absolute mt-[15rem]">
+                    <div class="flex gap-[81rem]  dark:hidden">
+                        <img src="../assets/img/green2.png" alt="" class="left-0" data-aos="fade-right">
+                        <img src="../assets/img/green2.png" alt="" class="right-0" data-aos="fade-left">
                     </div>
                 </div>
+
+            </div>
+            <div class="hidden dark:flex" id="waktu shalat">
+                <div class=" justify-between hidden md:flex absolute">
+                    <div class="flex gap-[81rem]  ">
+                        <img src="../assets/img/dark.png" alt="" class="left-0" data-aos="fade-right">
+                        <img src="../assets/img/dark.png" alt="" class="right-0" data-aos="fade-left">
+                    </div>
+                </div>
+                <div class=" justify-between hidden md:flex absolute mt-[15rem]">
+                    <div class="flex gap-[81rem]  ">
+                        <img src="../assets/img/dark.png" alt="" class="left-0" data-aos="fade-right">
+                        <img src="../assets/img/dark.png" alt="" class="right-0" data-aos="fade-left">
+                    </div>
+                </div>
+
             </div>
 
             </div>
             <div class="md:px-32 px-16 py-5 relative ">
-                <div class="rounded-lg bg-gray-400 w-full md:h-72 px-6 py-2 shadow-xl mt-24" data-aos="fade-up">
+                <div class="rounded-lg bg-green-900 dark:bg-slate-700 w-full md:h-72 px-6 py-2 shadow-xl mt-24"
+                    data-aos="fade-up">
                     <div class="text-center md:text-left ">
                         <div class="md:flex block justify-between items-center">
-                            <h3 class="font-medium md:text-base text-sm uppercase ">Waktu Shalat Untuk <a href=""
-                                    class="uppercase font-bold md:text-2xl text-xl text-green-900 ">jakarta</a></h3>
-                            <div id="date" class=" md:text-2xl   font-medium text-green-900 mt-6"></div>
+                            <h3 class="font-medium md:text-base text-sm uppercase text-white dark:text-white">Waktu
+                                Shalat Untuk <a href=""
+                                    class="uppercase font-bold md:text-2xl text-xl text-white dark:text-white">jakarta</a>
+                            </h3>
+                            <div id="date" class=" md:text-2xl   font-medium text-white mt-6"></div>
 
                         </div>
                         <div id="clock"
-                            class="md:text-3xl text-2xl font-bold mx-auto flex justify-center items-center py-4 text-green-900">
+                            class="md:text-3xl text-2xl font-bold mx-auto flex justify-center items-center py-4 text-white">
                         </div>
 
                         <div class="">
 
-                            <a href="../Webku/jadwal.html" class="   text-center font-bold text-black   ">
+                            <a href="../Webku/jadwal.html" class="   text-center font-bold   text-black ">
                                 <div
-                                    class="bg-white w-full h-10 py-2  rounded-xl text-center font-bold text-black  hover:scale-90 hover:bg-green-900 hover:text-white  duration-500">
+                                    class="bg-white w-full h-10 py-2  dark:text-green-900 dark:bg-slate-300 rounded-xl text-center font-bold text-black  hover:scale-90 hover:bg-white-900 dark:hover:text-white hover:text-black duration-500">
                                     Lihat jadwal 30 hari kedepan</div>
                             </a>
                         </div>
                         <div class=" gap-10 py-5  md:flex ">
-                            <div class="w-full  h-20   bg-white rounded-lg py-2 ">
+                            <div class="w-full  h-20   bg-white dark:bg-slate-300 rounded-lg py-2 ">
                                 <div class="  text-center px-3 ">
-                                    <h3 class=" font-medium text-xl">Subuh</h3>
+                                    <h3 class=" font-medium text-xl text-black dark:text-green-900">Subuh</h3>
                                     <p class="text-3xl font-medium text-green-900">04:35</p>
                                 </div>
                             </div>
 
-                            <div class="w-full  h-20   bg-white rounded-lg py-2 md:mt-0 mt-6">
+                            <div class="w-full  h-20   bg-white dark:bg-slate-300 rounded-lg py-2 md:mt-0 mt-6">
                                 <div class="  text-center px-3 ">
-                                    <h3 class=" font-medium text-xl">dhuhur</h3>
+                                    <h3 class=" font-medium text-xl text-black dark:text-green-900">dhuhur</h3>
                                     <p class="text-3xl font-medium text-green-900">11:53</p>
                                 </div>
                             </div>
-                            <div class="w-full  h-20   bg-white rounded-lg py-2 md:mt-0 mt-6">
+                            <div class="w-full  h-20   bg-white dark:bg-slate-300 rounded-lg py-2 md:mt-0 mt-6">
                                 <div class="  text-center px-3 ">
-                                    <h3 class=" font-medium text-xl">Asar</h3>
+                                    <h3 class=" font-medium text-xl text-black dark:text-green-900">Asar</h3>
                                     <p class="text-3xl font-medium text-green-900">15:14</p>
                                 </div>
                             </div>
-                            <div class="w-full  h-20   bg-white rounded-lg py-2 md:mt-0 mt-6">
+                            <div class="w-full  h-20   bg-white dark:bg-slate-300 rounded-lg py-2 md:mt-0 mt-6">
                                 <div class="  text-center px-3 ">
-                                    <h3 class=" font-medium text-xl">Magrib</h3>
+                                    <h3 class=" font-medium text-xl text-black dark:text-green-900">Magrib</h3>
                                     <p class="text-3xl font-medium text-green-900">17:47</p>
                                 </div>
                             </div>
-                            <div class="w-full  h-20   bg-white rounded-lg py-2 md:mt-0 mt-6">
+                            <div class="w-full  h-20   bg-white dark:bg-slate-300 rounded-lg py-2 md:mt-0 mt-6">
                                 <div class="  text-center px-3 ">
-                                    <h3 class=" font-medium text-xl">Isya</h3>
+                                    <h3 class=" font-medium text-xl text-black dark:text-green-900">Isya</h3>
                                     <p class="text-3xl font-medium text-green-900">18:59</p>
                                 </div>
                             </div>
@@ -284,19 +366,94 @@ font-Ubuntu">
         </section>
 
 
-        <section class="  h-screen md:mt-40 z-10">
+        <section class="  md:mt-40 z-10">
+            <div class="px-10 py-24 h-5/6 ">
+
+                <div class="bg-white dark:bg-slate-800  w-full px-24 md:h-1/2  py-10 drop-shadow shadow-md rounded-xl ">
+                    <div
+                        class="bg-white drop-shadow shadow-lg w-full h-3/4 dark:bg-slate-500 rounded-lg flex  md:flex-row flex-col">
+                        <div class="w-full h-full">
+                            <img src="../assets/img/maxresdefault.jpg" alt=""
+                                class="h-full  md:rounded-l-lg rounded-t-lg">
+                        </div>
+                        <div class="flex flex-col py-2 md:px-4 mr-60 w-auto">
+                            <h1 class="py-2 ">hahahah(1)</h1>
+                            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae autem totam
+                                quasi impedit molestiae asperiores voluptates, veritatis rerum cupiditate distinctio?
+                                Iste, fuga doloremque quos error sequi sed tempore fugiat alias!</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white drop-shadow shadow-lg w-full h-3/4 dark:bg-slate-500 rounded-lg flex mt-10  md:flex-row flex-col">
+                        <div class="w-full h-full">
+                            <img src="../assets/img/maxresdefault.jpg" alt=""
+                                class="h-full  md:rounded-l-lg rounded-t-lg">
+                        </div>
+                        <div class="flex flex-col py-2 md:px-4 mr-60 w-auto">
+                            <h1 class="py-2 ">hahahah(1)</h1>
+                            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae autem totam
+                                quasi impedit molestiae asperiores voluptates, veritatis rerum cupiditate distinctio?
+                                Iste, fuga doloremque quos error sequi sed tempore fugiat alias!</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white drop-shadow shadow-lg w-full h-3/4 dark:bg-slate-500 rounded-lg flex mt-10  md:flex-row flex-col">
+                        <div class="w-full h-full">
+                            <img src="../assets/img/maxresdefault.jpg" alt=""
+                                class="h-full  md:rounded-l-lg rounded-t-lg">
+                        </div>
+                        <div class="flex flex-col py-2 md:px-4 mr-60 w-auto">
+                            <h1 class="py-2 ">hahahah(1)</h1>
+                            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae autem totam
+                                quasi impedit molestiae asperiores voluptates, veritatis rerum cupiditate distinctio?
+                                Iste, fuga doloremque quos error sequi sed tempore fugiat alias!</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white drop-shadow shadow-lg w-full h-3/4 dark:bg-slate-500 rounded-lg flex mt-10  md:flex-row flex-col">
+                        <div class="w-full h-full">
+                            <img src="../assets/img/maxresdefault.jpg" alt=""
+                                class="h-full  md:rounded-l-lg rounded-t-lg">
+                        </div>
+                        <div class="flex flex-col py-2 md:px-4 mr-60 w-auto">
+                            <h1 class="py-2 ">hahahah(1)</h1>
+                            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae autem totam
+                                quasi impedit molestiae asperiores voluptates, veritatis rerum cupiditate distinctio?
+                                Iste, fuga doloremque quos error sequi sed tempore fugiat alias!</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white drop-shadow shadow-lg w-full h-3/4 dark:bg-slate-500 rounded-lg flex mt-10  md:flex-row flex-col">
+                        <div class="w-full h-full">
+                            <img src="../assets/img/maxresdefault.jpg" alt=""
+                                class="h-full  md:rounded-l-lg rounded-t-lg">
+                        </div>
+                        <div class="flex flex-col py-2 md:px-4 mr-60 w-auto">
+                            <h1 class="py-2 ">hahahah(1)</h1>
+                            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae autem totam
+                                quasi impedit molestiae asperiores voluptates, veritatis rerum cupiditate distinctio?
+                                Iste, fuga doloremque quos error sequi sed tempore fugiat alias!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
-            <div class="mt-32 z-20 bg-gray-300 dark:bg-slate-800 h-screen " id="ceramah singkat">
-                <div class="md:py-32 py-4">
+
+
+
+
+            <div class=" z-20 bg-gray-300 dark:bg-slate-800  " id="ceramah singkat">
+                <div class="m py-4">
                     <div class=" md:px-16 px-8 md:text-left  text-center flex justify-between">
-                        <h3 class="font-bold text-2xl" data-aos="fade-left">Ceramah Singkat</h3>
+                        <h3 class="font-bold text-2xl text-black dark:text-white" data-aos="fade-left">Ceramah Singkat
+                        </h3>
                         <div data-aos="fade-right"
                             class="md:px-4 px-3 md:py- py-1 bg-green-900 text-white md:text-base text-sm w-24 text-center rounded-lg">
                             Terbaru</div>
                     </div>
-                    <div class="flex md:hidden md:mt-0 justify-center items-center mt-5 gap-6 py-6">
+                    <!-- <div class="flex md:hidden md:mt-0 justify-center items-center mt-5 gap-6 py-6">
 
                         <h3 onclick="page1()"
                             class="w-14 bg-green-900 text-center text-white rounded-lg hover:bg-white hover:text-black hover:ring-2 hover:ring-green-900 hover:scale-110 duration-500">
@@ -307,23 +464,24 @@ font-Ubuntu">
                         <h3 onclick="page3()"
                             class="w-14 bg-green-900 text-center text-white rounded-lg hover:bg-white hover:text-black hover:ring-2 hover:ring-green-900 hover:scale-110 duration-500">
                             3</h3>
-                    </div>
-                    <div class="flex justify-between items-center  md:px-14 px-6 md:mt-10 mt-8 gap-10">
+                    </div> -->
+                    <div
+                        class="flex md:flex-row flex-col justify-between items-center  md:px-14 px-6 md:mt-10 mt-8 gap-10">
                         <div class=" flex  items-center justify-center  " id="page1" data-aos="fade-left">
-                            <div class="md:w-96   bg-white  rounded-3xl  shadow-xl ">
-                                <img src="../assets/img/Group 228.png" alt="" class="rounded-t-xl w-full">
+                            <div class=" w-full  dark:bg-slate-700 bg-white  rounded-3xl  shadow-xl ">
+                                <img src="../assets/img/Group 228.png" alt="" class="rounded-t-xl w-full object-cover">
 
                                 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/1N5zrXLteiU"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowfullscreen class="w-full rounded-t-xl h-56 object-cover"></iframe> -->
-                                <div class=" py-5">
+                                <div class=" py-6">
 
                                     <div class="px-8">
                                         <div class="flex flex-row justify-between items-center gap-3">
                                             <img src="../assets/img/download.png" alt="" class="rounded-full w-10 h-10">
                                             <div class="">
-                                                <h2 class="text-lg      font-normal">
+                                                <h2 class="text-lg   text-black dark:text-white   font-normal">
                                                     Ceramah Singkat: Salafi Wahabi - Ustadz
                                                     Abu Qatadah.
                                                 </h2>
@@ -332,9 +490,9 @@ font-Ubuntu">
                                         </div>
 
                                         <div class="pl-[3.3rem] ">
-                                            <p class="mt-2 text-gray-500 ">Yufid.TV
+                                            <p class="mt-2 text-gray-400 ">Yufid.TV
                                             </p>
-                                            <p class="text-gray-500">3,81 jt subscriber16 rb video</p>
+                                            <p class="text-gray-400">3,81 jt subscriber16 rb video</p>
                                         </div>
                                         <!-- <div class="flex flex-row mt-4 items-center justify-between">
 
@@ -351,26 +509,28 @@ font-Ubuntu">
                                 </div>
                             </div>
                         </div>
-                        <div class=" md:flex hidden items-center justify-center " id="page2" data-aos="fade-up">
-                            <div class="md:w-96  bg-white  rounded-3xl shadow-xl ">
-                                <img src="../assets/img/foto dak/Rectangle 12249.png" alt="" class="w-full">
+                        <div class=" md:flex  items-center justify-center " id="page2" data-aos="fade-up">
+                            <div class="w-full  bg-white dark:bg-slate-700 rounded-3xl shadow-xl ">
+                                <img src="../assets/img/foto dak/Rectangle 12249.png" alt="" class="w-full ">
 
-                                <div class=" py-5">
+                                <div class=" py-6">
 
                                     <div class="px-8">
-                                        <div class="flex flex-row justify-between items-center gap-3">
-                                            <img src="../assets/img/download.png" alt="" class="rounded-full w-10 h-10">
+                                        <div class="flex flex-row justify-between items-center gap-3 ">
+                                            <img src="../assets/img/download.png" alt=""
+                                                class="rounded-full  w-10 h-10">
                                             <div class="">
-                                                <h2 class="text-lg      font-normal">Tetesan Air Wudhu - Sebuah Video
+                                                <h2 class="text-lg  text-black dark:text-white    font-normal">Tetesan
+                                                    Air Wudhu - Sebuah Video
                                                     Motivasi Islami...</h2>
 
                                             </div>
                                         </div>
 
                                         <div class="pl-[3.3rem]">
-                                            <p class="mt-2 text-gray-500 ">Yufid.TV
+                                            <p class="mt-2 text-gray-400 ">Yufid.TV
                                             </p>
-                                            <p class="text-gray-500">3,81 jt subscriber16 rb video</p>
+                                            <p class="text-gray-400">3,81 jt subscriber16 rb video</p>
                                         </div>
                                         <!-- <div class="flex flex-row mt-4 items-center justify-between">
 
@@ -387,18 +547,18 @@ font-Ubuntu">
                                 </div>
                             </div>
                         </div>
-                        <div class=" md:flex hidden  items-center justify-center " id="page3" data-aos="fade-right">
-                            <div class="md:w-96  bg-white  rounded-3xl shadow-xl ">
+                        <div class=" md:flex   items-center justify-center " id="page3" data-aos="fade-right">
+                            <div class="w-full  dark:bg-slate-700 bg-white  rounded-3xl shadow-xl ">
                                 <img src="../assets/img/foto dak/Rectangle 72.png" alt="" class="w-full">
 
-                                <div class=" py-5">
+                                <div class=" py-3">
 
                                     <div class="px-8">
                                         <div class="flex flex-row justify-between items-center gap-3">
                                             <img src="../assets/img/foto dak/PP.png" alt=""
                                                 class="rounded-full w-10 h-10">
                                             <div class="">
-                                                <h2 class="text-lg      font-normal">
+                                                <h2 class="text-lg   text-black dark:text-white   font-normal">
                                                     Kenapa Memakai Nama Manhaj Salaf ust. Yazid bin Abdul Qadir
                                                 </h2>
 
@@ -406,10 +566,10 @@ font-Ubuntu">
                                         </div>
 
                                         <div class="pl-[3.3rem]">
-                                            <p class="mt-2 text-gray-500 ">Dakwah Vidgram
+                                            <p class="mt-2 text-gray-400 ">Dakwah Vidgram
 
                                             </p>
-                                            <p class="text-gray-500">39,9 rb subscriber801 video</p>
+                                            <p class="text-gray-400">39,9 rb subscriber801 video</p>
                                         </div>
                                         <!-- <div class="flex flex-row mt-4 items-center justify-between">
 
@@ -464,11 +624,11 @@ font-Ubuntu">
                     </div>
                     <!-- content -->
                     <div class="flex flex-1 flex-col items-center lg:items-start " data-aos="fade-right">
-                        <h1 class="text-3xl text-green-900 ">(Hadist riwayat Ibnu Majah)</h1>
-                        <p class="text-gray-500 my-4 text-center lg:text-left sm:w-3/4 lg:w-full"> طَلَبُ الْعِلْمِ
+                        <h1 class="text-3xl text-green-900 ">hadist untuk diberikan ilmu yang bermanfaat</h1>
+                        <p class="text-gray-500 dark:text-white my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+                            طَلَبُ الْعِلْمِ
                             فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ وَوَاضِعُ الْعِلْمِ عِنْدَ غَيْرِ أَهْلِهِ كَمُقَلِّدِ
                             الْخَنَازِيرِ الْجَوْهَرَ وَاللُّؤْلُؤَ وَالذَّهَبَ
-
 
 
                             Artinya: "Mencari ilmu adalah kewajiban setiap muslim, dan siapa yang menanamkan ilmu kepada
@@ -494,8 +654,9 @@ font-Ubuntu">
                     </div>
                     <!-- content -->
                     <div class="flex flex-1 flex-col items-center lg:items-start" data-aos="fade-left">
-                        <h1 class="text-3xl text-pink-500 ">(Hadist riwayat Ahmad).</h1>
-                        <p class="text-gray-500 my-4 text-center lg:text-left sm:w-3/4 lg:w-full"> مَنْ أَرَادَ
+                        <h1 class="text-3xl text-pink-500 ">Hadist untuk diberikan kemudahan dunia dan akhirat</h1>
+                        <p class="text-gray-500 dark:text-white my-4 text-center lg:text-left sm:w-3/4 lg:w-full"> مَنْ
+                            أَرَادَ
                             الدُّنْيَا فَعَلَيْهِ بِاْلعِلْمِ، وَمَنْ أَرَادَ الآخِرَهَ فَعَلَيْهِ بِالْعِلْمِ، وَمَنْ
                             أَرَادَهُمَا فَعَلَيْهِ باِلعِلْمِ
 
@@ -521,7 +682,8 @@ font-Ubuntu">
                     <div class="flex flex-1 flex-col items-center lg:items-start " data-aos="fade-right">
                         <h1 class="text-3xl text-blue-900 text-center">Doa Rasulullah Agar Terhindar dari Akhlak Tercela
                         </h1>
-                        <p class="text-gray-500 my-4 text-center lg:text-left sm:w-3/4 lg:w-full"> اَللَّهُمَّ
+                        <p class="text-gray-500 dark:text-white my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+                            اَللَّهُمَّ
                             جَنِّبْنِي مُنْكَرَاتِ اَلْأَخْلَاقِ وَالْأَعْمَالِ وَالْأَهْوَاءِ وَالْأَدْوَاءِ.
                             أَخْرَجَهُ اَلتِّرْمِذِيُّ وَصَحَّحَهُ اَلْحَاكِمُ وَاللَّفْظِ لَهُ
 
@@ -546,7 +708,7 @@ font-Ubuntu">
                     <div class="flex flex-1 flex-col items-center lg:items-start" data-aos="fade-left">
                         <h1 class="text-3xl text-orange-900 ">Nabi Muhammad
                             ﷺ bersabda </h1>
-                        <p class="text-gray-500 my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+                        <p class="text-gray-500 dark:text-white my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
 
                             تَرَكْتُ فِيْكُمْ أَمْرَيْنِ لَنْ تَضِلُّوْا مَا تَمَسَّكْتُمْ بِهِمَا : كِتَابَ اللهِ وَ
                             سُنَّةَ رَسُوْلِهِ
@@ -591,8 +753,8 @@ font-Ubuntu">
                             </a>
                         </div>
                         <div data-aos="fade-right"
-                            class="md:w-60 w-48 md:px-4 px-4  md:py-6 py-4 shadow-xl md:ml-[20rem] mx-auto mt-[-3rem] drop-shadow-lg rounded-lg bg-green-300 flex items-center absolute hover:scale-110 duration-500 z-20">
-                            <h3 class="text-center md:text-lg text-sm font-light text-black dark:text-white">Kamu bisa
+                            class="md:w-60 w-48 md:px-4 px-4  md:py-6 py-4 shadow-xl md:ml-[20rem] dark:bg-green-900 mx-auto mt-[-3rem] drop-shadow-lg rounded-lg bg-green-300 flex items-center absolute hover:scale-110 duration-500 z-20">
+                            <h3 class="text-center md:text-lg text-sm font-light text-black dark:text-white ">Kamu bisa
                                 menghubungi pembuat website
                                 daily muslim si bawah ini</h3>
 
@@ -763,6 +925,21 @@ font-Ubuntu">
         <script src="./script.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper('.swiper', {
+                direction: 'horizontal',
+                loop: true,
+                autoplay: {
+                    Delay: 100,
+                    disableOnInteraction: false
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            });
+        </script>
+
         <script>
             AOS.init();
         </script>

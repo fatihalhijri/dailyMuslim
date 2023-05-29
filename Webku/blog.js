@@ -10,73 +10,104 @@ window.onscroll = function () { menu() };
 
 
 
+// function menu() {
+//     if (document.documentElement.scrollTop > 20) {
+//         document.getElementById("header").classList.add("bg-white");
+//         document.getElementById("header").classList.add("shadow-xl");
+//         document.getElementById("header").classList.add("rounded-br-3xl");
+//         document.getElementById("header").classList.add("rounded-bl-3xl");
+//         document.getElementById("menu2").classList.add("bg-white");
+//         document.getElementById("menu2").classList.add("md:shadow-none");
+//         document.getElementById("menu2").classList.add("shadow-xl");
+//         document.getElementById("menu2").classList.add("rounded-br-3xl");
+//         document.getElementById("menu2").classList.add("rounded-bl-3xl");
+//     } else {
+//         document.getElementById("header").classList.remove("bg-white");
+//         document.getElementById("menu2").classList.remove("md:shadow-none");
+//         document.getElementById("header").classList.remove("shadow-xl");
+//         document.getElementById("header").classList.remove("rounded-br-3xl");
+//         document.getElementById("header").classList.remove("rounded-bl-3xl");
+//         document.getElementById("menu2").classList.remove("bg-white");
+//         document.getElementById("menu2").classList.remove("shadow-xl");
+//         document.getElementById("menu2").classList.remove("rounded-br-3xl");
+//         document.getElementById("menu2").classList.remove("rounded-bl-3xl");
+//     }
+// }
+
 function menu() {
     if (document.documentElement.scrollTop > 20) {
         document.getElementById("header").classList.add("bg-white");
+
+        document.getElementById("header").classList.add("dark:bg-slate-900");
         document.getElementById("header").classList.add("shadow-xl");
-        document.getElementById("header").classList.add("rounded-br-3xl");
-        document.getElementById("header").classList.add("rounded-bl-3xl");
+        document.getElementById("menu2").classList.add("md:shadow-none");
+        document.getElementById("header").classList.add("md:rounded-br-3xl");
+        document.getElementById("header").classList.add("md:rounded-bl-3xl");
         document.getElementById("menu2").classList.add("bg-white");
+        document.getElementById("menu2").classList.add("dark:bg-slate-900");
         document.getElementById("menu2").classList.add("md:shadow-none");
         document.getElementById("menu2").classList.add("shadow-xl");
-        document.getElementById("menu2").classList.add("rounded-br-3xl");
-        document.getElementById("menu2").classList.add("rounded-bl-3xl");
+        // document.getElementById("menu2").classList.add("rounded-br-3xl");
+        // document.getElementById("menu2").classList.add("rounded-bl-3xl");
     } else {
         document.getElementById("header").classList.remove("bg-white");
-        document.getElementById("menu2").classList.remove("md:shadow-none");
+        
+        document.getElementById("header").classList.remove("dark:bg-slate-900");
+        document.getElementById("header").classList.remove("md:shadow-none");
         document.getElementById("header").classList.remove("shadow-xl");
-        document.getElementById("header").classList.remove("rounded-br-3xl");
-        document.getElementById("header").classList.remove("rounded-bl-3xl");
+        document.getElementById("header").classList.remove("md:rounded-br-3xl");
+        document.getElementById("header").classList.remove("md:rounded-bl-3xl");
         document.getElementById("menu2").classList.remove("bg-white");
+        document.getElementById("menu2").classList.remove("dark:bg-slate-900");
         document.getElementById("menu2").classList.remove("shadow-xl");
-        document.getElementById("menu2").classList.remove("rounded-br-3xl");
-        document.getElementById("menu2").classList.remove("rounded-bl-3xl");
+        // document.getElementById("menu2").classList.remove("rounded-br-3xl");
+        // document.getElementById("menu2").classList.remove("rounded-bl-3xl");
     }
 }
 
 
 
-function pertama() {
-    document.getElementById("pertama").classList.add("md:flex")
-    document.getElementById("pertama").classList.add("md:flex")
-    document.getElementById("pertama").classList.remove("hidden")
-    document.getElementById("pertama").classList.remove("hidden")
+// function pertama() {
+//     document.getElementById("pertama").classList.add("md:flex")
+//     document.getElementById("pertama").classList.add("md:flex")
+//     document.getElementById("pertama").classList.remove("hidden")
+//     document.getElementById("pertama").classList.remove("hidden")
 
-    document.getElementById("kedua").classList.add("hidden")
-    document.getElementById("kedua").classList.add("hidden")
+//     document.getElementById("kedua").classList.add("hidden")
+//     document.getElementById("kedua").classList.add("hidden")
 
-    document.getElementById("ketiga").classList.add("hidden")
-    document.getElementById("ketiga").classList.add("hidden")
+//     document.getElementById("ketiga").classList.add("hidden")
+//     document.getElementById("ketiga").classList.add("hidden")
     
-}
-function kedua() {
-    document.getElementById("kedua").classList.add("md:flex")
-    document.getElementById("kedua").classList.add("flex")
-    document.getElementById("kedua").classList.remove("md:hidden")
-    document.getElementById("kedua").classList.remove("hidden")
+// }
+// function kedua() {
+//     document.getElementById("kedua").classList.add("md:flex")
+//     document.getElementById("kedua").classList.add("flex")
+//     document.getElementById("kedua").classList.remove("md:hidden")
+//     document.getElementById("kedua").classList.remove("hidden")
 
 
-    document.getElementById("pertama").classList.add("hidden")
-    document.getElementById("pertama").classList.add("hidden")
+//     document.getElementById("pertama").classList.add("hidden")
+//     document.getElementById("pertama").classList.add("hidden")
     
-    document.getElementById("ketiga").classList.add("hidden")
-    document.getElementById("ketiga").classList.add("hidden")
+//     document.getElementById("ketiga").classList.add("hidden")
+//     document.getElementById("ketiga").classList.add("hidden")
     
-}
-function ketiga() {
-    document.getElementById("ketiga").classList.add("md:flex")
-    document.getElementById("ketiga").classList.add("flex")
-    document.getElementById("ketiga").classList.remove("hidden")
-    document.getElementById("ketiga").classList.remove("hidden")
+// }
+// function ketiga() {
+//     document.getElementById("ketiga").classList.add("md:flex")
+//     document.getElementById("ketiga").classList.add("flex")
+//     document.getElementById("ketiga").classList.remove("hidden")
+//     document.getElementById("ketiga").classList.remove("hidden")
     
 
-    document.getElementById("kedua").classList.add("hidden")
-    document.getElementById("kedua").classList.add("hidden")
+//     document.getElementById("kedua").classList.add("hidden")
+//     document.getElementById("kedua").classList.add("hidden")
     
-    document.getElementById("pertama").classList.add("hidden")
+//     document.getElementById("pertama").classList.add("hidden")
     
     
-}
+// }
 // home~~~~~~~~~~~~~~~
 
 function satu() {
@@ -125,36 +156,52 @@ function up(){
 
 
 
-currentSlideID = 1;
-sliderElement = document.getElementById('slider');
-totalSlides = sliderElement.childElementCount;
+// currentSlideID = 1;
+// sliderElement = document.getElementById('slider');
+// totalSlides = sliderElement.childElementCount;
 
 
-function next() {
-    if (currentSlideID < totalSlides){
-        currentSlideID++;
-        showSlide()
-    }
+// function next() {
+//     if (currentSlideID < totalSlides){
+//         currentSlideID++;
+//         showSlide()
+//     }
         
-}
-function prev() {
-    if (currentSlideID > 1){
-        currentSlideID--;
-        showSlide()
-    }
+// }
+// function prev() {
+//     if (currentSlideID > 1){
+//         currentSlideID--;
+//         showSlide()
+//     }
         
-}
+// }
 
-function showSlide( ){
-    slides = document.getElementById('slider').getElementsByTagName('li')
-    for (let index = 0; index < totalSlides; index++){
-        const element = slides[index];
-        if(currentSlideID===index+1){
+// function showSlide( ){
+//     slides = document.getElementById('slider').getElementsByTagName('li')
+//     for (let index = 0; index < totalSlides; index++){
+//         const element = slides[index];
+//         if(currentSlideID===index+1){
             
-                element.classList.remove('hidden')
-            }
-            else{
-                element.classList.add('hidden')
-            }
-    }
-}
+//                 element.classList.remove('hidden')
+//             }
+//             else{
+//                 element.classList.add('hidden')
+//             }
+//     }
+// }
+
+
+
+
+const darkToggle = document.querySelector('#dark-toggle');
+const html = document.querySelector('html');
+
+darkToggle.addEventListener('click', function () {
+  if (darkToggle.checked) {
+    html.classList.add('dark');
+    localStorage.theme = 'dark';
+  } else {
+    html.classList.remove('dark');
+    localStorage.theme = 'light';
+  }
+});

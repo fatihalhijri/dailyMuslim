@@ -197,11 +197,11 @@ darkToggle.addEventListener('click', function () {
   }
 });
 
-if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.documentElement.classList.add('dark')
-  } else {
-    document.documentElement.classList.remove('dark')
-  }
+// if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+//     document.documentElement.classList.add('dark')
+//   } else {
+//     document.documentElement.classList.remove('dark')
+//   }
 
 
 
@@ -256,14 +256,3 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 
 
 
-const swiper = new Swiper('.swiper', {
-    direction: 'horizontal',
-    loop: true,
-    autoplay: {
-        Delay: 100,
-        disableOnInteraction: false
-    },
-    pagination: {
-        el: '.swiper-pagination',
-    },
-});

@@ -1,118 +1,144 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth ">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jadwal Sholat DKI Jakarta</title>
+    <title>Blog details</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/output.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 </head>
 
-<body class="overflow-x-hidden
+<body class="overflow-x-hidden 
 font-Ubuntu">
-    <header class="fixed top-0 filter bg-transparent  z-50 " id="header">
-        <nav class="w-screen bg-transparent  filter   p-5 md:flex md:items-center md:justify-between  md:px-24 ">
-            <div class="flex justify-between items-center drop-shadow">
-                <span class="text-2xl cursor-pointer font-bold text-green-900  ">
-                    <img src="../assets/img/images.png" alt="" class="w-14 h-16 inline">Daily Muslim
-                </span>
-                <span class="text-3xl cursor-pointer md:hidden block mx-2 text-green-900">
-                    <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
-                </span>
-            </div>
-            <ul class="md:flex gap-4 md:items-center z-[3] md:z-auto  md:static absolute   md:bg-gray-50  md:bg-opacity-0  bg-gray-900  rounded-2xl bg-opacity-10 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100  top-[-400px] transition-all ease-in duration-500"
-                id="menu2">
-                <li class="mx-5 my-6 md:my-0 font-bold">
-                    <a href="beranda.html" class="text-xl text-green-900   hover:underline-offset-4 hover:underline hover:text-red-700 duration-500  ">Home</a>
-                </li>
-                <li class="mx-5 my-6 md:my-0 font-bold">
-                    <a href="#" class="text-xl text-green-900   hover:underline-offset-4 hover:underline hover:text-red-700 duration-500 " onmouseenter="down()">Blog</a>
-                </li>
-                <li class="mx-5 my-6 md:my-0 font-bold">
-                    <a href="live.html" class="text-xl text-green-900   hover:underline-offset-4 hover:underline hover:text-red-700 duration-500 ">Live</a>
-                </li>
-                <!-- <span class="flex   gap-2 text-green-900  hover:text-gray-500" id=".">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search font-bold " viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                      </svg>
-                    <input type="text" placeholder="Search" class="rounded-lg font-normal text-center ring-1 ring-black" id="search">
-                    
-                </span> -->
-                <form action="" class="relative w-max mx-auto ">
-                    <input type="search " placeholder="Search here" name="search" id="search"
-                        class="relative peer z-10 bg-transparent 
-                    w-12 h-12 rounded-full border cursor-pointer outline-none pl-12 focus:w-full focus:border-green-900 focus:cursor-text focus:pl-16 focus:pr-4 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="text-green-900"
-                        class="bi bi-search font-bold  absolute inset-y-0 my-auto h-8 w-12 px-3.5 stroke-green-900 border-r border-transparent peer-focus:border-green-900 peer-focus:stroke-green-900 "
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                    </svg>
-                </form>
+    <header class="">
+        <div class="fixed top-0 filter   md:z-50 z-40">
+            <nav class="w-screen  bg-transparent  dark:bg-slate-900  p-5 md:flex md:items-center md:justify-between  md:px-24 "
+                id="header">
+                <div class="flex justify-between items-center drop-shadow">
+                    <span class="text-2xl cursor-pointer font-bold text-green-900  ">
+                        <img src="../assets/img/images.png" alt="" class="w-14 h-16 inline">Daily Muslim
+                    </span>
+                    <span class="text-3xl cursor-pointer md:hidden block mx-2 text-green-900">
+                        <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+                    </span>
+                </div>
+                <ul class="md:flex gap-4 md:items-center z-50 md:z-auto  md:static absolute   dark:md:bg-transparent md:bg-transparent bg-transparent dark:md:bg-opacity-100   dark:bg-slate-900 rounded-2xl  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100  top-[-400px] transition-all ease-in duration-500"
+                    id="menu2">
+                    <li class="mx-5 my-6 md:my-0 font-bold">
+                        <a href="beranda.html"
+                            class="text-xl text-green-900  hover:underline-offset-4 hover:underline hover:text-red-700 duration-500">Home</a>
+                    </li>
+
+                    <li class="mx-5 my-6 md:my-0 font-bold">
+                        <a href="../Webku/blog2.html"
+                            class="text-xl text-green-900  hover:underline-offset-4 hover:underline hover:text-red-700 duration-500 "
+                            onmouseenter="down()">Blog</a>
+                    </li>
+                    <li class="mx-5 my-6 md:my-0 font-bold">
+                        <a href="../Webku/live.html"
+                            class="text-xl text-green-900  hover:underline-offset-4 hover:underline hover:text-red-700 duration-500 ">Live</a>
+                    </li>
+                    <!-- <span class="flex   gap-2 text-green-900  hover:text-gray-500" id=".">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search font-bold " viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                <input type="text" placeholder="Search" class="rounded-lg font-normal text-center ring-1 ring-black" id="search">
+                
+            </span> -->
+                    <form action="" class="relative w-max mx-auto ">
+                        <input type="search " placeholder="Search here" name="search" id="search"
+                            class="relative peer z-10 bg-transparent 
+                w-12 h-12 rounded-full border cursor-pointer outline-none pl-12 focus:w-full focus:border-green-900 focus:cursor-text text-gray-600 focus:pl-16 focus:pr-4 dark:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="text-green-900"
+                            class="bi bi-search font-bold  absolute inset-y-0 my-auto h-8 w-12 px-3.5  stroke-green-900  border-r border-transparent  peer-focus:border-green-900 peer-focus:stroke-green-900 "
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </form>
 
 
-            </ul>
-        </nav>
+                </ul>
+            </nav>
+        </div>
 
         <div class="absolute" onmouseleave="up()">
-            <div class="fixed  bg-white md:w-48  w-48 rounded-md p-2 md:ml-[81.5rem]    bottom[11rem] md:-mt-11 mt-24 mr-[33] md:left-0  left-[6.5rem] hidden  z-50"
+            <div class="fixed  bg-white dark:bg-slate-700 md:w-48  w-48 rounded-md p-2 md:ml-[81.5rem]    bottom[11rem] md:mt-[3.8rem] mt-[12.5rem] mr-[38rem] md:left-0  left-[6.5rem] hidden  z-50"
                 id="dropdown1">
-                
+
                 <ul class="space-y-2  w-full">
                     <li class="">
                         <a href="#popular"
-                            class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">Sedang popular</a>
+                            class="flex p-2 font-medium text-gray-600 dark:text-white rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-block">Sedang
+                            popular</a>
                     </li>
                     <li class="">
                         <a href="#satu"
-                            class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">ceramah</a>
+                            class="flex p-2 font-medium text-gray-600 dark:text-white rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-block">ceramah</a>
                     </li>
                     <li class="">
                         <a href="#kontak"
-                            class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">kontak</a>
+                            class="flex p-2 font-medium text-gray-600 dark:text-white rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-block">kontak</a>
                     </li>
                     <!-- <li class="">
-                        <a href="#kontak"
-                            class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">Kontak</a>
-                    </li> -->
+                    <a href="#kontak"
+                        class="flex p-2 font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-block">Kontak</a>
+                </li> -->
                 </ul>
-                
+
             </div>
         </div>
 
+        <div class="fixed  md:z-50 z-30">
+            <div class="relative md:mt-[47rem] mt-[43rem] items-center md:right-2 left-3">
+
+                <div class="flex relative md:flex-row flex-row items-center gap-6">
+
+                    <div class="flex flex-col  justify-center  py-6 md:pl-0  pl-3">
+
+
+                        <div class="flex">
+                            <span class="mr-2 text-sm text-slate-500">light</span>
+                            <input type="checkbox" class="hidden" id="dark-toggle" />
+                            <label for="dark-toggle">
+                                <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                                    <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"
+                                        onclick="">
+                                    </div>
+                                </div>
+                            </label>
+                            <span class="ml-2 text-sm text-slate-500">dark</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </header>
 
-    <main class="h-screen">
-        <div class="h-screen w-screen ">
 
-            <div class="flex md:hidden md:mt-0 justify-center items-center mt-28 gap-6">
 
-                <h3 onclick="pertama()"
-                    class="w-14 bg-green-900 text-center text-white rounded-lg hover:bg-white hover:text-black hover:ring-2 hover:ring-green-900 hover:scale-110 duration-500">
-                    1</h3>
-                <h3 onclick="kedua()"
-                    class="w-14 bg-green-900 text-center text-white rounded-lg hover:bg-white hover:text-black hover:ring-2 hover:ring-green-900 hover:scale-110 duration-500">
-                    2</h3>
-                <h3 onclick="ketiga()"
-                    class="w-14 bg-green-900 text-center text-white rounded-lg hover:bg-white hover:text-black hover:ring-2 hover:ring-green-900 hover:scale-110 duration-500">
-                    3</h3>
+
+    <div class=" bg-white dark:bg-slate-900 ">
+
+
+
+        <div class="md:h-screen md:pt-0 pt-20  flex flex-col justify-center items-center md:pb-0 pb-20 ">
+            <div class="flex justify-between md:px-[8rem] px-14   bg-white dark:bg-slate-900">
+                <h3 class="font-bold md:text-2xl text-xl mb-10 text-black dark:text-white" id="popular">Sedang Popular
+                </h3>
+
             </div>
-
-            <div class="flex justify-between md:px-[8rem] px-14 text-left md:mt-32 mt-4">
-                <h3 class="font-bold md:text-3xl text-xl " id="popular">Sedang Popular</h3>
-                <div class="md:py-2 md:px-5 py-1 px-4 bg-green-900 rounded-lg md:text-xl text-sm text-white">Diperbarui
-                </div>
-            </div>
-            <div class="flex justify-center   px-14 mt-3">
-
-                <div class=" flex  items-center justify-center " id="pertama">
-                    <div class="md:w-3/4    rounded-xl shadow-xl py-2">
+            <div class="flex justify-center md:flex-row flex-col  gap-10 px-14">
+                <div class=" flex  items-center justify-center ">
+                    <div class="   rounded-xl shadow-xl  bg-white dark:bg-slate-700">
                         <img src="../assets/img/maxresdefault_1.jpg" alt=""
                             class="w-full rounded-t-xl h-56 object-cover ">
                         <!-- <div class="p-6">
@@ -121,20 +147,21 @@ font-Ubuntu">
                             </div>
                         </div>
                     </div> -->
-                        <div class=" ">
-                            <div class="flex  justify-start items-center  px-5 gap-0">
+                        <div class=" text-black dark:text-white">
+                            <a href="https://www.youtube.com/" class="flex  justify-start items-center  px-5 gap-0">
                                 <img src="../assets/img/Youtube.png" alt="" class="rounded-md w-16">
                                 <h3 class="font-bold text-base tracking-tighter uppercase">Youtube</h3>
-                            </div>
-                            <div class="px-8">
-                                <h2 class="text-2xl      font-bold">the road</h2>
-                                <p class="mt-2 text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </a>
+                            <div class="px-8 py-7">
+                                <h2 class="text-2xl   text-black dark:text-white   font-bold">the road</h2>
+                                <p class="mt-2 text-gray-700  dark:text-white">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
                                     Molestias
                                     voluptatum magnam aspernatur hic nulla, tenetur iure? Sed error amet esse at aliquid
                                     officia
                                     libero tempora. Quo neque ut vitae tempora.</p>
 
-                                <div class="flex flex-row mt-4 items-center justify-between">
+                                <!-- <div class="flex flex-row mt-4 items-center justify-between">
 
                                     <div class="flex items-center justify-center gap-2">
                                         <img src="../assets/img/avatar-link-ahsan.png" alt=""
@@ -145,28 +172,28 @@ font-Ubuntu">
 
                                     </div>
                                     <div class="text-gray-300">on october</div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="md:flex hidden items-center justify-center" id="kedua">
-                    <div class="md:w-3/4   rounded-xl shadow-xl py-2">
+                <div class="flex  items-center justify-center" id="kedua">
+                    <div class="   rounded-xl shadow-xl  bg-white dark:bg-slate-700">
                         <img src="../assets/img/maxresdefault.jpg" alt=""
                             class="w-full rounded-t-xl h-56 object-cover ">
-                        <div class="flex  justify-start items-center  px-5 gap-0">
+                        <a href="https://www.youtube.com/" class="flex  justify-start items-center  px-5 gap-0">
                             <img src="../assets/img/Youtube.png" alt="" class="rounded-md w-16">
-                            <h3 class="font-bold text-base tracking-tighter uppercase">Youtube</h3>
-                        </div>
-                        <div class="px-8 ">
-                            <h2 class="text-2xl  font-bold">the road</h2>
-                            <p class="mt-2 text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <h3 class="font-bold text-base tracking-tighter text-black dark:text-white uppercase">Youtube</h3>
+                        </a>
+                        <div class="px-8 py-7 text-black dark:text-white">
+                            <h2 class="text-2xl text-black dark:text-white font-bold">the road</h2>
+                            <p class="mt-2 text-gray-700   dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Molestias
                                 voluptatum magnam aspernatur hic nulla, tenetur iure? Sed error amet esse at aliquid
                                 officia
                                 libero tempora. Quo neque ut vitae tempora.</p>
 
-                            <div class="flex flex-row mt-4 items-center justify-between">
+                            <!-- <div class="flex flex-row mt-4 items-center justify-between">
                                 <div class="flex items-center justify-center gap-2">
                                     <img src="../assets/img/majid2.png" alt="" class="rounded-full w-16 h-16">
                                     <h3 class="font-bold mr-2">
@@ -175,26 +202,28 @@ font-Ubuntu">
 
                                 </div>
                                 <div class="text-gray-300">on october</div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
-                <div class="md:flex hidden items-center justify-center" id="ketiga">
-                    <div class="md:w-3/4   rounded-xl shadow-xl py-2">
+                <div class="flex  items-center justify-center" id="ketiga">
+                    <div class="   rounded-xl shadow-xl bg-white dark:bg-slate-700">
                         <img src="../assets/img/images.jpeg" alt="" class="w-full rounded-t-xl h-56 object-cover ">
-                        <div class="flex  justify-start items-center  px-5 gap-0">
+
+                        <a href="https://www.youtube.com/" class="flex  justify-start items-center  px-5 gap-0">
                             <img src="../assets/img/Youtube.png" alt="" class="rounded-md w-16">
-                            <h3 class="font-bold text-base tracking-tighter uppercase">Youtube</h3>
-                        </div>
-                        <div class="px-8 ">
-                            <h2 class="text-2xl  font-bold">the road</h2>
-                            <p class="mt-2 text-gray-700 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <h3 class="font-bold text-base tracking-tighter text-black dark:text-white uppercase">Youtube</h3>
+                        </a>
+
+                        <div class="px-8 py-7">
+                            <h2 class="text-2xl text-black dark:text-white  font-bold">the road</h2>
+                            <p class="mt-2 text-gray-700  dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Molestias
                                 voluptatum magnam aspernatur hic nulla, tenetur iure? Sed error amet esse at aliquid
                                 officia
                                 libero tempora. Quo neque ut vitae tempora.</p>
 
-                            <div class="flex flex-row mt-4 items-center justify-between">
+                            <!-- <div class="flex flex-row mt-4 items-center justify-between">
                                 <div class="flex items-center justify-center gap-2">
                                     <img src="../assets/img/majid2.png" alt="" class="rounded-full w-16 h-16">
                                     <h3 class="font-bold mr-2">
@@ -203,17 +232,18 @@ font-Ubuntu">
 
                                 </div>
                                 <div class="text-gray-300">on october</div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
 
-        <section class="h-screen  ">
-            <div class="flex justify-center items-center  cursor-pointer gap-6 ">
-                <!-- <hr class="border border-gray-400 w-full px-10"> -->
+    </div>
+
+    <section class="bg-white dark:bg-slate-900  h-screen">
+        <!-- <div class="flex justify-center items-center  cursor-pointer gap-6 ">
+                
                 <div class="">
                     <hr class="border w-full border-black">
                 </div>
@@ -226,27 +256,53 @@ font-Ubuntu">
                 <h3 onclick="tiga()"
                     class="w-14 bg-green-900 text-center text-white rounded-lg hover:bg-white hover:text-black hover:ring-2 hover:ring-green-900 hover:scale-110 duration-500">
                     3</h3>
-                <!-- <hr class="border border-gray-400 w-full"> -->
+                
+            </div> -->
+
+        <div class="swiper text-black dark:text-white bg-white dark:bg-slate-900">
+
+            <div class="swiper-wrapper ">
+
+                <div class="swiper-slide">
+                    
+                </div>
+                <div class="swiper-slide">
+                   
+                </div>
+                <div class="swiper-slide">
+                    
+                </div>
             </div>
-            <div class="">
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+
+        <swiper-container class="mySwiper bg-white  dark:bg-slate-900" init="false">
+            <swiper-slide >
                 <div class="md:px-14 px-4">
                     <div id="satu" class="flex items-center justify-center  mt-10 flex-col gap-24 mb-28">
                         <div class="md:flex  items-center justify-center" id="satu">
-                            <div class="md:w-full   rounded-xl shadow-xl py-4 ">
+                            <div class="md:w-full   rounded-xl shadow-xl bg-white dark:bg-slate-700 ">
                                 <img src="../assets/img/150839470559e846d1e8a93.jpg" alt=""
                                     class="w-full rounded-t-xl h-[37rem] object-cover ">
                                 <div class="md:px-4 ">
                                     <a href="https://www.youtube.com/"
                                         class="flex  justify-start items-center  px-5 gap-0">
                                         <img src="../assets/img/Youtube.png" alt="" class="rounded-md w-16">
-                                        <h3 class="font-bold text-base tracking-tighter uppercase">Youtube</h3>
+                                        <h3 class="font-bold text-base tracking-tighter text-black dark:text-white uppercase">Youtube</h3>
                                     </a>
                                 </div>
-                                <div class="md:px-12  px-8">
-                                    <h2 class="md:text-2xl text-xl font-bold  ">Ceramah Habib Umar bin Hafidz di JIC
+                                <div class="md:px-12  px-8 " >
+                                    <h2 class="md:text-2xl text-xl font-bold  text-black dark:text-white">Ceramah Habib Umar bin Hafidz di
+                                        JIC
 
                                     </h2>
-                                    <div class="text-gray-700 text-xl font-light  text-left">
+                                    <div class="text-gray-700 text-xl font-light  text-left  dark:text-white pb-5">
                                         <p class="mt-8  ">"Islam Kita
                                             Menyatukan,
                                             Bukan Memecah Belah Umat"<br>
@@ -257,109 +313,139 @@ font-Ubuntu">
                                             milik Allah yang telah memilih kalian untuk memikul amanah
                                             yang agung ini.
                                             Semoga Allah menolong kalian agar bisa menjalankan amanah ini dengan
-                                            sebaik-baiknya. Wahai Allah rekatkanlah hati dan sanubari-sanubari kami ini
+                                            sebaik-baiknya. Wahai Allah rekatkanlah hati dan sanubari-sanubari
+                                            kami ini
                                             dengan
                                             hati
-                                            dan sanubari orang-orang yang dekat dan Engkau cintai dengan sanad yang kuat
+                                            dan sanubari orang-orang yang dekat dan Engkau cintai dengan sanad
+                                            yang kuat
                                             yang
                                             tersambung kepada mereka.</p>
                                         <p class=" mt-4">
                                             Hakikat keistimewaan dalam Islam adalah dengan memerdekakan
-                                            nafsu kita dan juga memerdekakan orang lain dari jajahan nafsu-nafsu mereka
+                                            nafsu kita dan juga memerdekakan orang lain dari jajahan nafsu-nafsu
+                                            mereka
                                             sendiri.
-                                            Allah telah menyebutkan kepada kita tentang perkara dakwah di jalan Allah
+                                            Allah telah menyebutkan kepada kita tentang perkara dakwah di jalan
+                                            Allah
                                             dengan
-                                            cara/metode dakwah yang diterima oleh Allah Swt. yang bermanfaat bagi
+                                            cara/metode dakwah yang diterima oleh Allah Swt. yang bermanfaat
+                                            bagi
                                             masyarakat.
                                             <br>
-                                            Pertama, memenuhi hati dengan pengagungan kepada Allah hingga ia takut dan
+                                            Pertama, memenuhi hati dengan pengagungan kepada Allah hingga ia
+                                            takut dan
                                             berharap
                                             hanya kepada Allah Swt.
                                             <br> Sesungguhnya Allah Swt mengatur slogan ini di lidahnya para
-                                            rasul seperti tercantum dalam Al-Qur'an: وَمَا أَسْأَلُكُمْ عَلَيْهِ مِنْ
+                                            rasul seperti tercantum dalam Al-Qur'an: وَمَا أَسْأَلُكُمْ عَلَيْهِ
+                                            مِنْ
                                             أَجْرٍ
                                             ۖ
                                             إِنْ
-                                            أَجْرِيَ إِلَّا عَلَىٰ رَبِّ الْعَالَمِينَ "Dan aku sekali-kali tidak
+                                            أَجْرِيَ إِلَّا عَلَىٰ رَبِّ الْعَالَمِينَ "Dan aku sekali-kali
+                                            tidak
                                             meminta
                                             upah
-                                            kepadamu atas ajakan-ajakan itu; upahku tidak lain hanyalah dari Tuhan
+                                            kepadamu atas ajakan-ajakan itu; upahku tidak lain hanyalah dari
+                                            Tuhan
                                             semesta
                                             alam."
                                             (QS. asy-Syu'ara ayat 109, 127, 145, 164 dan 180).
                                         </p>
                                         <p class=" mt-4">
                                             Allah memuji orang-orang yang
-                                            menyampaikan risalah-Nya dengan takut hanya kepada Allah dan menjadikan
+                                            menyampaikan risalah-Nya dengan takut hanya kepada Allah dan
+                                            menjadikan
                                             Allah
                                             sebaik-baik perlindungan: الَّذِينَ يُبَلِّغُونَ رِسَالَاتِ اللَّهِ
                                             وَيَخْشَوْنَهُ
                                             وَلَا
-                                            يَخْشَوْنَ أَحَدًا إِلَّا اللَّهَ ۗ وَكَفَىٰ بِاللَّهِ حَسِيبًا "(Yaitu)
+                                            يَخْشَوْنَ أَحَدًا إِلَّا اللَّهَ ۗ وَكَفَىٰ بِاللَّهِ حَسِيبًا
+                                            "(Yaitu)
                                             orang-orang
-                                            yang menyampaikan risalah-risalah Allah, mereka takut kepada-Nya dan mereka
+                                            yang menyampaikan risalah-risalah Allah, mereka takut kepada-Nya dan
+                                            mereka
                                             tiada
                                             merasa
-                                            takut kepada seorang(pun) selain kepada Allah. Dan cukuplah Allah sebagai
+                                            takut kepada seorang(pun) selain kepada Allah. Dan cukuplah Allah
+                                            sebagai
                                             perlindungan."
                                             (QS. al-Ahzab ayat 39).
                                             <br> Sesungguhnya yang patut menyandang dakwah di jalan Allah adalah
-                                            orang yang hatinya berharap dan takut hanya kepada Allah. Dan selama di
+                                            orang yang hatinya berharap dan takut hanya kepada Allah. Dan selama
+                                            di
                                             dalam
                                             hatinya
-                                            masih ada titik harapan kepada selain Allah maka pasti dia tidak akan
+                                            masih ada titik harapan kepada selain Allah maka pasti dia tidak
+                                            akan
                                             selamat
                                             dari
                                             kekacauan dalam dakwahnya.
                                         </p>
                                         <p class=" mt-4">
                                             Baik disadari maupun tanpa disadari ada kepentingan demi
-                                            sesuatu yang diharapkan selain Allah atau demi kekhawatiran selain khawatir
+                                            sesuatu yang diharapkan selain Allah atau demi kekhawatiran selain
+                                            khawatir
                                             kepada
-                                            Allah. Dan kita pun membaca wahyu Allah di dalam metode dakwah yang benar,
+                                            Allah. Dan kita pun membaca wahyu Allah di dalam metode dakwah yang
+                                            benar,
                                             Allah
-                                            memerintahkan kepada Nabi Musa dan Nabi Harun: اذْهَبَا إِلَىٰ فِرْعَوْنَ
+                                            memerintahkan kepada Nabi Musa dan Nabi Harun: اذْهَبَا إِلَىٰ
+                                            فِرْعَوْنَ
                                             إِنَّهُ
                                             طَغَىٰ
-                                            فَقُولَا لَهُ قَوْلًا لَّيِّنًا "Pergilah kalian berdua kepada Fir'aun,
+                                            فَقُولَا لَهُ قَوْلًا لَّيِّنًا "Pergilah kalian berdua kepada
+                                            Fir'aun,
                                             sesungguhnya
                                             di
                                             telah melampaui batas.
-                                            <br> Maka berbicaralah kepadanya dengan penyampaian yang lembut." (QS.
+                                            <br> Maka berbicaralah kepadanya dengan penyampaian yang lembut."
+                                            (QS.
                                             Thaha ayat 43-44). Sesungguhnya akal-akal yang berpikiran bahwa
                                             'sesungguhnya
                                             engkau
-                                            belum melaksanakan nahi munkar apabila engkau tidak berucap dengan kata-kata
+                                            belum melaksanakan nahi munkar apabila engkau tidak berucap dengan
+                                            kata-kata
                                             yang
                                             kasar
-                                            dan keras", maka ucapan dan pemikiran itu bertentangan dengan wahyu Allah.
+                                            dan keras", maka ucapan dan pemikiran itu bertentangan dengan wahyu
+                                            Allah.
                                         </p>
 
                                         <p class=" mt-7">
                                             Dan semuanya dikumpulkan di barisan Nabi Muhammad Saw.
-                                            Sesungguhnya barusan para guru kita dan para wakil kita telah duduk bersama,
+                                            Sesungguhnya barusan para guru kita dan para wakil kita telah duduk
+                                            bersama,
                                             bersepakat
-                                            untuk kemaslahatan ummat yang perlu segera kita realisasikan bersama. Dan
+                                            untuk kemaslahatan ummat yang perlu segera kita realisasikan
+                                            bersama. Dan
                                             semua
-                                            poin-poin yang telah kita sepakati tadi adalah benih yang akan membuahkan
+                                            poin-poin yang telah kita sepakati tadi adalah benih yang akan
+                                            membuahkan
                                             menolak
                                             balak
-                                            dan musibah dari ummat ini dan mendatangkan kemanfaatan yang besar, apabila
+                                            dan musibah dari ummat ini dan mendatangkan kemanfaatan yang besar,
+                                            apabila
                                             benih
                                             ini
                                             kita sirami dengan tiga hal; kejujuran, keikhlasan dan kesungguhan.
                                         </p>
                                         <p class=" mt-7">
                                             Semoga Allah
-                                            memberkahi benih yang baru saja kita tanami bersama. Memberikan taufiq di
+                                            memberkahi benih yang baru saja kita tanami bersama. Memberikan
+                                            taufiq di
                                             dalam
-                                            menyiraminya. Dan memberkahi buah yang akan keluar darinya. Dan Allah
+                                            menyiraminya. Dan memberkahi buah yang akan keluar darinya. Dan
+                                            Allah
                                             perlihatkan
                                             kepada
-                                            kita semua buah darinya, di dunia dan akhirat. Aamiin. <br><br>*Disampaikan
+                                            kita semua buah darinya, di dunia dan akhirat. Aamiin.
+                                            <br><br>*Disampaikan
                                             oleh
                                             Habib Umar bin
-                                            Hafidz dalam acara Jalsatuddu'at I di Jakarta Islamic Center (JIC), Jakarta
+                                            Hafidz dalam acara Jalsatuddu'at I di Jakarta Islamic Center (JIC),
+                                            Jakarta
                                             Utara,
                                             Ahad
                                             15 Oktober 2017.
@@ -371,398 +457,504 @@ font-Ubuntu">
 
                                     </div>
 
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div id="dua" class=" md:px-14 px-4 items-center justify-center  mt-10 flex-col gap-24 ">
+                    <div class="md:flex  items-center justify-center " id="satu">
+                        <div class="md:w-full   rounded-xl shadow-xl  bg-white dark:bg-slate-700">
+                            <img src="../assets/img/yazid-abdul-qadir-jawas.jpg" alt=""
+                                class="w-full rounded-t-xl h-[37rem] object-cover ">
+                            <div class="md:px-4 ">
+                                <a href="https://www.youtube.com/"
+                                    class="flex  justify-start items-center  px-5 gap-0">
+                                    <img src="../assets/img/Youtube.png" alt="" class="rounded-md w-16">
+                                    <h3 class="font-bold text-base tracking-tighter text-black dark:text-white uppercase">Youtube</h3>
+                                </a>
+                            </div>
+                            <div class="md:px-12 px-8 ">
+                                <h2 class="text-2xl  font-bold  text-black dark:text-white">Ustad yazid bin abdul qadir jawas
+                                </h2>
+                                <div class="text-gray-700 text-xl font-light  dark:text-white text-left pb-5">
+                                    <p class="mt-8  ">CERAMAH SINGKAT
+                                        TENTANG
+                                        ILMU: ISLAM AGAMA ILMU<br>
+                                    <p class=" mt-4"> Ikhwani fiddin a’azza
+                                        kumullah,
+
+                                        Kepada kaum muslimin dan muslimat, kepada pemirsa TV Rodja dan pendengar
+                                        Radio Rodja
+                                        yang mudah-mudahan dirahmati oleh Allah Subhanahu wa Ta’ala.
+                                        Alhamdulillah kita
+                                        bersyukur kepada Allah atas segala nikmat yang Allah karuniakan kepada
+                                        kita dan kita
+                                        bersyukur diberikan nikmat Islam.
+                                        <br>
+                                        Yang saya akan bahas dalam ceramah singkat ini, yaitu kita harus
+                                        mengetahui bahwa
+                                        agama
+                                        Islam ini adalah agama ilmu. Sebab kita tidak akan tahu tentang agama
+                                        ini kecuali
+                                        dengan
+                                        ilmu.
+
+                                        Yang pertama, dengan wahyu Nabi
+                                    </p>
+                                    <p class=" mt-4">
+                                        Yang pertama, dengan wahyu Nabi Muhammad Shallallahu ‘Alaihi wa Sallam.
+                                        Nabi
+                                        Muhammad
+                                        Shallallahu ‘Alaihi wa Sallam mendapatkan wahyu dari Allah Subhanahu wa
+                                        Ta’ala, yang
+                                        Allah turunkan Al-Qur’an selama 23 tahun. Kemudian Nabi menyampaikan
+                                        kepada para
+                                        sahabat
+                                        Radhiyallahu ‘Anhum Ajma’in, kemudian sahabat menyampaikan kepada
+                                        Tabi’in, sampai
+                                        kepada
+                                        kita.
+                                    </p>
+                                    <p class=" mt-4">
+
+                                        Kita harus belajar tentang agama ini. Karena pada hakikatnya manusia
+                                        mempunyai sifat
+                                        bodoh, tidak tahu agama. Allah Subhanahu wa Ta’ala menjelaskan di dalam
+                                        surah
+                                        Al-Ahzab,
+                                        surah 33 ayat 72, Allah berfirman:
+
+                                        إِنَّا عَرَضْنَا الْأَمَانَةَ عَلَى السَّمَاوَاتِ وَالْأَرْضِ
+                                        وَالْجِبَالِ
+                                        فَأَبَيْنَ
+                                        أَن يَحْمِلْنَهَا وَأَشْفَقْنَ مِنْهَا وَحَمَلَهَا الْإِنسَانُ ۖ إِنَّهُ
+                                        كَانَ
+                                        ظَلُومًا
+                                        جَهُولًا ﴿٧٢﴾
+
+                                        “Sesungguhnya Kami telah mengemukakan amanat kepada langit, bumi dan
+                                        gunung-gunung,
+                                        maka
+                                        semuanya enggan untuk memikul amanat itu dan mereka khawatir akan
+                                        mengkhianatinya,
+                                        dan
+                                        dipikullah amanat itu oleh manusia. Sesungguhnya manusia itu amat dzalim
+                                        dan amat
+                                        bodoh,” (QS. Al-Ahzab[33]: 72)
+                                    </p>
+                                    <p class=" mt-4">
+                                        Allah menyebutkan di dalam surat Al-Ahzab ayat 72 ini bahwa manusia
+                                        sangat dzalim
+                                        dan
+                                        sangat bodoh. Kalau manusia sangat dzalim, manusia sangat bodoh, maka
+                                        dia harus
+                                        belajar
+                                        <br>
+                                        tentang agama ini. Supaya hilang kebodohan. Begitu juga dia harus
+                                        mentauhidkan
+                                        Allah,
+                                        supaya hilang kedzaliman. Karena kalau kita bicara soal keadilan,
+                                        keadilan yang
+                                        paling
+                                        <br>
+                                        adil adalah tauhid. Sedangkan kedzaliman yang paling dzalim adalah
+                                        syirik. Maka
+                                        manusia
+                                        disuruh belajar.
+                                    </p>
+
+                                    <p class=" mt-7">
+                                        Dan semuanya dikumpulkan di barisan Nabi Muhammad Saw.
+                                        Sesungguhnya barusan para guru kita dan para wakil kita telah duduk
+                                        bersama,
+                                        bersepakat
+                                        untuk kemaslahatan ummat yang perlu segera kita realisasikan bersama.
+                                        Dan semua
+                                        <br>
+                                        poin-poin yang telah kita sepakati tadi adalah benih yang akan
+                                        membuahkan menolak
+                                        balak
+                                        dan musibah dari ummat ini dan mendatangkan kemanfaatan yang besar,
+                                        apabila benih
+                                        ini
+                                        kita sirami dengan tiga hal; kejujuran, keikhlasan dan kesungguhan.
+                                    </p>
+                                    <p class=" mt-7">
+                                        Semoga Allah
+                                        memberkahi benih yang baru saja kita tanami bersama. Memberikan taufiq
+                                        di dalam
+                                        menyiraminya. Dan memberkahi buah yang akan keluar darinya. Dan Allah
+                                        perlihatkan
+                                        kepada
+                                        kita semua buah darinya, di dunia dan akhirat. Aamiin.
+                                        <br><br>
+                                        
+                                    </p>
+
+
+
+
+
+                                    </p>
+
                                     <!-- <div class="flex flex-row mt-4 items-center justify-between">
                                         <div class="flex items-center justify-center gap-2">
                                             <img src="../assets/img/majid2.png" alt="" class="rounded-full w-16 h-16">
                                             <h3 class="font-bold mr-2">
                                                 Fatih hijri
                                             </h3>
-
+    
                                         </div>
                                         <div class="text-gray-300">on october</div>
                                     </div> -->
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-
-
-                </div>
-                <div id="dua" class="hidden md:px-14 px-4 items-center justify-center  mt-10 flex-col gap-24 mb-28">
-                    <div class="md:flex  items-center justify-center" id="satu">
-                        <div class="md:w-full   rounded-xl shadow-xl py-4 ">
-                            <img src="../assets/img/yazid-abdul-qadir-jawas.jpg" alt=""
-                                class="w-full rounded-t-xl h-[37rem] object-cover ">
-                            <div class="md:px-4 ">
-                                <a href="https://www.youtube.com/" class="flex  justify-start items-center  px-5 gap-0">
-                                    <img src="../assets/img/Youtube.png" alt="" class="rounded-md w-16">
-                                    <h3 class="font-bold text-base tracking-tighter uppercase">Youtube</h3>
-                                </a>
-                            </div>
-                            <div class="md:px-12 px-8 ">
-                                <h2 class="text-2xl  font-bold  ">Ustad yazid bin abdul qadir jawas
-                                </h2>
-                                <div class="text-gray-700 md:text-xl text-base font-light  text-left">
-                                <p class="mt-8  ">CERAMAH SINGKAT
-                                    TENTANG
-                                    ILMU: ISLAM AGAMA ILMU<br>
-                                <p class=" mt-4"> Ikhwani fiddin a’azza
-                                    kumullah,
-
-                                    Kepada kaum muslimin dan muslimat, kepada pemirsa TV Rodja dan pendengar Radio Rodja
-                                    yang mudah-mudahan dirahmati oleh Allah Subhanahu wa Ta’ala. Alhamdulillah kita
-                                    bersyukur kepada Allah atas segala nikmat yang Allah karuniakan kepada kita dan kita
-                                    bersyukur diberikan nikmat Islam.
-                                    <br>
-                                    Yang saya akan bahas dalam ceramah singkat ini, yaitu kita harus mengetahui bahwa
-                                    agama
-                                    Islam ini adalah agama ilmu. Sebab kita tidak akan tahu tentang agama ini kecuali
-                                    dengan
-                                    ilmu.
-
-                                    Yang pertama, dengan wahyu Nabi
-                                </p>
-                                <p class=" mt-4">
-                                    Yang pertama, dengan wahyu Nabi Muhammad Shallallahu ‘Alaihi wa Sallam. Nabi
-                                    Muhammad
-                                    Shallallahu ‘Alaihi wa Sallam mendapatkan wahyu dari Allah Subhanahu wa Ta’ala, yang
-                                    Allah turunkan Al-Qur’an selama 23 tahun. Kemudian Nabi menyampaikan kepada para
-                                    sahabat
-                                    Radhiyallahu ‘Anhum Ajma’in, kemudian sahabat menyampaikan kepada Tabi’in, sampai
-                                    kepada
-                                    kita.
-                                </p>
-                                <p class=" mt-4">
-
-                                    Kita harus belajar tentang agama ini. Karena pada hakikatnya manusia mempunyai sifat
-                                    bodoh, tidak tahu agama. Allah Subhanahu wa Ta’ala menjelaskan di dalam surah
-                                    Al-Ahzab,
-                                    surah 33 ayat 72, Allah berfirman:
-
-                                    إِنَّا عَرَضْنَا الْأَمَانَةَ عَلَى السَّمَاوَاتِ وَالْأَرْضِ وَالْجِبَالِ
-                                    فَأَبَيْنَ
-                                    أَن يَحْمِلْنَهَا وَأَشْفَقْنَ مِنْهَا وَحَمَلَهَا الْإِنسَانُ ۖ إِنَّهُ كَانَ
-                                    ظَلُومًا
-                                    جَهُولًا ﴿٧٢﴾
-
-                                    “Sesungguhnya Kami telah mengemukakan amanat kepada langit, bumi dan gunung-gunung,
-                                    maka
-                                    semuanya enggan untuk memikul amanat itu dan mereka khawatir akan mengkhianatinya,
-                                    dan
-                                    dipikullah amanat itu oleh manusia. Sesungguhnya manusia itu amat dzalim dan amat
-                                    bodoh,” (QS. Al-Ahzab[33]: 72)
-                                </p>
-                                <p class=" mt-4">
-                                    Allah menyebutkan di dalam surat Al-Ahzab ayat 72 ini bahwa manusia sangat dzalim
-                                    dan
-                                    sangat bodoh. Kalau manusia sangat dzalim, manusia sangat bodoh, maka dia harus
-                                    belajar
-                                    <br>
-                                    tentang agama ini. Supaya hilang kebodohan. Begitu juga dia harus mentauhidkan
-                                    Allah,
-                                    supaya hilang kedzaliman. Karena kalau kita bicara soal keadilan, keadilan yang
-                                    paling
-                                    <br>
-                                    adil adalah tauhid. Sedangkan kedzaliman yang paling dzalim adalah syirik. Maka
-                                    manusia
-                                    disuruh belajar.
-                                </p>
-
-                                <p class=" mt-7">
-                                    Dan semuanya dikumpulkan di barisan Nabi Muhammad Saw.
-                                    Sesungguhnya barusan para guru kita dan para wakil kita telah duduk bersama,
-                                    bersepakat
-                                    untuk kemaslahatan ummat yang perlu segera kita realisasikan bersama. Dan semua
-                                    <br>
-                                    poin-poin yang telah kita sepakati tadi adalah benih yang akan membuahkan menolak
-                                    balak
-                                    dan musibah dari ummat ini dan mendatangkan kemanfaatan yang besar, apabila benih
-                                    ini
-                                    kita sirami dengan tiga hal; kejujuran, keikhlasan dan kesungguhan.
-                                </p>
-                                <p class=" mt-7">
-                                    Semoga Allah
-                                    memberkahi benih yang baru saja kita tanami bersama. Memberikan taufiq di dalam
-                                    menyiraminya. Dan memberkahi buah yang akan keluar darinya. Dan Allah perlihatkan
-                                    kepada
-                                    kita semua buah darinya, di dunia dan akhirat. Aamiin. <br><br>*Disampaikan oleh
-                                    Habib
-                                    Umar bin
-                                    Hafidz dalam acara Jalsatuddu'at I di Jakarta Islamic Center (JIC), Jakarta Utara,
-                                    Ahad
-                                    15 Oktober 2017.
-                                </p>
-
-
-
-
-
-                                </p>
-
-                                <!-- <div class="flex flex-row mt-4 items-center justify-between">
-                                    <div class="flex items-center justify-center gap-2">
-                                        <img src="../assets/img/majid2.png" alt="" class="rounded-full w-16 h-16">
-                                        <h3 class="font-bold mr-2">
-                                            Fatih hijri
-                                        </h3>
-
-                                    </div>
-                                    <div class="text-gray-300">on october</div>
-                                </div> -->
-                            </div>
-                            </div>
-                        </div>
                     </div>
 
                 </div>
-                <div id="tiga" class="hidden md:px-14 px-4 items-center justify-center  mt-10 flex-col gap-24 mb-28">
+            </swiper-slide>
+            <swiper-slide>
+                <div id="tiga" class=" md:px-14 px-4 items-center justify-center  mt-10 flex-col gap-24 ">
                     <div class="md:flex  items-center justify-center" id="satu">
-                        <div class="md:w-full   rounded-xl shadow-xl py-4 ">
+                        <div class="md:w-full   rounded-xl shadow-xl bg-white dark:bg-slate-700 ">
                             <img src="../assets/img/ustud.jpeg" alt=""
                                 class="w-full rounded-t-xl h-[37rem] object-cover ">
                             <div class="md:px-4 ">
-                                <a href="https://www.youtube.com/" class="flex  justify-start items-center  px-5 gap-0">
+                                <a href="https://www.youtube.com/"
+                                    class="flex  justify-start items-center  px-5 gap-0">
                                     <img src="../assets/img/Youtube.png" alt="" class="rounded-md w-16">
-                                    <h3 class="font-bold text-base tracking-tighter uppercase">Youtube</h3>
+                                    <h3 class="font-bold text-base tracking-tighter dark:text-white uppercase">Youtube</h3>
                                 </a>
                             </div>
                             <div class="md:px-12 px-8 ">
-                                <h2 class="text-2xl  font-bold  ">Ustad Khalid basalamah
+                                <h2 class="text-2xl  font-bold text-black dark:text-white ">Ustad Khalid basalamah
                                 </h2>
-                                <div class="md:text-xl text-base font-light  text-left text-gray-700 ">
-                                <p class="mt-8   ">Salafi ala Basalamah
-                                    dan
-                                    Hijrah Kaum Muda Takut Dosa
+                                <div class="text-gray-700 text-xl font-light dark:text-white text-left pb-5">
+                                    <p class="mt-8   ">Salafi ala Basalamah
+                                        dan
+                                        Hijrah Kaum Muda Takut Dosa
 
-                                    <br>
-                                <p class=" mt-4"> "Alhamdulillah penuh,
-                                    banyak yang mau tobat nih," canda Khalid sesaat sebelum memberikan kajian yang
-                                    disambut
-                                    gelak tawa.
-                                    <br>
-                                    Khalid lantas berceramah dengan tema "Dosa-dosa Besar ke-117". Isi ceramah pria
-                                    kelahiran Makassar, Sulawesi Selatan tersebut tidaklah semenakutkan seperti tema
-                                    yang
-                                    <br>
-                                    ditentukan. Khalid justru mengemas kajian tersebut dengan cara yang santai dan mudah
-                                    dicerna anak muda yang mendengarnya.
-
-
-
-                                    Yang pertama, dengan wahyu Nabi
-                                </p>
-                                <p class="  mt-4">
-                                    Khalid lantas berceramah dengan tema "Dosa-dosa Besar ke-117". Isi ceramah pria
-                                    kelahiran Makassar, Sulawesi Selatan tersebut tidaklah semenakutkan seperti tema
-                                    yang
-                                    <br>
-                                    ditentukan. Khalid justru mengemas kajian tersebut dengan cara yang santai dan mudah
-                                    dicerna anak muda yang mendengarnya.
-
-
-                                </p>
-                                <p class=" mt-4">
-                                    <br><br>
-                                    "Untuk itu kami sudah sepakat dakwahnya adalah dakwah salaf atau sunnah. Dakwah yang
-                                    murni Islamnya. Maka itu yang akhirnya membuat ketemu di satu titik dan
-                                    Alhamdulillah
-                                    diterima oleh anak muda," kata dia.
-
-
-                                </p>
-                                <p class=" mt-4">
-                                    Allah menyebutkan di dalam surat Al-Ahzab ayat 72 ini bahwa manusia sangat dzalim
-                                    dan
-                                    sangat bodoh. Kalau manusia sangat dzalim, manusia sangat bodoh, maka dia harus
-                                    belajar
-                                    <br><br>
-                                    tentang agama ini. Supaya hilang kebodohan. Begitu juga dia harus mentauhidkan
-                                    Allah,
-                                    supaya hilang kedzaliman. Karena kalau kita bicara soal keadilan, keadilan yang
-                                    paling
-                                    <br><br>
-                                    adil adalah tauhid. Sedangkan kedzaliman yang paling dzalim adalah syirik. Maka
-                                    manusia
-                                    disuruh belajar.
-                                </p>
-
-                                <p class=" mt-7">
-
-                                <p class=" mt-7">
-                                    "Dulu di sini semua aliran masuk, ada Jamaah Tabligh, sekte Syiah, Tasswauf sampe
-                                    kejawen semuanya masuk sini lah. Tapi sekarang semuanya Salafi, yang lama saya
-                                    bredel
-                                    semua karena bertentangan," kata Fauzar kepada CNNIndonesia.com.
-                                    <br><br>
-                                    Dampak kehadiran para ustaz Salafi di Masjid Nurul Iman pun disambut positif oleh
-                                    jamaah. Fauzar mencatat terdapat lonjakan jamaah yang sangat tinggi di masjid 4.000
-                                    meter persegi itu, khususnya anak muda yang mau hijrah.
-
-
-                                </p>
+                                        <br>
+                                    <p class=" mt-4"> "Alhamdulillah penuh,
+                                        banyak yang mau tobat nih," canda Khalid sesaat sebelum memberikan
+                                        kajian yang
+                                        disambut
+                                        gelak tawa.
+                                        <br>
+                                        Khalid lantas berceramah dengan tema "Dosa-dosa Besar ke-117". Isi
+                                        ceramah pria
+                                        kelahiran Makassar, Sulawesi Selatan tersebut tidaklah semenakutkan
+                                        seperti tema
+                                        yang
+                                        <br>
+                                        ditentukan. Khalid justru mengemas kajian tersebut dengan cara yang
+                                        santai dan mudah
+                                        dicerna anak muda yang mendengarnya.
 
 
 
+                                        Yang pertama, dengan wahyu Nabi
+                                    </p>
+                                    <p class="  mt-4">
+                                        Khalid lantas berceramah dengan tema "Dosa-dosa Besar ke-117". Isi
+                                        ceramah pria
+                                        kelahiran Makassar, Sulawesi Selatan tersebut tidaklah semenakutkan
+                                        seperti tema
+                                        yang
+                                        <br>
+                                        ditentukan. Khalid justru mengemas kajian tersebut dengan cara yang
+                                        santai dan mudah
+                                        dicerna anak muda yang mendengarnya.
 
 
-                                </p>
+                                    </p>
+                                    <p class=" mt-4">
+                                        <br><br>
+                                        "Untuk itu kami sudah sepakat dakwahnya adalah dakwah salaf atau sunnah.
+                                        Dakwah yang
+                                        murni Islamnya. Maka itu yang akhirnya membuat ketemu di satu titik dan
+                                        Alhamdulillah
+                                        diterima oleh anak muda," kata dia.
 
-                                <!-- <div class="flex flex-row mt-4 items-center justify-between">
-                                    <div class="flex items-center justify-center gap-2">
-                                        <img src="../assets/img/majid2.png" alt="" class="rounded-full w-16 h-16">
-                                        <h3 class="font-bold mr-2">
-                                            Fatih hijri
-                                        </h3>
 
-                                    </div>
-                                    <div class="text-gray-300">on october</div>
-                                </div> -->
-                            </div>
+                                    </p>
+                                    <p class=" mt-4">
+                                        Allah menyebutkan di dalam surat Al-Ahzab ayat 72 ini bahwa manusia
+                                        sangat dzalim
+                                        dan
+                                        sangat bodoh. Kalau manusia sangat dzalim, manusia sangat bodoh, maka
+                                        dia harus
+                                        belajar
+                                        <br><br>
+                                        tentang agama ini. Supaya hilang kebodohan. Begitu juga dia harus
+                                        mentauhidkan
+                                        Allah,
+                                        supaya hilang kedzaliman. Karena kalau kita bicara soal keadilan,
+                                        keadilan yang
+                                        paling
+                                        <br><br>
+                                        adil adalah tauhid. Sedangkan kedzaliman yang paling dzalim adalah
+                                        syirik. Maka
+                                        manusia
+                                        disuruh belajar.
+                                    </p>
+
+                                    <p class=" mt-7">
+
+                                    <p class=" mt-7">
+                                        "Dulu di sini semua aliran masuk, ada Jamaah Tabligh, sekte Syiah,
+                                        Tasswauf sampe
+                                        kejawen semuanya masuk sini lah. Tapi sekarang semuanya Salafi, yang
+                                        lama saya
+                                        bredel
+                                        semua karena bertentangan," kata Fauzar kepada CNNIndonesia.com.
+                                        <br><br>
+                                        Dampak kehadiran para ustaz Salafi di Masjid Nurul Iman pun disambut
+                                        positif oleh
+                                        jamaah. Fauzar mencatat terdapat lonjakan jamaah yang sangat tinggi di
+                                        masjid 4.000
+                                        meter persegi itu, khususnya anak muda yang mau hijrah.
+
+
+                                    </p>
+
+
+
+
+
+                                    </p>
+
+                                    <!-- <div class="flex flex-row mt-4 items-center justify-between">
+                                        <div class="flex items-center justify-center gap-2">
+                                            <img src="../assets/img/majid2.png" alt="" class="rounded-full w-16 h-16">
+                                            <h3 class="font-bold mr-2">
+                                                Fatih hijri
+                                            </h3>
+    
+                                        </div>
+                                        <div class="text-gray-300">on october</div>
+                                    </div> -->
+                                </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
+            
+          </swiper-container>
 
 
-                <section class="h-screen" id="kontak">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                        <path fill="#14532d" fill-opacity="1"
-                            d="M0,288L48,266.7C96,245,192,203,288,208C384,213,480,267,576,245.3C672,224,768,128,864,96C960,64,1056,96,1152,133.3C1248,171,1344,213,1392,234.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                        </path>
-                    </svg>
-            
-                    <footer class=" flex items-end text-white box-border ">
-                        <div class="h-4/5 bg-green-900  w-full">
-            
-                            <div class="  flex md:flex-row flex-col px-14  py-20">
-                                <div class="md:w-5/12">
-            
-                                    <div class="  ">
-                                        <h3 class="font-bold text-3xl ">DailyMuslim</h3>
-                                        <p class="font-light text-2xl mt-5  md:px-0 px-5">Hubungi kami </p>
-                                    </div>
-            
-                                    <div class="flex md:flex-col flex-col justify-between items-start   md:mt-5 md:py-0 py-10">
-                                        <div class="   justify-center text-center flex  items-center py-4 px-5 gap-5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                                class="bi bi-geo-alt-fill " viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                                            </svg>
-                                            <div class="">
-                                                <p class="text-start font-medium text-white text-xl hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold  duration-300">
-                                                    +62 857-7666-3953
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class=" gap-5  justify-start text-start flex  items-center py-4 px-5 ">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                                class="bi bi-chat-dots-fill " viewBox="0 0 16 16">
-                                                <path
-                                                    d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                                            </svg>
-                                            <div class="">
-            
-                                                <p class="text-start font-medium text-white text-lg hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold  duration-300">
-                                                    Dailymuslim@gmail.com
-                                            </div>
+        <div class="text-black dark:text-white bg-white dark:bg-slate-900">
+
+
+
+
+
+            <section class="h-screen" id="kontak">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#14532d" fill-opacity="1"
+                        d="M0,288L48,266.7C96,245,192,203,288,208C384,213,480,267,576,245.3C672,224,768,128,864,96C960,64,1056,96,1152,133.3C1248,171,1344,213,1392,234.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                </svg>
+
+                <footer class=" flex items-end text-white box-border ">
+                    <div class="h-4/5 bg-green-900  w-full">
+
+                        <div class="  flex md:flex-row flex-col px-14  py-20">
+                            <div class="md:w-5/12">
+
+                                <div class="  ">
+                                    <h3 class="font-bold text-3xl ">DailyMuslim</h3>
+                                    <p class="font-light text-2xl mt-5  md:px-0 px-5">Hubungi kami </p>
+                                </div>
+
+                                <div
+                                    class="flex md:flex-col flex-col justify-between items-start   md:mt-5 md:py-0 py-10">
+                                    <div class="   justify-center text-center flex  items-center py-4 px-5 gap-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            fill="currentColor" class="bi bi-geo-alt-fill " viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                        </svg>
+                                        <div class="">
+                                            <p
+                                                class="text-start font-medium text-white text-xl hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold  duration-300">
+                                                +62 857-7666-3953
                                             </p>
                                         </div>
-                                        <div class="   justify-start text-start flex  items-start  py-4 px-5 gap-5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                                class="bi bi-telephone-fill " viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                                            </svg>
-                                            <div class="flex  ">
-            
-                                                <p class="text-start font-medium text-white text-base  hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold  duration-300">Jonggol, Kab. Bogor,
-                                                    Indonesia</p>
-                                            </div>
+                                    </div>
+                                    <div class=" gap-5  justify-start text-start flex  items-center py-4 px-5 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            fill="currentColor" class="bi bi-chat-dots-fill " viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                        </svg>
+                                        <div class="">
+
+                                            <p
+                                                class="text-start font-medium text-white text-lg hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold  duration-300">
+                                                Dailymuslim@gmail.com
+                                        </div>
+                                        </p>
+                                    </div>
+                                    <div class="   justify-start text-start flex  items-start  py-4 px-5 gap-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            fill="currentColor" class="bi bi-telephone-fill " viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                        </svg>
+                                        <div class="flex  ">
+
+                                            <p
+                                                class="text-start font-medium text-white text-base  hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold  duration-300">
+                                                Jonggol, Kab. Bogor,
+                                                Indonesia</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" md:w-1/2 ">
-                                    <h3 class="font-bold text-3xl md:px-5">Yang sering dilihat</h3>
-                                    <div class="flex flex-col gap-8 mt-8 px-8 font-semibold md:py-0 py-10">
-                                        <a href="jadwal.html"
-                                            class="font-medium text-xl hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold md:hover:text-xl duration-300 ">Jadwal
-                                            shalat</a>
-                                        <a href="profile.html"
-                                            class="font-medium text-xl hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold md:hover:text-xl duration-300">Profile
-                                            pemilik</a>
-                                        <a href="blog2.html"
-                                            class="font-medium text-xl  hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold md:hover:text-xl duration-300">Ceramah
-                                            Pilihan</a>
-                                        <a href="live.html"
-                                            class="font-medium text-xl hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold md:hover:text-xl duration-300 ">Live</a>
-            
-                                    </div>
+                            </div>
+                            <div class=" md:w-1/2 ">
+                                <h3 class="font-bold text-3xl md:px-5">Yang sering dilihat</h3>
+                                <div class="flex flex-col gap-8 mt-8 px-8 font-semibold md:py-0 py-10">
+                                    <a href="jadwal.html"
+                                        class="font-medium text-xl hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold md:hover:text-xl duration-300 ">Jadwal
+                                        shalat</a>
+                                    <a href="profile.html"
+                                        class="font-medium text-xl hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold md:hover:text-xl duration-300">Profile
+                                        pemilik</a>
+                                    <a href="blog2.html"
+                                        class="font-medium text-xl  hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold md:hover:text-xl duration-300">Ceramah
+                                        Pilihan</a>
+                                    <a href="live.html"
+                                        class="font-medium text-xl hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold md:hover:text-xl duration-300 ">Live</a>
+
                                 </div>
-                                <div class=" md:w-5/12 ">
-                                    <h3 class="font-bold text-3xl">Kirimkan pesan</h3>
-                                    <div class=" text-center flex flex-col gap-4 rounded-xl md:py-2 py-5">
-                                        <div class="flex flex-col gap-4 mt-4">
-                                            <input type="text" class="py-4 px-6 w-full  text-black rounded-xl"
-                                                placeholder="Ketikkan sesuatu">
-                                            <a href="" class="">
-                                                <div
-                                                    class="py-4 px-6 w-full bg-white text-black hover:scale-90 font-bold text-lg rounded-xl hover:bg-green-900 hover:ring-2 hover:text-white hover:ring-white duration-700 ">
-                                                    kirim Sekarang</div>
+                            </div>
+                            <div class=" md:w-5/12 ">
+                                <h3 class="font-bold text-3xl">Kirimkan pesan</h3>
+                                <div class=" text-center flex flex-col gap-4 rounded-xl md:py-2 py-5">
+                                    <div class="flex flex-col gap-4 mt-4">
+                                        <input type="text" class="py-4 px-6 w-full  text-black rounded-xl"
+                                            placeholder="Ketikkan sesuatu">
+                                        <a href="" class="">
+                                            <div
+                                                class="py-4 px-6 w-full bg-white text-black hover:scale-90 font-bold text-lg rounded-xl hover:bg-green-900 hover:ring-2 hover:text-white hover:ring-white duration-700 ">
+                                                kirim Sekarang</div>
+                                        </a>
+                                    </div>
+                                    <div class="flex flex-row justify-around mt-5">
+                                        <div class="bg-white rounded-xl ">
+                                            <a href="https://twitter.com/">
+                                                <img src="../assets/img/Social media logo-1.png" alt=""
+                                                    class="md:w-16 w-10">
                                             </a>
                                         </div>
-                                        <div class="flex flex-row justify-around mt-5">
-                                            <div class="bg-white rounded-xl ">
-                                                <a href="https://twitter.com/">
-                                                    <img src="../assets/img/Social media logo-1.png" alt="" class="md:w-16 w-10">
-                                                </a>
-                                            </div>
-                                            <div class="bg-white rounded-xl">
-            
-                                                <a href="https://www.facebook.com/">
-                                                    <img src="../assets/img/Social media logo-2.png" alt="" class="md:w-16 w-10">
-                                                </a>
-                                            </div>
-                                            <div class="bg-white rounded-xl">
-                                                <a href="https://www.google.com/">
-                                                    <img src="../assets/img/ggogle.png" alt="" class="md:w-16 w-10">
-                                                </a>
-                                            </div>
-            
-            
+                                        <div class="bg-white rounded-xl">
+
+                                            <a href="https://www.facebook.com/">
+                                                <img src="../assets/img/Social media logo-2.png" alt=""
+                                                    class="md:w-16 w-10">
+                                            </a>
                                         </div>
+                                        <div class="bg-white rounded-xl">
+                                            <a href="https://www.google.com/">
+                                                <img src="../assets/img/ggogle.png" alt="" class="md:w-16 w-10">
+                                            </a>
+                                        </div>
+
+
                                     </div>
-                                </div>
-                            </div>
-            
-                            <div class="social flex-col">
-                                <img src="" alt="" class="">
-                            </div>
-                            <div class="   ">
-                                <div class=" bg-gray-800 w-full h-16    md:py-4 py-5">
-                                    <h3 class="font-medium md:text-base text-sm  text-center  flex justify-center items-center ">
-                                        Created
-                                        By Student From SMK MAdinatul Qur'an 2023 |
-                                        Daily Muslim</h3>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="social flex-col">
+                            <img src="" alt="" class="">
+                        </div>
+                        <div class="   ">
+                            <div class=" bg-gray-800 w-full h-16    md:py-4 py-5">
+                                <h3
+                                    class="font-medium md:text-base text-sm  text-center  flex justify-center items-center ">
+                                    Created
+                                    By Student From SMK MAdinatul Qur'an 2023 |
+                                    Daily Muslim</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </footer>
+            </section>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <!-- <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
+                Delay: 1000,
+                disableOnInteraction: false
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script> -->
+    <script>
+        const swiperEl = document.querySelector('swiper-container')
+    
+        const params = {
+          injectStyles: [`
+          .swiper-pagination-bullet {
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+            color: #fff;
             
-                    </footer>
-                </section>
-
-            </div>
-
-        </section>
-
-
-
-    </main>
-
-
-
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.2);
+          }
+    
+          .swiper-pagination-bullet-active {
+            color: #fff;
+            background: #007aff;
+          }
+          `],
+          pagination: {
+            clickable: true,
+            renderBullet: function (index, className) {
+              return '<span class="' + className + '">' + (index + 1) + "</span>";
+            },
+          },
+        }
+    
+        Object.assign(swiperEl, params)
+    
+        swiperEl.initialize();
+      </script>
 
 
 
