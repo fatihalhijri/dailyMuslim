@@ -61,14 +61,38 @@ font-Ubuntu">
                 </ul>
             </nav>
         </div>
+        <div class="fixed  md:z-50 z-30">
+            <div class="relative md:mt-[47rem] mt-[43rem] items-center md:right-2 left-3">
+
+                <div class="flex relative md:flex-row flex-row items-center gap-6">
+
+                    <div class="flex flex-col  justify-center  py-6 md:pl-0  pl-3">
+
+
+                        <div class="flex">
+                            <span class="mr-2 text-sm text-slate-500">light</span>
+                            <input type="checkbox" class="hidden" id="dark-toggle" />
+                            <label for="dark-toggle">
+                                <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                                    <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"
+                                        onclick="">
+                                    </div>
+                                </div>
+                            </label>
+                            <span class="ml-2 text-sm text-slate-500">dark</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </header>
-    <section class="h-screen ">
-        <div class="">
+    <section class="h-screen bg-white dark:bg-slate-900">
+        <div class="bg-white dark:bg-slate-900">
             <div class="bg-gradient-to-br from-violet-500 to-red-500 w-full h-80 justify-start">
 
-                <div class="absolute  flex md:justify-between  md:gap-[71rem] gap-[12.2rem]">
+                <!-- <div class="absolute  flex md:justify-between  md:gap-[71rem] gap-[12.2rem]">
                     <img src="../assets/img/drif g.png" alt="" class="md:w-56 w-36" data-aos="fade-right">
                     <img src="../assets/img/drif g.png" alt="" class="md:w-56 w-36" data-aos="fade-left">
                 </div>
@@ -80,23 +104,23 @@ font-Ubuntu">
                     class="absolute md:hidden flex justify-between  md:gap-[72rem] gap-[12.2rem]  md:mt-[10.2rem] mt-[6.7rem]">
                     <img src="../assets/img/drif g.png" alt="" class="md:w-56 w-36" data-aos="fade-right">
                     <img src="../assets/img/drif g.png" alt="" class="md:w-56 w-36" data-aos="fade-left">
-                </div>
+                </div> -->
                 <div class="flex h-full w-full items-center justify-center ">
-                    <h3 class="text-center font-extrabold text-black md:text-4xl text-2xl z-20" data-aos="fade-up">
+                    <h3 class="text-center font-extrabold text-black md:text-4xl dark:text-white text-2xl z-20" data-aos="fade-up">
                         Profile Pembuat Website
                     </h3>
 
                 </div>
 
             </div>
-            <div class=" relative z-20">
+            <div class=" relative z-20 ">
                 
                 <div class="">
                     <div class=" md:right-[45.5rem] right-[13rem] md:mt-[4rem] mt-[6rem] absolute"
                         data-aos="fade-right">
                         <div
                             class="md:w-60 w-48 md:px-4 px-4  md:py-6 py-4 shadow-xl drop-shadow-lg rounded-lg bg-pink-300 flex items-center absolute hover:scale-110 duration-500">
-                            <h3 class="text-center md:text-lg text-sm font-light ">Kamu bisa menghubungi pembuat website
+                            <h3 class="text-center md:text-lg text-sm font-light text-black dark:text-white">Kamu bisa menghubungi pembuat website
                                 daily muslim si bawah ini</h3>
 
                         </div>
@@ -104,7 +128,7 @@ font-Ubuntu">
                     <div class=" md:right-[69rem] right-[28rem] md:mt-[22rem] mt-[24rem] absolute" data-aos="fade-left">
                         <div
                             class="md:w-60 w-48 md:px-4 px-4  md:py-6 py-4 shadow-xl drop-shadow-lg rounded-lg bg-blue-300 flex items-center absolute hover:scale-110 duration-500">
-                            <h3 class="text-center md:text-lg text-sm font-light ">Bisa juga untuk menanyakan hal-hal
+                            <h3 class="text-center md:text-lg text-sm font-light text-black dark:text-white">Bisa juga untuk menanyakan hal-hal
                                 penting lainnya..</h3>
 
                         </div>
@@ -115,7 +139,7 @@ font-Ubuntu">
                     </div>
                 </div>
             </div>
-            <div class="flex justify-center mt-20 md:px-0 px-8 ">
+            <div class="flex justify-center mt-20 md:px-0 px-8 bg-white dark:bg-slate-900">
                 <div
                     class=" drop-shadow-lg md:w-2/3 w-full   flex justify-center shadow-xl py-8 rounded-3xl bg-gradient-to-tr from-pink-400  to-blue-500">
                     
@@ -130,10 +154,10 @@ font-Ubuntu">
             
         </div>
     </section>
-    <section class=" ">
+    <section class=" bg-white dark:bg-slate-900">
         <div class="">
-            <div class="mt-52" data-aos="fade-up">
-                <h3 class="text-center font-bold md:text-4xl text-2xl">
+            <div class="pt-32" data-aos="fade-up">
+                <h3 class="text-center font-bold md:text-4xl text-black dark:text-white text-2xl">
                     Profile Pembuat DailyMuslim
                 </h3>
             </div>
@@ -240,7 +264,7 @@ font-Ubuntu">
 
     </section>
     
-    <section class="h-screen" id="kontak">
+    <section class="h-screen bg-white dark:bg-slate-900" id="kontak">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#14532d" fill-opacity="1"
                 d="M0,288L48,266.7C96,245,192,203,288,208C384,213,480,267,576,245.3C672,224,768,128,864,96C960,64,1056,96,1152,133.3C1248,171,1344,213,1392,234.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
