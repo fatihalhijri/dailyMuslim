@@ -205,3 +205,78 @@ darkToggle.addEventListener('click', function () {
     localStorage.theme = 'light';
   }
 });
+
+
+function munculkan1() {
+    document.getElementById('tampilan-poup').classList.add('flex')
+    document.getElementById('tampilan-poup').classList.remove('hidden')
+}
+
+function keluar1() {
+    document.getElementById('tampilan-poup').classList.add('hidden')
+    document.getElementById('tampilan-poup').classList.remove('flex')
+}
+
+function munculkan2() {
+    document.getElementById('tampilan-poup2').classList.add('flex')
+    document.getElementById('tampilan-poup2').classList.remove('hidden')
+}
+
+function keluar2() {
+    document.getElementById('tampilan-poup2').classList.add('hidden')
+    document.getElementById('tampilan-poup2').classList.remove('flex')
+}
+
+
+function munculkan3() {
+    document.getElementById('tampilan-poup3').classList.add('flex')
+    document.getElementById('tampilan-poup3').classList.remove('hidden')
+}
+
+function keluar3() {
+    document.getElementById('tampilan-poup3').classList.add('hidden')
+    document.getElementById('tampilan-poup3').classList.remove('flex')
+}
+
+function munculkan4() {
+    document.getElementById('tampilan-poup4').classList.add('flex')
+    document.getElementById('tampilan-poup4').classList.remove('hidden')
+}
+
+function keluar4() {
+    document.getElementById('tampilan-poup4').classList.add('hidden')
+    document.getElementById('tampilan-poup4').classList.remove('flex')
+}
+
+function munculkan5() {
+    document.getElementById('tampilan-poup5').classList.add('flex')
+    document.getElementById('tampilan-poup5').classList.remove('hidden')
+}
+
+function keluar5() {
+    document.getElementById('tampilan-poup5').classList.add('hidden')
+    document.getElementById('tampilan-poup5').classList.remove('flex')
+}
+
+
+function munculkan6() {
+    document.getElementById('tampilan-poup6').classList.add('flex')
+    document.getElementById('tampilan-poup6').classList.remove('hidden')
+}
+
+function keluar6() {
+    document.getElementById('tampilan-poup6').classList.add('hidden')
+    document.getElementById('tampilan-poup6').classList.remove('flex')
+}
+
+
+
+function munculkan7() {
+    document.getElementById('tampilan-poup7').classList.add('flex')
+    document.getElementById('tampilan-poup7').classList.remove('hidden')
+}
+
+function keluar7() {
+    document.getElementById('tampilan-poup7').classList.add('hidden')
+    document.getElementById('tampilan-poup7').classList.remove('flex')
+}
