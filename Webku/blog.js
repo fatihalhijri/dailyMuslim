@@ -280,3 +280,12 @@ function keluar7() {
     document.getElementById('tampilan-poup7').classList.add('hidden')
     document.getElementById('tampilan-poup7').classList.remove('flex')
 }
+
+
+// function muncul(e) {
+//     let list = document.querySelector('ul');
+//     e.name === 'muncul' ? (e.name = "close", list.classList.add('scale-0'),
+//         list.classList.add('opacity-100')) : (e.name = "muncul", list.classList.remove('scale-0'),
+//             list.classList.remove('opacity-100'))
+
+// }

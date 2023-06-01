@@ -6,6 +6,26 @@ function Menu(e) {
 
 }
 
+
+// const hamburger = document.querySelector('#hamburger');
+// const navMenu = document.querySelector('#nav-menu')
+
+// hamburger.addEventListener ('click', function() {
+//     hamburger.classList.toggle('hamburger-active');
+//     navMenu.classList.toggle('hidden');
+// });
+
+
+
+
+// window.addEventListener('click', function (e){
+//     if(e.target != hamburger && e.target != navMenu) {
+//         hamburger.classList.remove('hamburger-active');
+//         navMenu.classList.add('hidden');
+//     }
+// })
+
+
 // let list2 = document.querySelector('ul');
 // e.name === 'menu' ? (e.name = "close", list2.classList.add('bg-gray-900')) :
 // (e.name = "menu" , list2.classList.remove('bg-gray-900'))
