@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden
+font-Ubuntu bg-white dark:bg-slate-900">
+    <header class="">
+        <div class="fixed top-0 filter   md:z-50 z-40">
+            <nav class="w-screen  bg-transparent  dark:bg-slate-900  p-5 md:flex md:items-center md:justify-between  md:px-24 "
+                id="header">
+                <div class="flex justify-between items-center drop-shadow">
+                    <span class="text-2xl cursor-pointer font-bold text-green-900  ">
+                        <img src="../assets/img/images.png" alt="" class="w-14 h-16 inline">Daily Muslim
+                    </span>
+                    <span class="text-3xl cursor-pointer md:hidden block mx-2 text-green-900">
+                        <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+                    </span>
+                </div>
+                <ul class="md:flex gap-4 md:items-center z-50 md:z-auto  md:static absolute   dark:md:bg-transparent md:bg-transparent bg-transparent dark:md:bg-opacity-100   dark:bg-slate-900 rounded-2xl  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100  top-[-400px] transition-all ease-in duration-500"
+                    id="menu2">
+                    <li class="mx-5 my-6 md:my-0 font-bold">
+                        <a href="beranda.html"
+                            class="text-xl text-green-900  hover:underline-offset-4 hover:underline hover:text-red-700 duration-500">Home</a>
+                    </li>
+
+                    <li class="mx-5 my-6 md:my-0 font-bold">
+                        <a href="../Webku/blog2.html"
+                            class="text-xl text-green-900  hover:underline-offset-4 hover:underline hover:text-red-700 duration-500 "
+                            onmouseenter="down()">Blog</a>
+                    </li>
+                    <li class="mx-5 my-6 md:my-0 font-bold">
+                        <a href="../Webku/live.html"
+                            class="text-xl text-green-900  hover:underline-offset-4 hover:underline hover:text-red-700 duration-500 ">Live</a>
+                    </li>
+                    <!-- <span class="flex   gap-2 text-green-900  hover:text-gray-500" id=".">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search font-bold " viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+        <input type="text" placeholder="Search" class="rounded-lg font-normal text-center ring-1 ring-black" id="search">
+        
+    </span> -->
+                    <form action="" class="relative w-max mx-auto ">
+                        <input type="search " placeholder="Search here" name="search" id="search"
+                            class="relative peer z-10 bg-transparent 
+        w-12 h-12 rounded-full border cursor-pointer outline-none pl-12 focus:w-full focus:border-green-900 focus:cursor-text text-gray-600 focus:pl-16 focus:pr-4 dark:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="text-green-900"
+                            class="bi bi-search font-bold  absolute inset-y-0 my-auto h-8 w-12 px-3.5  stroke-green-900  border-r border-transparent  peer-focus:border-green-900 peer-focus:stroke-green-900 "
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </form>
+
+
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <div class="fixed  md:z-50 z-30">
+            <div class="relative md:mt-[40rem] mt-[38.5rem] items-center md:right-2 left-3">
+
+                <div class="flex relative md:flex-row flex-row items-center gap-6">
+
+                    <div class="flex flex-col  justify-center  py-6 md:pl-0  pl-3">
+
+
+                        <div class="flex">
+                            <span class="mr-2 text-sm text-slate-500">light</span>
+                            <input type="checkbox" class="hidden" id="dark-toggle" />
+                            <label for="dark-toggle">
+                                <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                                    <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"
+                                        onclick="">
+                                    </div>
+                                </div>
+                            </label>
+                            <span class="ml-2 text-sm text-slate-500">dark</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="mt-32">
+        <div class="mx-auto px-2" data-aos="fade-up">
+            <h1 class="md:text-3xl  text-3xl text-center text-green-900 ">Kumpulan Hadist-hadist</h1>
+            <p class="text-center text-gray-500 dark:text-gray-300 mt-4">
+                hadist tentang motivasi hidup dan lain sebagainya
+            </p>
+        </div>
+        <main class="mt-32 md:px-32 px-10 flex flex-col gap-24">
+
+            <div class="flex flex-col md:w-2/3 " data-aos="fade-left">
+                <h1 class="text-2xl text-green-900 md:text-left text-center">Hadits Tentang Jujur
+                </h1>
+                <p class="text-gray-500 dark:text-gray-300 my-4 text-lg md:text-left text-center  ">
+                    عَلَيْكُمْ بِالصِّدْقِ فَاِنَّ الصِّدْقَ يَهْدِيْ اِلَى الْبِرِّ اِنَّ الْبِرِّيَهْدِيْ اِلَى
+                    الْجَنَّةِ
+                    <br><br>
+                <p class="text-gray-500 dark:text-gray-300 my-4 text-lg md:text-left text-center md:pr-36">
+
+                    Artinya : “Hendaknya kamu selalu jujur karena kejujuran itu akan membawa kepada kebaikan dan
+                    kebaikan itu akan membawa ke dalam surga.” [HR. Bukhari dan Muslim]
+                </p>
+                </p>
+            </div>
+
+            <div class="flex flex-col md:items-end">
+                <div class="flex flex-col md:w-2/3 md:items-end" data-aos="fade-right">
+                    <h1 class="text-2xl text-pink-500 md:text-right text-center">Hadits Tentang Ilmu Agama
+                    </h1>
+                    <p class="text-gray-500 dark:text-gray-300 my-4 text-lg md:text-right text-center  ">
+                        مَنْ يُرِدِ اللَّهُ بِهِ خَيْرًا يُفَقِّهْهُ فِى الدِّينِ
+                        <br><br>
+                    <p class="text-gray-500 dark:text-gray-300 my-4 text-lg md:text-right text-center md:pl-36">
+
+                        Artinya: “Barang siapa yang Allah kehendaki kebaikan, maka Allah akan memahamkan dia tentang
+                        ilmu
+                        agama.” [HR. Bukhari no. 71 dan Muslim No. 1037]
+                    </p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:w-2/3" data-aos="fade-left">
+                <h1 class="text-2xl text-blue-700 md:text-left text-center">Hadits Pendek Tentang Nikah
+                </h1>
+                <p class="text-gray-500 dark:text-gray-300 my-4 text-lg md:text-left text-center  ">
+                    تزوجوا الودود الولود فاني مكاثر بكم الأمم
+                    <br><br>
+                <p class="text-gray-500 dark:text-gray-300 my-4 text-lg md:text-left text-center md:pr-36">
+
+                    “Nikahilah wanita yang penyayang dan subur! Karena aku berbangga dengan banyaknya ummatku.” [HR. An
+                    Nasa’I dan Abu Dawud]
+                </p>
+                </p>
+            </div>
+
+            <div class="flex flex-col md:items-end">
+                <div class="flex flex-col md:w-2/3" data-aos="fade-right">
+                    <h1 class="text-2xl text-amber-900 md:text-right text-center">Hadits Tentang Sedekah
+                    </h1>
+                    <p class="text-gray-500 dark:text-gray-300 my-4 text-lg md:text-right text-center  ">
+                        اليَدُ العُلْيَا خَيْرٌ مِنَ اليَدِ السُّفْلَى، فَاليَدُ العُلْيَا: هِيَ المُنْفِقَةُ،
+                        وَالسُّفْلَى: هِيَ السَّائِلَةُ
+                        <br><br>
+                    <p class="text-gray-500 dark:text-gray-300 my-4 text-lg md:text-right text-center md:pl-36">
+
+                        Artinya: “Tangan yang di atas lebih baik dari tangan yang di bawah. Tangan di atas adalah orang
+                        yang memberi dan tangan yang dibawah adalah orang yang meminta.” [HR. al-Bukhari no.1429 dan
+                        Muslim no.1033]
+                    </p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:w-2/3" data-aos="fade-left">
+                <h1 class="text-2xl text-orange-500 md:text-left text-center">Hadits Tentang Larangan Malas
+                </h1>
+                <p class="text-gray-500 dark:text-gray-300 my-4 text-lg md:text-left text-center  ">
+                    احْرِصْ عَلَى مَا يَنْفَعُكَ وَاسْتَعِنْ بِاللَّهِ وَلاَ تَعْجِزْ
+                    <br><br>
+                <p class="text-gray-500 dark:text-gray-300 my-4 text-lg md:text-left text-center md:pr-36">
+
+                    Artinya: “Bersemangatlah melakukan hal yang bermanfaat untukmu dan meminta tolonglah pada Allah,
+                    serta janganlah engkau malas” [HR. Muslim]
+                </p>
+                </p>
+            </div>
+
+            <div class="flex flex-col md:items-end">
+                <div class="flex flex-col md:w-2/3" data-aos="fade-right">
+                    <h1 class="text-2xl text-amber-900 md:text-right text-center">Hadits Tentang Nafkah
+                    </h1>
+                    <p class="text-gray-500 dark:text-gray-300 my-4 text-lg md:text-right text-center  ">
+                        كَفَى بِالْمَرْءِ إِثْمًا أَنْ يُضَيِّعَ مَنْ يَقُوتُ
+                        <br><br>
+                    <p class="text-gray-500 dark:text-gray-300 my-4 text-lg md:text-right text-center md:pl-36">
+
+                        Artinya: “Seseorang cukup dikatakan berdosa jika ia melalaikan orang yang wajib ia nafkahi.”
+                        [HR. Abu Daud]
+                    </p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:w-2/3" data-aos="fade-left">
+                <h1 class="text-2xl text-pink-500 md:text-left text-center">Hadits Tentang Ibadah
+                </h1>
+                <p class="text-gray-500 dark:text-gray-300 my-4 text-lg md:text-left text-center  ">
+                    أَنْ تَعْبُدَ اللَّهَ كَأَنَّكَ تَرَاهُ، فَإِنْلَمْ تَكُنْ تَرَاهُ فَغِنَّهُ يَرَاكَ
+                    <br><br>
+                <p class="text-gray-500 dark:text-gray-300 my-4 text-lg md:text-left text-center md:pr-36">
+
+                    Artinya: “Hendaknya kamu beribadah kepada Allah seakan-akan kamu melihatNya. Jika kamu tidak
+                    melihatNya maka sesungguhnya Dia melihatmu” [HR Muslim] </p>
+                </p>
+            </div>
+
+            <div class="flex flex-col md:items-end">
+                <div class="flex flex-col md:w-2/3" data-aos="fade-right">
+                    <h1 class="text-2xl text-green-400 md:text-right text-center">Hadits Tentang Sholat
+                    </h1>
+                    <p class="text-gray-500 dark:text-gray-300 my-4 text-lg md:text-right text-center  ">
+                        قُمْ يَا بِلَالُ فَأَرِحْنَا بِالصَّلَاةِ <br><br>
+                    <p class="text-gray-500 dark:text-gray-300 my-4 text-lg md:text-right text-center md:pl-36">
+
+                        Artinya: “Wahai Bilal, berdirilah. Nyamankanlah kami dengan mendirikan shalat.” [HR. Abu Dawud
+                        no. 4985, shahih] </p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:w-2/3" data-aos="fade-left">
+                <h1 class="text-2xl text-lime-500 md:text-left text-center">Ayat Al Quran Tentang Sholat
+                </h1>
+                <p class="text-gray-500 dark:text-gray-300 my-4 text-lg md:text-left text-center  ">
+                    وَأَقِيمُوا الصَّلَاةَ وَآَتُوا الزَّكَاةَ وَارْكَعُوا مَعَ الرَّاكِعِينَ <br><br>
+                <p class="text-gray-500 dark:text-gray-300 my-4 text-lg md:text-left text-center md:pr-36">
+
+                    Artinya: “Dan dirikanlah shalat, tunaikanlah zakat dan ruku’lah beserta orang-orang yang ruku’.”
+                    [QS. Al-Baqarah: 43] </p>
+            </div>
+
+            <div class="flex flex-col md:items-end">
+                <div class="flex flex-col md:w-2/3" data-aos="fade-right">
+                    <h1 class="text-2xl text-red-600 md:text-right text-center">Hadits Tentang Bid’ah
+                    </h1>
+                    <p class="text-gray-500 dark:text-gray-300 my-4 text-lg md:text-right text-center  ">
+                        مَنْ أَحْدَثَ فِى أَمْرِنَا هَذَا مَا لَيْسَ مِنْهُ فَهُوَ رَدٌّ<br><br>
+                    <p class="text-gray-500 dark:text-gray-300 my-4 text-lg md:text-right text-center md:pl-36">
+
+                        Artinya: “Barangsiapa membuat suatu perkara baru dalam agama kami ini yang tidak ada asalnya,
+                        maka perkara tersebut tertolak.” [HR. Bukhari dan Muslim] </p>
+                    </p>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <section class="h-screen bg-white dark:bg-slate-900" id="kontak">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#14532d" fill-opacity="1"
+                d="M0,288L48,266.7C96,245,192,203,288,208C384,213,480,267,576,245.3C672,224,768,128,864,96C960,64,1056,96,1152,133.3C1248,171,1344,213,1392,234.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+
+        <footer class=" flex items-end text-white box-border ">
+            <div class="h-4/5 bg-green-900  w-full">
+
+                <div class="  flex md:flex-row flex-col px-14  py-20">
+                    <div class="md:w-5/12">
+
+                        <div class="  ">
+                            <h3 class="font-bold text-3xl ">DailyMuslim</h3>
+                            <p class="font-light text-2xl mt-5  md:px-0 px-5">Hubungi kami </p>
+                        </div>
+
+                        <div class="flex md:flex-col flex-col justify-between items-start   md:mt-5 md:py-0 py-10">
+                            <div class="   justify-center text-center flex  items-center py-4 px-5 gap-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                    class="bi bi-telephone-fill " viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                </svg>
+                                <div class="">
+                                    <p
+                                        class="text-start font-medium text-white text-xl hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold  duration-300">
+                                        +62 857-7666-3953
+                                    </p>
+                                </div>
+                            </div>
+                            <div class=" gap-5  justify-start text-start flex  items-center py-4 px-5 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                    class="bi bi-chat-dots-fill " viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                </svg>
+                                <div class="">
+
+                                    <p
+                                        class="text-start font-medium text-white text-lg hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold  duration-300">
+                                        Dailymuslim@gmail.com
+                                </div>
+                                </p>
+                            </div>
+                            <div class="   justify-start text-start flex  items-start  py-4 px-5 gap-5">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                    class="bi bi-geo-alt-fill " viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                </svg>
+                                <div class="flex  ">
+
+                                    <p
+                                        class="text-start font-medium text-white text-base  hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold  duration-300">
+                                        Jonggol, Kab. Bogor,
+                                        Indonesia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" md:w-1/2 ">
+                        <h3 class="font-bold text-3xl md:px-5">Yang sering dilihat</h3>
+                        <div class="flex flex-col gap-8 mt-8 px-8 font-semibold md:py-0 py-10">
+                            <a href="jadwal.html"
+                                class="font-medium text-xl hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold md:hover:text-xl duration-300 ">Jadwal
+                                shalat</a>
+                            <a href="profile.html"
+                                class="font-medium text-xl hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold md:hover:text-xl duration-300">Profile
+                                pemilik</a>
+                            <a href="blog2.html"
+                                class="font-medium text-xl  hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold md:hover:text-xl duration-300">Ceramah
+                                Pilihan</a>
+                            <a href="live.html"
+                                class="font-medium text-xl hover:underline-offset-4 hover:underline hover:text-red-700 hover:font-bold md:hover:text-xl duration-300 ">Live</a>
+
+                        </div>
+                    </div>
+                    <div class=" md:w-5/12 ">
+                        <h3 class="font-bold text-3xl">Kirimkan pesan</h3>
+                        <div class=" text-center flex flex-col gap-4 rounded-xl md:py-2 py-5">
+                            <div class="flex flex-col gap-4 mt-4">
+                                <input type="text" class="py-4 px-6 w-full  text-black rounded-xl"
+                                    placeholder="Ketikkan sesuatu">
+                                <a href="" class="">
+                                    <div
+                                        class="py-4 px-6 w-full bg-white text-black hover:scale-90 font-bold text-lg rounded-xl hover:bg-green-900 hover:ring-2 hover:text-white hover:ring-white duration-700 ">
+                                        kirim Sekarang</div>
+                                </a>
+                            </div>
+                            <div class="flex flex-row justify-around mt-5">
+                                <div class="bg-white rounded-xl ">
+                                    <a href="https://twitter.com/">
+                                        <img src="../assets/img/Social media logo-1.png" alt="" class="md:w-16 w-10">
+                                    </a>
+                                </div>
+                                <div class="bg-white rounded-xl">
+
+                                    <a href="https://www.facebook.com/">
+                                        <img src="../assets/img/Social media logo-2.png" alt="" class="md:w-16 w-10">
+                                    </a>
+                                </div>
+                                <div class="bg-white rounded-xl">
+                                    <a href="https://www.google.com/">
+                                        <img src="../assets/img/ggogle.png" alt="" class="md:w-16 w-10">
+                                    </a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social flex-col">
+                    <img src="" alt="" class="">
+                </div>
+                <div class="   ">
+                    <div class=" bg-gray-800 w-full h-16    md:py-4 py-5">
+                        <h3 class="font-medium md:text-base text-sm  text-center  flex justify-center items-center ">
+                            Created
+                            By Student From SMK MAdinatul Qur'an 2023 |
+                            Daily Muslim</h3>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </section>
+
+
+    <script src="blog.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
