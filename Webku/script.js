@@ -275,4 +275,34 @@ darkToggle.addEventListener('click', function () {
 // themeCheck();
 
 
+function munculkan1() {
+    document.getElementById('tampilan-poup1').classList.add('flex')
+    document.getElementById('tampilan-poup1').classList.remove('hidden')
+}
 
+function keluar1() {
+    document.getElementById('tampilan-poup1').classList.add('hidden')
+    document.getElementById('tampilan-poup1').classList.remove('flex')
+}
+
+
+function munculkan2() {
+    document.getElementById('tampilan-poup2').classList.add('flex')
+    document.getElementById('tampilan-poup2').classList.remove('hidden')
+}
+
+function keluar2() {
+    document.getElementById('tampilan-poup2').classList.add('hidden')
+    document.getElementById('tampilan-poup2').classList.remove('flex')
+}
+
+
+function munculkan3() {
+    document.getElementById('tampilan-poup3').classList.add('flex')
+    document.getElementById('tampilan-poup3').classList.remove('hidden')
+}
+
+function keluar3() {
+    document.getElementById('tampilan-poup3').classList.add('hidden')
+    document.getElementById('tampilan-poup3').classList.remove('flex')
+}

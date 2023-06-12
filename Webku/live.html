@@ -11,12 +11,106 @@
     <link rel="stylesheet" href="../assets/css/output.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js" integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #eee;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .loader-wrapper {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #242f3f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loader {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            border: 4px solid #Fff;
+            animation: loader 2s infinite ease;
+        }
+
+        .loader-inner {
+            vertical-align: top;
+            display: inline-block;
+            width: 100%;
+            background-color: #fff;
+            animation: loader-inner 2s infinite ease-in;
+        }
+
+        @keyframes loader {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(180deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            75% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes loader-inner {
+            0% {
+                height: 0%;
+            }
+
+            25% {
+                height: 0%;
+            }
+
+            50% {
+                height: 100%;
+            }
+
+            75% {
+                height: 100%;
+            }
+
+            100% {
+                height: 0%;
+            }
+        }
+    </style>
 </head>
 
 <body class="overflow-x-hidden
 font-Ubuntu">
+<div class="loader-wrapper z-50">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
     <header class="">
-        <div class="fixed top-0 filter   md:z-50 z-40">
+        <div class="fixed top-0 filter   md:z-40 z-40">
             <nav class="w-screen  bg-transparent    p-5 md:flex md:items-center md:justify-between  md:px-24 "
                 id="header">
                 <div class="flex justify-between items-center drop-shadow">
@@ -99,8 +193,8 @@ font-Ubuntu">
             </div>
         </div>
 
-        <div class=" fixed md:z-50">
-            <div class=" relative md:left-3 md:mt-[48rem] mt-[43rem]">
+        <div class=" fixed md:z-40">
+            <div class=" relative md:left-3 md:mt-[48rem] mt-[46rem]">
 
                 <div class="flex md:flex-row  flex-row items-center gap-6">
 
@@ -661,8 +755,8 @@ font-Ubuntu">
     <div class="max-w-2xl mx-auto">
         <div id="tampilan-poup"
             class="hidden overflow-hidden backdrop-blur-lg w-full bg-green-500/50  h-full top-0 bottom-0 right-0 left-0 z-50 justify-center items-center fixed">
-            <div class="relative w-max px-12 py-px flex overflow-hidden  mt-0 ">
-                <div class="  rounded-lg w-screen h-screen  bg-white dark:bg-slate-700">
+            <div class="relative  w-max px-12 py-px flex overflow-hidden  mt-0 ">
+                <div class="  rounded-lg w-screen md:h-auto h-full  bg-white dark:bg-slate-700">
                     <!-- <div class="flex flex-row justify-between items-center px-5 py-3"> -->
                     <!-- <h3 class="font-semibold text-xl text-black dark:text-white">Live streaming</h3> -->
                     <button onclick="keluar1()" class=" rounded-lg   absolute right-1 ">
@@ -674,10 +768,47 @@ font-Ubuntu">
                         </svg></button>
                     <!-- </div> -->
                     <div class="md:w-full   rounded-xl shadow-xl  bg-white dark:bg-slate-700">
-                        <iframe width="560" height="315" class="w-full h-screen rounded-t-xl md:h-screen object-cover"
+                        <iframe width="560" height="315"
+                            class="w-full rounded-t-xl  md:h-screen  object-cover"
                             src="https://www.youtube.com/embed/oSeCczv8GhA" title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
+                    </div>
+                    <div class="justify-between flex md:hidden px-5 my-5 items-center">
+                        <div class="">
+                            <div class="flex items-center">
+                                <h2 class="font-semibold text-lg text-black dark:text-gray-200">Live sekarang</h2>
+                                <div class="rounded-full bg-red-500 w-6 h-6 animate-pulse"></div>
+
+                            </div>
+                            <h3 class="font-medium text-base text-gray-500 dark:text-gray-200">Nasihat Tentang Tebar
+                                Qurban</h3>
+
+                        </div>
+                        <div class=" flex  items-center my-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping" width="32" height="32"
+                                fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping-slow absolute  " width="32"
+                                height="32" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping-slow2 absolute  " width="32"
+                                height="32" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <div class="absolute">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                    class="bi bi-heart text-black dark:text-white" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -688,7 +819,7 @@ font-Ubuntu">
         <div id="tampilan-poup2"
             class="hidden overflow-hidden backdrop-blur-lg w-full bg-green-500/50  h-full top-0 bottom-0 right-0 left-0 z-50 justify-center items-center fixed">
             <div class="relative w-max px-12 py-px flex overflow-hidden  mt-0 ">
-                <div class="  rounded-lg w-screen h-screen  bg-white dark:bg-slate-700">
+                <div class="  rounded-lg w-screen md:h-screen h-full bg-white dark:bg-slate-700">
                     <button onclick="keluar2()" class=" rounded-lg  absolute right-1 ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-x-lg font-bold text-black  dark:text-white text-2xl w-10 h-10"
@@ -698,10 +829,46 @@ font-Ubuntu">
                         </svg></button>
                     <div class="md:w-full   rounded-xl shadow-xl  bg-white dark:bg-slate-700">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/V7X9jbI3u1U"
-                            class="w-full h-screen rounded-t-xl md:h-screen object-cover" title="YouTube video player"
+                            class="w-full  rounded-t-xl md:h-screen object-cover" title="YouTube video player"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
+                    </div>
+                    <div class="justify-between flex md:hidden px-5 my-5 items-center">
+                        <div class="">
+                            <div class="flex items-center">
+                                <h2 class="font-semibold text-lg text-black dark:text-gray-200">Live sekarang</h2>
+                                <div class="rounded-full bg-red-500 w-6 h-6 animate-pulse"></div>
+
+                            </div>
+                            <h3 class="font-medium text-base text-gray-500 dark:text-gray-200">“Khusnuzdhon kepada allah
+                            </h3>
+
+                        </div>
+                        <div class=" flex  items-center my-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping" width="32" height="32"
+                                fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping-slow absolute  " width="32"
+                                height="32" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping-slow2 absolute  " width="32"
+                                height="32" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <div class="absolute">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                    class="bi bi-heart text-black dark:text-white" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -711,7 +878,7 @@ font-Ubuntu">
         <div id="tampilan-poup3"
             class="hidden overflow-hidden backdrop-blur-lg w-full bg-green-500/50  h-full top-0 bottom-0 right-0 left-0 z-50 justify-center items-center fixed">
             <div class="relative w-max px-12 py-px flex overflow-hidden  mt-0 ">
-                <div class="  rounded-lg w-screen h-screen  bg-white dark:bg-slate-700">
+                <div class="  rounded-lg w-screen md:h-screen h-full  bg-white dark:bg-slate-700">
                     <button onclick="keluar3()" class=" rounded-lg  absolute right-1 ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-x-lg font-bold text-black  dark:text-white text-2xl w-10 h-10"
@@ -720,10 +887,45 @@ font-Ubuntu">
                                 d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                         </svg></button>
                     <div class="md:w-full   rounded-xl shadow-xl  bg-white dark:bg-slate-700">
-                        <iframe width="560" height="315" class="w-full h-screen rounded-t-xl md:h-screen object-cover"
+                        <iframe width="560" height="315" class="w-full  rounded-t-xl md:h-screen object-cover"
                             src="https://www.youtube.com/embed/YMBvEV4Hn7I" title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
+                    </div>
+                    <div class="justify-between flex md:hidden px-5 my-5 items-center">
+                        <div class="">
+                            <div class="flex items-center">
+                                <h2 class="font-semibold text-lg text-black dark:text-gray-200">Live sekarang</h2>
+                                <div class="rounded-full bg-red-500 w-6 h-6 animate-pulse"></div>
+
+                            </div>
+                            <h3 class="font-medium text-base text-gray-500 dark:text-gray-200">Menjemput taubat</h3>
+
+                        </div>
+                        <div class=" flex  items-center my-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping" width="32" height="32"
+                                fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping-slow absolute  " width="32"
+                                height="32" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping-slow2 absolute  " width="32"
+                                height="32" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <div class="absolute">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                    class="bi bi-heart text-black dark:text-white" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -733,7 +935,7 @@ font-Ubuntu">
         <div id="tampilan-poup4"
             class="hidden overflow-hidden backdrop-blur-lg w-full bg-green-500/50  h-full top-0 bottom-0 right-0 left-0 z-50 justify-center items-center fixed">
             <div class="relative w-max px-12 py-px flex overflow-hidden  mt-0 ">
-                <div class="  rounded-lg w-screen h-screen  bg-white dark:bg-slate-700">
+                <div class="  rounded-lg w-screen md:h-screen h-full  bg-white dark:bg-slate-700">
                     <button onclick="keluar4()" class=" rounded-lg  absolute right-1 ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-x-lg font-bold text-black  dark:text-white text-2xl w-10 h-10"
@@ -742,10 +944,46 @@ font-Ubuntu">
                                 d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                         </svg></button>
                     <div class="md:w-full   rounded-xl shadow-xl  bg-white dark:bg-slate-700">
-                        <iframe width="560" height="315" class="w-full h-screen rounded-t-xl md:h-screen object-cover"
+                        <iframe width="560" height="315" class="w-full  rounded-t-xl md:h-screen object-cover"
                             src="https://www.youtube.com/embed/RfXLnapRaSI" title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
+                    </div>
+                    <div class="justify-between flex md:hidden px-5 my-5 items-center">
+                        <div class="">
+                            <div class="flex items-center">
+                                <h2 class="font-semibold text-lg text-black dark:text-gray-200">Live sekarang</h2>
+                                <div class="rounded-full bg-red-500 w-6 h-6 animate-pulse"></div>
+
+                            </div>
+                            <h3 class="font-medium text-base text-gray-500 dark:text-gray-200">Tawakal untuk hidup sehat
+                            </h3>
+
+                        </div>
+                        <div class=" flex  items-center my-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping" width="32" height="32"
+                                fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping-slow absolute  " width="32"
+                                height="32" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping-slow2 absolute  " width="32"
+                                height="32" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <div class="absolute">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                    class="bi bi-heart text-black dark:text-white" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -755,7 +993,7 @@ font-Ubuntu">
         <div id="tampilan-poup5"
             class="hidden overflow-hidden backdrop-blur-lg w-full bg-green-500/50  h-full top-0 bottom-0 right-0 left-0 z-50 justify-center items-center fixed">
             <div class="relative w-max px-12 py-px flex overflow-hidden  mt-0 ">
-                <div class="  rounded-lg w-screen h-screen  bg-white dark:bg-slate-700">
+                <div class="  rounded-lg w-screen md:h-screen h-full  bg-white dark:bg-slate-700">
                     <button onclick="keluar5()" class=" rounded-lg  absolute right-1 ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-x-lg font-bold text-black  dark:text-white text-2xl w-10 h-10"
@@ -764,10 +1002,46 @@ font-Ubuntu">
                                 d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                         </svg></button>
                     <div class="md:w-full   rounded-xl shadow-xl  bg-white dark:bg-slate-700">
-                        <iframe width="560" height="315" class="w-full h-screen rounded-t-xl md:h-screen object-cover"
+                        <iframe width="560" height="315" class="w-full  rounded-t-xl md:h-screen object-cover"
                             src="https://www.youtube.com/embed/yM2szhLjwsc" title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
+                    </div>
+                    <div class="justify-between flex md:hidden px-5 my-5 items-center">
+                        <div class="">
+                            <div class="flex items-center">
+                                <h2 class="font-semibold text-lg text-black dark:text-gray-200">Live sekarang</h2>
+                                <div class="rounded-full bg-red-500 w-6 h-6 animate-pulse"></div>
+
+                            </div>
+                            <h3 class="font-medium text-base text-gray-500 dark:text-gray-200">Kaidah-kaidah memahami
+                                dalil</h3>
+
+                        </div>
+                        <div class=" flex  items-center my-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping" width="32" height="32"
+                                fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping-slow absolute  " width="32"
+                                height="32" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping-slow2 absolute  " width="32"
+                                height="32" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <div class="absolute">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                    class="bi bi-heart text-black dark:text-white" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -777,7 +1051,7 @@ font-Ubuntu">
         <div id="tampilan-poup6"
             class="hidden overflow-hidden backdrop-blur-lg w-full bg-green-500/50  h-full top-0 bottom-0 right-0 left-0 z-50 justify-center items-center fixed">
             <div class="relative w-max px-12 py-px flex overflow-hidden  mt-0 ">
-                <div class="  rounded-lg w-screen h-screen  bg-white dark:bg-slate-700">
+                <div class="  rounded-lg w-screen md:h-screen h-full bg-white dark:bg-slate-700">
                     <button onclick="keluar6()" class=" rounded-lg  absolute right-1 ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-x-lg font-bold text-black  dark:text-white text-2xl w-10 h-10"
@@ -786,11 +1060,47 @@ font-Ubuntu">
                                 d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                         </svg></button>
                     <div class="md:w-full   rounded-xl shadow-xl  bg-white dark:bg-slate-700">
-                        <iframe width="560" height="315" class="w-full h-screen rounded-t-xl md:h-screen object-cover"
+                        <iframe width="560" height="315" class="w-full  rounded-t-xl md:h-screen object-cover"
                             src="https://www.youtube.com/embed/jJWM1inLQjo?start=32" title="YouTube video player"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
+                    </div>
+                    <div class="justify-between flex md:hidden px-5 my-5 items-center">
+                        <div class="">
+                            <div class="flex items-center">
+                                <h2 class="font-semibold text-lg text-black dark:text-gray-200">Live sekarang</h2>
+                                <div class="rounded-full bg-red-500 w-6 h-6 animate-pulse"></div>
+
+                            </div>
+                            <h3 class="font-medium text-base text-gray-500 dark:text-gray-200">Adab berdoa agar diijabah
+                            </h3>
+
+                        </div>
+                        <div class=" flex  items-center my-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping" width="32" height="32"
+                                fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping-slow absolute  " width="32"
+                                height="32" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping-slow2 absolute  " width="32"
+                                height="32" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <div class="absolute">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                    class="bi bi-heart text-black dark:text-white" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -800,7 +1110,7 @@ font-Ubuntu">
         <div id="tampilan-poup7"
             class="hidden overflow-hidden backdrop-blur-lg w-full bg-green-500/50  h-full top-0 bottom-0 right-0 left-0 z-50 justify-center items-center fixed">
             <div class="relative w-max px-12 py-px flex overflow-hidden  mt-0 ">
-                <div class="  rounded-lg w-screen h-screen  bg-white dark:bg-slate-700">
+                <div class="  rounded-lg w-screen md:h-screen h-full bg-white dark:bg-slate-700">
                     <button onclick="keluar7()" class=" rounded-lg  absolute right-1 ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-x-lg font-bold text-black  dark:text-white text-2xl w-10 h-10"
@@ -809,10 +1119,45 @@ font-Ubuntu">
                                 d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                         </svg></button>
                     <div class="md:w-full   rounded-xl shadow-xl  bg-white dark:bg-slate-700">
-                        <iframe width="560" height="315" class="w-full h-screen rounded-t-xl md:h-screen object-cover" src="https://www.youtube.com/embed/aYLoIfllYss"
-                            title="YouTube video player" frameborder="0"
+                        <iframe width="560" height="315" class="w-full  rounded-t-xl md:h-screen object-cover"
+                            src="https://www.youtube.com/embed/aYLoIfllYss" title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
+                    </div>
+                    <div class="justify-between flex md:hidden px-5 my-5 items-center">
+                        <div class="">
+                            <div class="flex items-center">
+                                <h2 class="font-semibold text-lg text-black dark:text-gray-200">Live sekarang</h2>
+                                <div class="rounded-full bg-red-500 w-6 h-6 animate-pulse"></div>
+
+                            </div>
+                            <h3 class="font-medium text-base text-gray-500 dark:text-gray-200">Mengenal rabb mu</h3>
+
+                        </div>
+                        <div class=" flex  items-center my-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping" width="32" height="32"
+                                fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping-slow absolute  " width="32"
+                                height="32" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="animate-ping-slow2 absolute  " width="32"
+                                height="32" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path class="" fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                            <div class="absolute">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                    class="bi bi-heart text-black dark:text-white" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -820,7 +1165,11 @@ font-Ubuntu">
     </div>
 
 
-
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
     <script src="../Webku/blog.js"></script>
     <script>
 

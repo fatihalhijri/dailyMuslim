@@ -12,13 +12,107 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js" integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #eee;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .loader-wrapper {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #242f3f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loader {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            border: 4px solid #Fff;
+            animation: loader 2s infinite ease;
+        }
+
+        .loader-inner {
+            vertical-align: top;
+            display: inline-block;
+            width: 100%;
+            background-color: #fff;
+            animation: loader-inner 2s infinite ease-in;
+        }
+
+        @keyframes loader {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(180deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            75% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes loader-inner {
+            0% {
+                height: 0%;
+            }
+
+            25% {
+                height: 0%;
+            }
+
+            50% {
+                height: 100%;
+            }
+
+            75% {
+                height: 100%;
+            }
+
+            100% {
+                height: 0%;
+            }
+        }
+    </style>
 
 </head>
 
 <body class="overflow-x-hidden 
 font-Ubuntu">
+<div class="loader-wrapper z-50">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
     <header class="">
-        <div class="fixed top-0 filter   md:z-50 z-40">
+        <div class="fixed top-0 filter   md:z-40 z-40">
             <nav class="w-screen  bg-transparent  dark:bg-slate-900  p-5 md:flex md:items-center md:justify-between  md:px-24 "
                 id="header">
                 <div class="flex justify-between items-center drop-shadow">
@@ -96,8 +190,8 @@ font-Ubuntu">
             </div>
         </div>
 
-        <div class="fixed  md:z-50 z-30">
-            <div class="relative md:mt-[47rem] mt-[43rem] items-center md:right-2 left-3">
+        <div class="fixed  md:z-40 z-30">
+            <div class="relative md:mt-[47rem] mt-[46rem] items-center md:right-2 left-3">
 
                 <div class="flex relative md:flex-row flex-row items-center gap-6">
 
@@ -939,7 +1033,12 @@ font-Ubuntu">
 
         swiperEl.initialize();
     </script>
-
+    
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
 
 
     <script src="../Webku/blog.js"></script>

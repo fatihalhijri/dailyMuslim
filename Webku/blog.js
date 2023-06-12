@@ -289,3 +289,95 @@ function keluar7() {
 //             list.classList.remove('opacity-100'))
 
 // }
+
+function buka1() {
+    document.getElementById('hoh1').classList.add('flex')
+    document.getElementById('hoh1').classList.remove('hidden')
+}
+
+function tutup1() {
+    document.getElementById('hoh1').classList.add('hidden')
+    document.getElementById('hoh1').classList.remove('flex')
+}
+
+function buka2() {
+    document.getElementById('hoh2').classList.add('flex')
+    document.getElementById('hoh2').classList.remove('hidden')
+}
+
+function tutup2() {
+    document.getElementById('hoh2').classList.add('hidden')
+    document.getElementById('hoh2').classList.remove('flex')
+}
+
+function buka3() {
+    document.getElementById('hoh3').classList.add('flex')
+    document.getElementById('hoh3').classList.remove('hidden')
+}
+
+function tutup3() {
+    document.getElementById('hoh3').classList.add('hidden')
+    document.getElementById('hoh3').classList.remove('flex')
+}
+
+function buka4() {
+    document.getElementById('hoh4').classList.add('flex')
+    document.getElementById('hoh4').classList.remove('hidden')
+}
+
+function tutup4() {
+    document.getElementById('hoh4').classList.add('hidden')
+    document.getElementById('hoh4').classList.remove('flex')
+}
+
+function buka5() {
+    document.getElementById('hoh5').classList.add('flex')
+    document.getElementById('hoh5').classList.remove('hidden')
+}
+
+function tutup5() {
+    document.getElementById('hoh5').classList.add('hidden')
+    document.getElementById('hoh5').classList.remove('flex')
+}
+
+function buka6() {
+    document.getElementById('hoh6').classList.add('flex')
+    document.getElementById('hoh6').classList.remove('hidden')
+}
+
+function tutup6() {
+    document.getElementById('hoh6').classList.add('hidden')
+    document.getElementById('hoh6').classList.remove('flex')
+}
+
+function buka7() {
+    document.getElementById('hoh7').classList.add('flex')
+    document.getElementById('hoh7').classList.remove('hidden')
+}
+
+function tutup7() {
+    document.getElementById('hoh7').classList.add('hidden')
+    document.getElementById('hoh7').classList.remove('flex')
+}
+
+
+function buka8() {
+    document.getElementById('hoh8').classList.add('flex')
+    document.getElementById('hoh8').classList.remove('hidden')
+}
+
+function tutup8() {
+    document.getElementById('hoh8').classList.add('hidden')
+    document.getElementById('hoh8').classList.remove('flex')
+}
+
+
+function buka9() {
+    document.getElementById('hoh9').classList.add('flex')
+    document.getElementById('hoh9').classList.remove('hidden')
+}
+
+function tutup9() {
+    document.getElementById('hoh9').classList.add('hidden')
+    document.getElementById('hoh9').classList.remove('flex')
+}

@@ -13,11 +13,105 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js" integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #eee;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .loader-wrapper {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #242f3f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loader {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            border: 4px solid #Fff;
+            animation: loader 2s infinite ease;
+        }
+
+        .loader-inner {
+            vertical-align: top;
+            display: inline-block;
+            width: 100%;
+            background-color: #fff;
+            animation: loader-inner 2s infinite ease-in;
+        }
+
+        @keyframes loader {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(180deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            75% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes loader-inner {
+            0% {
+                height: 0%;
+            }
+
+            25% {
+                height: 0%;
+            }
+
+            50% {
+                height: 100%;
+            }
+
+            75% {
+                height: 100%;
+            }
+
+            100% {
+                height: 0%;
+            }
+        }
+    </style>
 </head>
 
 <body class="overflow-x-hidden scroll-smooth
-font-Ubuntu">
-
+font-Ubuntu bg-white dark:bg-slate-900">
+<div class="loader-wrapper z-50">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
     <header class=" ">
         <div class="fixed top-0 filter bg-transparent  md:z-50 z-40">
             <nav class="w-screen bg-transparent  filter   p-5 md:flex md:items-center md:justify-between  md:px-24 "
@@ -64,7 +158,7 @@ font-Ubuntu">
             </nav>
         </div>
         <div class="fixed  md:z-50 z-30">
-            <div class="relative md:mt-[47rem] mt-[43rem] items-center md:right-2 left-3">
+            <div class="relative md:mt-[47rem] mt-[46rem] items-center md:right-2 left-3">
 
                 <div class="flex relative md:flex-row flex-row items-center gap-6">
 
@@ -94,21 +188,9 @@ font-Ubuntu">
         <div class="bg-white dark:bg-slate-900">
             <div class="bg-gray-300 dark:bg-slate-500 w-full h-80 justify-start">
 
-                <!-- <div class="absolute  flex md:justify-between  md:gap-[71rem] gap-[12.2rem]">
-                    <img src="../assets/img/drif g.png" alt="" class="md:w-56 w-36" data-aos="fade-right">
-                    <img src="../assets/img/drif g.png" alt="" class="md:w-56 w-36" data-aos="fade-left">
-                </div>
-                <div class="absolute  flex justify-between  md:gap-[71rem] gap-[12.2rem]  md:mt-[10.2rem] mt-[13.5rem]">
-                    <img src="../assets/img/drif g.png" alt="" class="md:w-56 w-36" data-aos="fade-right">
-                    <img src="../assets/img/drif g.png" alt="" class="md:w-56 w-36" data-aos="fade-left">
-                </div>
-                <div
-                    class="absolute md:hidden flex justify-between  md:gap-[72rem] gap-[12.2rem]  md:mt-[10.2rem] mt-[6.7rem]">
-                    <img src="../assets/img/drif g.png" alt="" class="md:w-56 w-36" data-aos="fade-right">
-                    <img src="../assets/img/drif g.png" alt="" class="md:w-56 w-36" data-aos="fade-left">
-                </div> -->
+                
                 <div class="flex h-full w-full items-center justify-center ">
-                    <h3 class="text-center font-extrabold text-black md:text-4xl dark:text-white text-2xl z-20"
+                    <h3 class="text-center font-medium text-black md:text-4xl dark:text-white text-2xl z-20"
                         data-aos="fade-up">
                         Profile Pembuat Website
                     </h3>
@@ -162,7 +244,7 @@ font-Ubuntu">
     <section class=" bg-white dark:bg-slate-900">
         <div class="">
             <div class="pt-32" data-aos="fade-up">
-                <h3 class="text-center font-bold md:text-4xl text-black dark:text-white text-2xl">
+                <h3 class="text-center font-medium md:text-4xl text-black dark:text-white text-2xl">
                     Profile Pembuat DailyMuslim
                 </h3>
             </div>
@@ -179,7 +261,7 @@ font-Ubuntu">
                                     class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40 group-hover:flex hidden">
                                 <!-- <img src="../assets/img/majid2.png" alt="" class="group-hover:flex hidden h-full w-full rounded-xl object-cover shadow-xl shadow-black/40"> -->
                                 <div
-                                    class="absolute h-full w-full rounded-xl  shadow-xl bg-black/80 px-12 text-center text-slate-200  group-hover:[transform:rotateY(180deg)] ">
+                                    class="absolute h-full w-full rounded-xl  shadow-xl bg-black/80 dark:bg-slate-500 px-12 text-center text-slate-200  group-hover:[transform:rotateY(180deg)] ">
                                     <div class="flex min-h-full flex-col items-center justify-center">
                                         <h1 class="md:text-3xl text-2xl  font-bold">Muhammad fatih</h1>
                                         <p class="text-xl mt-4">Tailwind CSS</p>
@@ -229,7 +311,7 @@ font-Ubuntu">
                                     class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40 group-hover:flex hidden">
                                 <!-- <img src="../assets/img/majid2.png" alt="" class="group-hover:flex hidden h-full w-full rounded-xl object-cover shadow-xl shadow-black/40"> -->
                                 <div
-                                    class="absolute h-full w-full rounded-xl  shadow-xl bg-black/80 px-12 text-center text-slate-200  group-hover:[transform:rotateY(180deg)] ">
+                                    class="absolute h-full w-full rounded-xl  shadow-xl bg-black/80 dark:bg-slate-500 px-12 text-center text-slate-200  group-hover:[transform:rotateY(180deg)] ">
                                     <div class="flex min-h-full flex-col items-center justify-center">
                                         <h1 class="md:text-3xl text-2xl  font-bold">Muhammad rizki</h1>
                                         <p class="text-xl mt-4">Javascript</p>
@@ -281,7 +363,7 @@ font-Ubuntu">
                                     class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40 group-hover:flex hidden">
                                 <!-- <img src="../assets/img/majid2.png" alt="" class="group-hover:flex hidden h-full w-full rounded-xl object-cover shadow-xl shadow-black/40"> -->
                                 <div
-                                    class="absolute h-full w-full rounded-xl  shadow-xl bg-black/80 px-12 text-center text-slate-200  group-hover:[transform:rotateY(180deg)] ">
+                                    class="absolute h-full w-full rounded-xl  shadow-xl bg-black/80 dark:bg-slate-500 px-12 text-center text-slate-200  group-hover:[transform:rotateY(180deg)] ">
                                     <div class="flex min-h-full flex-col items-center justify-center">
                                         <h1 class="md:text-3xl text-2xl  font-bold">Abdul Aziz</h1>
                                         <p class="text-xl mt-4">Figma Design</p>
@@ -331,7 +413,7 @@ font-Ubuntu">
                                     class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40 group-hover:flex hidden">
                                 <!-- <img src="../assets/img/majid2.png" alt="" class="group-hover:flex hidden h-full w-full rounded-xl object-cover shadow-xl shadow-black/40"> -->
                                 <div
-                                    class="absolute h-full w-full rounded-xl  shadow-xl bg-black/80 px-12 text-center text-slate-200  group-hover:[transform:rotateY(180deg)] ">
+                                    class="absolute h-full w-full rounded-xl  shadow-xl bg-black/80 dark:bg-slate-500 px-12 text-center text-slate-200  group-hover:[transform:rotateY(180deg)] ">
                                     <div class="flex min-h-full flex-col items-center justify-center">
                                         <h1 class="md:text-3xl text-2xl  font-bold">Miko Ahmadineza</h1>
                                         <p class="text-xl mt-4">Support</p>
@@ -513,6 +595,13 @@ font-Ubuntu">
     <script>
         AOS.init();
     </script>
+
+<script>
+    $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut("slow");
+    });
+</script>
+
 
 </body>
 
