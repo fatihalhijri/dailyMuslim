@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -50,7 +50,7 @@
 
 
 
-    <section class="h-screen ">
+    <section class="h-screen bg-white dark:bg-slate-900" id="kontak">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#14532d" fill-opacity="1"
                 d="M0,288L48,266.7C96,245,192,203,288,208C384,213,480,267,576,245.3C672,224,768,128,864,96C960,64,1056,96,1152,133.3C1248,171,1344,213,1392,234.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -130,38 +130,33 @@
                         </div>
                     </div>
                     <div class=" md:w-5/12 ">
-                        <h3 class="font-bold text-3xl">Kirimkan pesan</h3>
-                        <div class=" text-center flex flex-col gap-4 rounded-xl md:py-2 py-5">
-                            <div class="flex flex-col gap-4 mt-4">
-                                <input type="text" class="py-4 px-6 w-full  text-black rounded-xl"
-                                    placeholder="Ketikkan sesuatu">
-                                <a href="" class="">
-                                    <div
-                                        class="py-4 px-6 w-full bg-white text-black hover:scale-90 font-bold text-lg rounded-xl hover:bg-green-900 hover:ring-2 hover:text-white hover:ring-white duration-700 ">
-                                        kirim Sekarang</div>
-                                </a>
-                            </div>
-                            <div class="flex flex-row justify-around mt-5">
-                                <div class="bg-white rounded-xl ">
-                                    <a href="https://twitter.com/">
-                                        <img src="../assets/img/Social media logo-1.png" alt="" class="md:w-16 w-10">
-                                    </a>
-                                </div>
-                                <div class="bg-white rounded-xl">
+                        <div class=" flex flex-col gap-4 rounded-xl md:py-2 py-5">
+                            <div class="text-black " id="error"></div>
+                            <form action="https://formspree.io/f/xdovqkoa"  method="POST">
+                                <div class="flex flex-col">
 
-                                    <a href="https://www.facebook.com/">
-                                        <img src="../assets/img/Social media logo-2.png" alt="" class="md:w-16 w-10">
-                                    </a>
+                                    <label class="text-left font-bold text-xl">
+                                        Your email
+                                    </div>
+                                    <input type="email" required id="email" class="text-left rounded-lg h-12 w-80 font-medium  text-black py-4 px-6" placeholder="Ketikan Sesuatu" name="email">
+                                </label>
+
+                                <div class="flex flex-col text-left">
+
+                                    <label class="flex flex-col font-bold text-xl">
+                                        Your message
+                                    </label>
                                 </div>
-                                <div class="bg-white rounded-xl">
-                                    <a href="https://www.google.com/">
-                                        <img src="../assets/img/ggogle.png" alt="" class="md:w-16 w-10">
-                                    </a>
-                                </div>
+                                <textarea name="message" required id="textarea" class=" rounded-lg h-20 w-full font-medium  text-gray-700 py-3 px-6" placeholder="Ketikan Sesuatu"></textarea>
+                            <!-- your other form fields go here -->
+                            <button type="submit" class="text-center rounded-lg h-12 w-full font-medium bg-gray-600 text-white py-3 px-6">Send</button>
+                        </form>
+                    </div>
 
 
-                            </div>
-                        </div>
+
+                        
+                        
                     </div>
                 </div>
 
@@ -181,6 +176,7 @@
         </footer>
     </section>
     <script src="script.js"></script>
+    <script src="validasi.js"></script>
 </body>
 
 </html>
